@@ -1,7 +1,7 @@
 #ifndef SPORTIDENTREADER_H
 #define SPORTIDENTREADER_H
 
-#include "sportidentreader_global.h"
+#include "Sportidentreader_global.h"
 #include <QSerialPort>
 #include <QTimer>
 

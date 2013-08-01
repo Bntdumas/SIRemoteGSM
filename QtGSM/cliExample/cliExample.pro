@@ -1,33 +1,27 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2013-07-31T18:00:44
-#
-#-------------------------------------------------
-
-QT       += core serialport
-QT       -= gui
+QT += core serialport
+QT -= gui
 
 top_srcdir=$$PWD
-top_builddir=$$shadowed($$PWD)
+top_builddir=$$shadowed($$top_srcdir)
 
 TARGET = cliExample
-CONFIG   += console
-CONFIG   -= app_bundle
+CONFIG += console
+CONFIG -= app_bundle
 
 linux-rasp-pi-g++: {
     message("setting up CLI Example to run on a Raspberry PI")
-    target.path = /home/pi/
+    target.path = /home/pi/sportIdentGSM/
     INSTALLS += target
 }
 
 TEMPLATE = app
 
-INCLUDEPATH += $$PWD/../GSModule/
+INCLUDEPATH += $$top_srcdir/../GSModule/
 
 LIBS += -L$$top_builddir/../GSModule/ -lGSModule
 
-SOURCES += $$PWD/main.cpp \
-           $$PWD/autoSMS.cpp
+SOURCES += $$top_srcdir/main.cpp \
+           $$top_srcdir/autoSMS.cpp
 
 HEADERS += \
-    autoSMS.h
+    $$top_srcdir/autoSMS.h

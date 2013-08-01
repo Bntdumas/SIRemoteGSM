@@ -1,3 +1,4 @@
+top_srcdir=$$PWD
 
 QT -= gui
 QT += serialport
@@ -8,12 +9,14 @@ TEMPLATE = lib
 DEFINES += SPORTIDENTREADER_LIBRARY
 
 SOURCES += \
-       $$PWD/SportIdentReader.cpp
+       $$top_srcdir/SportIdentReader.cpp
 
 HEADERS += \
-       $$PWD/SportIdentReader.h\
-       $$PWD/ sportidentreader_global.h
+       $$top_srcdir/SportIdentReader.h\
+       $$top_srcdir/Sportidentreader_global.h
 
-unix: {
+linux-rasp-pi-g++: {
+    message("setting up Sport ident reader to run on a Raspberry PI")
+    target.path = /home/pi/sportIdentGSM/
     INSTALLS += target
 }

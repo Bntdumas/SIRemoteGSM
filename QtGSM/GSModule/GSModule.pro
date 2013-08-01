@@ -1,4 +1,6 @@
 
+top_srcdir=$$PWD
+
 QT -= gui
 QT += serialport
 
@@ -8,14 +10,14 @@ TEMPLATE = lib
 DEFINES += GSMODULE_LIBRARY
 
 SOURCES += \
-       $$PWD/GSModule.cpp
+       $$top_srcdir/GSModule.cpp
 
 HEADERS += \
-       $$PWD/GSModule.h\
-       $$PWD/GSModule_global.h
+       $$top_srcdir/GSModule.h\
+       $$top_srcdir/GSModule_global.h
 
 linux-rasp-pi-g++: {
     message("setting up GSM Library to run on a Raspberry PI")
-    target.path = /home/pi/
+    target.path = /home/pi/sportIdentGSM/
     INSTALLS += target
 }
