@@ -8,6 +8,7 @@
  */
 
 class QTimer;
+class GSModule;
 
 class SIPunchToSMS : public QObject
 {
@@ -44,8 +45,31 @@ private Q_SLOTS:
      */
     void releaseButtons();
 
+    /**
+     * @brief press/release "physical" buttons on the GSM module
+     */
+    void GSModuleReady();
+
 private:
+    /**
+     * @brief Holds wether the GSM Module is ready to transmit SMS or not
+     */
+    bool m_GSModuleIsReady;
+
+    /**
+     * @brief Timer for buttons pushing
+     */
     QTimer *m_ButtonTimer;
+
+    /**
+     * @brief Serial connections
+     */
+    GSModule *m_GSModule;
+
+    /**
+     * @brief Connect to the GSM module serial.
+     */
+    void initialiseGSModule(const QString &port);
 };
 
 #endif // SIPUNCHTOSMS_H
