@@ -28,6 +28,4 @@ INCLUDEPATH += $$top_srcdir/../GSModule/ \
 
 LIBS += -L$$top_builddir/../sportIdentReader/sportIdentReader/ -lsportIdentReader \
         -L$$top_builddir/../QtGSM/GSModule/ -lGSModule \
-        -L$$top_builddir/../wiringPi/ -lwiringPi
-
-message($$top_srcdir/../wiringPi/)
+        -L$$top_srcdir/../wiringPi/ -lwiringPi
