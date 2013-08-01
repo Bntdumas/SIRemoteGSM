@@ -2,8 +2,8 @@
 top_srcdir=$$PWD
 top_builddir=$$shadowed($$top_srcdir)
 
-QT       += core
-QT       -= gui
+QT += core
+QT -= gui
 
 TARGET = SIRemoteGSM
 CONFIG   += console
@@ -20,11 +20,14 @@ linux-rasp-pi-g++: {
 SOURCES += $$top_srcdir/main.cpp \
            $$top_srcdir/SIPunchToSMS.cpp
 
-HEADERS += $$top_srcdir/SIPunchToSMS.h
+HEADERS += $$top_srcdir/SIPunchToSMS.h \
 
 INCLUDEPATH += $$top_srcdir/../GSModule/ \
-               $$top_srcdir/../sportIdentReader/
+               $$top_srcdir/../sportIdentReader/ \
+               $$top_srcdir/../wiringPi/
 
 LIBS += -L$$top_builddir/../sportIdentReader/sportIdentReader/ -lsportIdentReader \
-        -L$$top_builddir/../QtGSM/GSModule/ -lGSModule
+        -L$$top_builddir/../QtGSM/GSModule/ -lGSModule \
+        -L$$top_builddir/../wiringPi/ -lwiringPi
 
+message($$top_srcdir/../wiringPi/)
