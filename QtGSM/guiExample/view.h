@@ -9,7 +9,7 @@ class view;
 }
 
 /**
- * @brief GUI class which uses the gsmModule
+ * @brief GUI class which uses the GSModule
  */
 
 class view : public QWidget
@@ -22,14 +22,14 @@ public:
     
 private Q_SLOTS:
     /**
-     * @brief Creates a QSerialPort object and initialize the gsmModule
+     * @brief Creates a QSerialPort object and initialize the GSModule
      */
     void on_btConnect_clicked();
 
     /**
      * @brief Displays a message in the TextEdit, formatting the message according to msgType
      */
-    void processMessage(const QString &msg, gsmModule::MessageType msgType);
+    void processMessage(const QString &msg, GSModule::MessageType msgType);
 
     /**
      * @brief Sends a line using the text in the lineEdit
@@ -41,7 +41,7 @@ private Q_SLOTS:
 
 private:
     Ui::view *ui;
-    gsmModule *m_gsm;
+    GSModule *m_gsm;
 };
 
 #endif // VIEW_H

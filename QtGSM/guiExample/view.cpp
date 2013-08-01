@@ -11,8 +11,8 @@ view::view(QWidget *parent) :
     m_gsm(0)
 {
     ui->setupUi(this);
-    m_gsm = new gsmModule(this);
-    connect(m_gsm, SIGNAL(message(QString, gsmModule::MessageType)), this, SLOT(processMessage(QString, gsmModule::MessageType)));
+    m_gsm = new GSModule(this);
+    connect(m_gsm, SIGNAL(message(QString, GSModule::MessageType)), this, SLOT(processMessage(QString, GSModule::MessageType)));
 }
 
 view::~view()
@@ -34,19 +34,19 @@ void view::on_btConnect_clicked()
     m_gsm->initializeSerialConnection(serialPort);
 }
 
-void view::processMessage(const QString &msg, gsmModule::MessageType msgType)
+void view::processMessage(const QString &msg, GSModule::MessageType msgType)
 {
     switch(msgType) {
-    case gsmModule::DebugInformation:
+    case GSModule::DebugInformation:
         ui->txtOutput->setTextColor(Qt::darkGray);
         break;
-    case gsmModule::ATFormatted:
+    case GSModule::ATFormatted:
         ui->txtOutput->setTextColor(Qt::darkYellow);
         break;
-    case gsmModule::RawSerial:
+    case GSModule::RawSerial:
         ui->txtOutput->setTextColor(Qt::darkGreen);
         break;
-    case gsmModule::Error:
+    case GSModule::Error:
         ui->txtOutput->setTextColor(Qt::darkRed);
         break;
     default:
@@ -59,10 +59,10 @@ void view::processMessage(const QString &msg, gsmModule::MessageType msgType)
 void view::on_btSend_clicked()
 {
     if (!m_gsm) {
-        processMessage(tr("Could not send: GSM module not initialized"), gsmModule::Error);
+        processMessage(tr("Could not send: GSM module not initialized"), GSModule::Error);
         return;
     } else if (ui->ctlSend->text().isEmpty()) {
-        processMessage(tr("Could not send: nothing to send"), gsmModule::Error);
+        processMessage(tr("Could not send: nothing to send"), GSModule::Error);
         return;
     }
     m_gsm->send(ui->ctlSend->text());

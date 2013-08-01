@@ -11,11 +11,11 @@ class QSerialPort;
  * @brief A class that enables communication with a serial GSM module.
  */
 
-class gsmModule : public QObject
+class GSModule : public QObject
 {
     Q_OBJECT
 public:
-    explicit gsmModule(QObject *parent = 0, bool debugOutputEnabled = false);
+    explicit GSModule(QObject *parent = 0, bool debugOutputEnabled = false);
 
     /**
      * @brief Open the serial console with the specified serialPort.
@@ -49,12 +49,12 @@ public:
     void sendSMS(const QString &message, const QString &phoneNumber);
 
 Q_SIGNALS:
-    void message(const QString &message, gsmModule::MessageType type);
+    void message(const QString &message, GSModule::MessageType type);
     void readyToTransmit();
 
 private Q_SLOTS:
     void serialDataAvailable();
-    void messageAsDebug(const QString &message, gsmModule::MessageType type);
+    void messageAsDebug(const QString &message, GSModule::MessageType type);
 
 private:
     QSerialPort *m_serialPort;
@@ -100,5 +100,5 @@ private:
       */
     bool m_debugOutputEnabled;
 };
-Q_DECLARE_METATYPE(gsmModule::MessageType)
+Q_DECLARE_METATYPE(GSModule::MessageType)
 #endif // GSMMODULE_H

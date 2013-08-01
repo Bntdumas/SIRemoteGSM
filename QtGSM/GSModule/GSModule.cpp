@@ -6,7 +6,7 @@
 #define SIM_PIN 4302
 #define SMS_MAX_LENGTH 160
 
-gsmModule::gsmModule(QObject *parent, bool debugOutputEnabled)
+GSModule::GSModule(QObject *parent, bool debugOutputEnabled)
     : QObject(parent),
     m_serialPort(0),
     m_debugOutputEnabled(debugOutputEnabled)
@@ -15,11 +15,11 @@ gsmModule::gsmModule(QObject *parent, bool debugOutputEnabled)
     connect(&m_transmissionWaitTimer, SIGNAL(timeout()), this, SLOT(serialDataAvailable()));
 
     if (m_debugOutputEnabled) {
-        connect(this, SIGNAL(message(QString,gsmModule::MessageType)), this, SLOT(messageAsDebug(QString,gsmModule::MessageType)));
+        connect(this, SIGNAL(message(QString,GSModule::MessageType)), this, SLOT(messageAsDebug(QString,GSModule::MessageType)));
     }
 }
 
-void gsmModule::initializeSerialConnection( QSerialPort *serialPort)
+void GSModule::initializeSerialConnection( QSerialPort *serialPort)
 {
     if (m_serialPort) {
         m_serialPort->close();
@@ -41,7 +41,7 @@ void gsmModule::initializeSerialConnection( QSerialPort *serialPort)
     send("");
 }
 
-void gsmModule::send(const QString &line)
+void GSModule::send(const QString &line)
 {
     if (!m_serialPort->isOpen()) {
         emit message(tr("Data send failed: the serial port is not open."), Error);
@@ -55,7 +55,7 @@ void gsmModule::send(const QString &line)
     m_serialPort->write(rawMsg);
 }
 
-void gsmModule::sendSMS(const QString &msg, const QString &phoneNumber)
+void GSModule::sendSMS(const QString &msg, const QString &phoneNumber)
 {
     emit message(tr("Sending SMS..."), ATFormatted);
     if (msg.length() > SMS_MAX_LENGTH) {
@@ -75,7 +75,7 @@ void gsmModule::sendSMS(const QString &msg, const QString &phoneNumber)
 }
 
 
-void gsmModule::serialDataAvailable()
+void GSModule::serialDataAvailable()
 {
     if (m_serialPort->bytesAvailable()) {
         if (m_waitingForEndOfTransmission) {
@@ -96,7 +96,7 @@ void gsmModule::serialDataAvailable()
     }
 }
 
-void gsmModule::messageAsDebug(const QString &message, gsmModule::MessageType type)
+void GSModule::messageAsDebug(const QString &message, GSModule::MessageType type)
 {
     if (!m_debugOutputEnabled) {
         return;
@@ -118,7 +118,7 @@ void gsmModule::messageAsDebug(const QString &message, gsmModule::MessageType ty
     }
 }
 
-void gsmModule::processIncomingMessage(const QString &msg)
+void GSModule::processIncomingMessage(const QString &msg)
 {
     if (msg.isEmpty()) {
         return;
@@ -138,7 +138,7 @@ void gsmModule::processIncomingMessage(const QString &msg)
     }
 }
 
-void gsmModule::sendNextCommandInLine()
+void GSModule::sendNextCommandInLine()
 {
     if (m_commandsQueue.isEmpty()) {
         return;
@@ -150,7 +150,7 @@ void gsmModule::sendNextCommandInLine()
     }
 }
 
-void gsmModule::requestSendCommand(const QString &command)
+void GSModule::requestSendCommand(const QString &command)
 {
     if (m_commandsQueue.isEmpty()) { //if we're not waiting for ACK on a previous command, send it right away
         m_commandsQueue.append(command);
