@@ -17,10 +17,14 @@ linux-rasp-pi-g++: {
     INSTALLS += target
 }
 
-SOURCES += $$top_srcdir/main.cpp
+SOURCES += $$top_srcdir/main.cpp \
+           $$top_srcdir/SIPunchToSMS.cpp
+
+HEADERS += $$top_srcdir/SIPunchToSMS.h
 
 INCLUDEPATH += $$top_srcdir/../GSModule/ \
                $$top_srcdir/../sportIdentReader/
 
 LIBS += -L$$top_builddir/../sportIdentReader/sportIdentReader/ -lsportIdentReader \
         -L$$top_builddir/../QtGSM/GSModule/ -lGSModule
+
