@@ -10,12 +10,13 @@
 class SIPunchToSMS : public QObject
 {
     Q_OBJECT
+
 public:
-    explicit SIPunchToSMS(QObject *parent = 0);
+    explicit SIPunchToSMS(const QString &GSMPort = QLatin1String("/dev/ttyAMA0"), const QString &SIPort = QLatin1String("/dev/ttyUSB0"), QObject *parent = 0);
     
-signals:
+Q_SIGNALS:
     
-public slots:
+public Q_SLOTS:
     
 };
 
