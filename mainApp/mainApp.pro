@@ -2,7 +2,7 @@
 top_srcdir=$$PWD
 top_builddir=$$shadowed($$top_srcdir)
 
-QT += core
+QT += core serialport
 QT -= gui
 
 TARGET = SIRemoteGSM
