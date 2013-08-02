@@ -15,7 +15,7 @@ class SIPunchToSMS : public QObject
     Q_OBJECT
 
 public:
-    explicit SIPunchToSMS(const QString &GSMPort = QLatin1String("/dev/ttyAMA0"), const QString &SIPort = QLatin1String("/dev/ttyUSB0"), QObject *parent = 0);
+    explicit SIPunchToSMS(const QString &GSMPort = QLatin1String("ttyAMA0"), const QString &SIPort = QLatin1String("ttyUSB0"), QObject *parent = 0);
 
     /**
      * @brief Send a signal on the RST pin of the GSM module
