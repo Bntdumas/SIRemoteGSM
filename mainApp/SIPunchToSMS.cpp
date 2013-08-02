@@ -8,6 +8,7 @@
 #include <QSerialPort>
 #include <QSerialPortInfo>
 #include <QDebug>
+#include <QTime>
 
 SIPunchToSMS::SIPunchToSMS(const QString &GSMPort, const QString &SIPort, QObject *parent) :
     QObject(parent),
@@ -52,6 +53,15 @@ void SIPunchToSMS::GSModuleReady()
     m_GSModuleIsReady = true;
 }
 
+void SIPunchToSMS::punchToSMS(const int SInumber, const QTime &punchTimeSTamp)
+{
+    qDebug() << Q_FUNC_INFO;
+    if (m_GSModuleIsReady) {
+        const QString SMS = QString("%1@%2").arg(SInumber).arg(punchTimeSTamp.toString());
+        m_GSModule->sendSMS(SMS, QLatin1String("+46708783740"));
+    }
+}
+
 void SIPunchToSMS::initialiseGSModule(const QString &port)
 {
     qDebug() << "Setting up GSM Module";
@@ -69,6 +79,7 @@ void SIPunchToSMS::initialiseGSModule(const QString &port)
     serialPort->setStopBits(QSerialPort::OneStop);
     m_GSModule->initializeSerialConnection(serialPort);
     powerGSModule();
+    connect(m_GSModule, SIGNAL(readyToTransmit()), this, SLOT(GSModuleReady()));
 }
 
 void SIPunchToSMS::initialiseSportIdentReader(const QString &port)
@@ -82,6 +93,8 @@ void SIPunchToSMS::initialiseSportIdentReader(const QString &port)
     m_SIReader->setserialPort(port);
     m_SIReader->setserialSpeed(38400);
     m_SIReader->initSerialConnection();
+
+    connect(m_SIReader, SIGNAL(SIPunch(int,QTime)), this, SLOT(punchToSMS(int,QTime)));
 }
 
 

@@ -51,6 +51,13 @@ private Q_SLOTS:
      */
     void GSModuleReady();
 
+    /**
+     * @brief Connect the punch to sending a SMS
+     * @param SInumber the SI card number
+     * @param punchTimeSTamp the punch timestamp
+     */
+    void punchToSMS(const int SInumber, const QTime &punchTimeSTamp);
+
 private:
     /**
      * @brief Holds wether the GSM Module is ready to transmit SMS or not
