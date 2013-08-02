@@ -9,6 +9,7 @@
 
 class QTimer;
 class GSModule;
+class SportIdentReader;
 
 class SIPunchToSMS : public QObject
 {
@@ -65,11 +66,14 @@ private:
      * @brief Serial connections
      */
     GSModule *m_GSModule;
+    SportIdentReader *m_SIReader;
 
     /**
-     * @brief Connect to the GSM module serial.
+     * @brief Connect to the GSM/SI serial.
      */
     void initialiseGSModule(const QString &port);
+    void initialiseSportIdentReader(const QString &port);
+
 };
 
 #endif // SIPUNCHTOSMS_H

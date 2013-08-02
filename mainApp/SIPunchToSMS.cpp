@@ -1,5 +1,6 @@
 #include "SIPunchToSMS.h"
 #include "GSModule.h"
+#include "SportIdentReader.h"
 
 #include "wiringPi.h"
 
@@ -26,6 +27,7 @@ SIPunchToSMS::SIPunchToSMS(const QString &GSMPort, const QString &SIPort, QObjec
     connect(m_ButtonTimer, SIGNAL(timeout()), this, SLOT(releaseButtons()));
 
     initialiseGSModule(GSMPort);
+    initialiseSportIdentReader(SIPort);
 }
 
 void SIPunchToSMS::resetGSModule()
@@ -68,3 +70,18 @@ void SIPunchToSMS::initialiseGSModule(const QString &port)
     m_GSModule->initializeSerialConnection(serialPort);
     powerGSModule();
 }
+
+void SIPunchToSMS::initialiseSportIdentReader(const QString &port)
+{
+    qDebug() << "Setting up master SI unit";
+    if (m_SIReader) {
+        delete m_SIReader;
+    }
+
+    m_SIReader = new SportIdentReader(this, true);
+    m_SIReader->setserialPort(port);
+    m_SIReader->setserialSpeed(38400);
+    m_SIReader->initSerialConnection();
+}
+
+
