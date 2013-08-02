@@ -5,6 +5,7 @@
 #include <QStringList>
 #include <QtEndian>
 #include <QDebug>
+#include <QTime>
 
 SportIdentReader::SportIdentReader(QObject *parent, bool debugOutputEnabled) :
     QObject(parent),
@@ -131,8 +132,12 @@ void SportIdentReader::processIncomingMessage(const QByteArray &msg)
     for (int i = 0; i < 3; ++i) {
         SINumberHex.append(trimmedMessage.at(SICardNumber + i));
     }
-    emit logText(tr("SI Card number: %1").arg(SINumberHex.toHex().toInt(0, 16)), DebugInformation);
+    // TODO handle SI cards better, this method does not work for SI 5
+    const int SINumber = SINumberHex.toHex().toInt(0, 16);
 
+
+    emit logText(tr("SI Card number: %1").arg(SINumber), DebugInformation);
+    emit SIPunch(SINumber, QTime::currentTime());
 
    // emit logText(byteArrayToHexaString(removeSeparationCharacters(msg)), RawSerial);
 

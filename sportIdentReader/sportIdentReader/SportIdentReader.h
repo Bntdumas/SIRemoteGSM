@@ -69,6 +69,13 @@ Q_SIGNALS:
      */
     void logText(const QString &str, SportIdentReader::MessageType type);
 
+    /**
+     * @brief Emitted when a punch is detected on the SI unit
+     * @param The SI card number who punched
+     * @param Timestamp of the punch, according to the SI Unit time
+     */
+    void SIPunch(const int SICardNUmber, const QTime &punchDateStamp);
+
 private:
 
     QSerialPort *m_serialPort;
