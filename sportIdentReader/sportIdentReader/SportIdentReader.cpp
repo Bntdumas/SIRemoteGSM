@@ -4,14 +4,20 @@
 #include <QSerialPortInfo>
 #include <QStringList>
 #include <QtEndian>
+#include <QDebug>
 
-SportIdentReader::SportIdentReader(QObject *parent) :
+SportIdentReader::SportIdentReader(QObject *parent, bool debugOutputEnabled) :
     QObject(parent),
     m_serialPort(0),
-    m_connected(false)
+    m_connected(false),
+    m_debugOutputEnabled(debugOutputEnabled)
 {
     m_transmissionWaitTimer.setInterval(100);
     connect(&m_transmissionWaitTimer, SIGNAL(timeout()), this, SLOT(serialDataAvailable()));
+
+    if (m_debugOutputEnabled) {
+        connect(this, SIGNAL(logText(QString,SportIdentReader::MessageType)), this, SLOT(messageAsDebug(QString,SportIdentReader::MessageType)));
+    }
 }
 
 void SportIdentReader::initSerialConnection(const QString & port, const int serialSpeed)
@@ -86,6 +92,27 @@ void SportIdentReader::serialDataAvailable()
             processIncomingMessage(m_dataBuffer);
             m_dataBuffer.clear();
             m_waitingForEndOfTransmission = false;
+    }
+}
+
+void SportIdentReader::messageAsDebug(const QString &message, SportIdentReader::MessageType type)
+{
+    if (!m_debugOutputEnabled) {
+        return;
+    }
+
+    switch (type) {
+    case DebugInformation:
+        qDebug() << "SI - error" << message;
+    case Error:
+        qWarning(message.toLocal8Bit().constData());
+        break;
+    case Warning:
+        qDebug() << "SI - Warning : " << message;
+        break;
+    case RawSerial:
+        qDebug() << "SI - RawSerial : " << message;
+        break;
     }
 }
 

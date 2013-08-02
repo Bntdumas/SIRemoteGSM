@@ -18,7 +18,7 @@ class SPORTIDENTREADERSHARED_EXPORT SportIdentReader: public QObject
     Q_PROPERTY(int serialSpeed READ serialSpeed WRITE setserialSpeed)
 
 public:
-    explicit SportIdentReader(QObject *parent = 0);
+    explicit SportIdentReader(QObject *parent = 0, bool debugOutputEnabled = false);
 
     /**
      * @brief Opens the serial connection to the Sport Ident module
@@ -57,6 +57,9 @@ private Q_SLOTS:
      * @brief reach when data is available on the open port
      */
     void serialDataAvailable();
+
+    void messageAsDebug(const QString &message, SportIdentReader::MessageType type);
+
 
 Q_SIGNALS:
     /**
@@ -113,7 +116,10 @@ private:
      */
     QByteArray removeSeparationCharacters(const QByteArray &array) const;
 
-
+    /**
+      * display message in debug output
+      */
+    bool m_debugOutputEnabled;
 
 };
 Q_DECLARE_METATYPE(SportIdentReader::MessageType)
