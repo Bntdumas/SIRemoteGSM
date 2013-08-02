@@ -23,7 +23,7 @@ SOURCES += $$top_srcdir/main.cpp \
 HEADERS += $$top_srcdir/SIPunchToSMS.h \
 
 INCLUDEPATH += $$top_srcdir/../QtGSM/GSModule/ \
-               $$top_srcdir/../sportIdentReader/ \
+               $$top_srcdir/../sportIdentReader/sportIdentReader/ \
                $$top_srcdir/../wiringPi/
 
 LIBS += -L$$top_builddir/../sportIdentReader/sportIdentReader/ -lsportIdentReader \
