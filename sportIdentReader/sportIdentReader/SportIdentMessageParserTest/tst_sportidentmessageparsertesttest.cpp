@@ -96,7 +96,7 @@ void SportIdentMessageParserTest::testSI8()
     const quint8 rawData2[] = {
         0x02, 0x53, 0x10, 0x07, 0x2D, 0x10, 0x1F, 0x67, 0xD6, 0x10, 0x00, 0x4D, 0x10, 0x07, 0x10, 0x00, 0xA2, 0x10, 0x1D, 0x03
     };
-    QByteArray inMsg2( (char*)rawData2, 19 );
+    QByteArray inMsg2( (char*)rawData2, 20 );
     SportIdentMessageParser::parse(inMsg2, out);
     QVERIFY2( out.cardNumber == 0, "Card number parsing failed" );
     QVERIFY2( out.cardSeries == 0, "Card series parsing failed");
