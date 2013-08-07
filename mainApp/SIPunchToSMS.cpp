@@ -2,7 +2,9 @@
 #include "GSModule.h"
 #include "SportIdentReader.h"
 
+#ifdef RASPBERRYPI
 #include "wiringPi.h"
+#endif
 
 #include <QTimer>
 #include <QSerialPort>
@@ -16,12 +18,14 @@ SIPunchToSMS::SIPunchToSMS(const QString &GSMPort, const QString &SIPort, QObjec
     m_GSModule(0)
 {
 
+#ifdef RASPBERRYPI
     const int ret = wiringPiSetup();
     if (ret == -1) {
         qFatal("failed to setup wiringPi lib.");
     }
     pinMode(Power, OUTPUT);
     pinMode(Reset, OUTPUT);
+#endif
 
     m_ButtonTimer = new QTimer(this);
     m_ButtonTimer->setSingleShot(true);
@@ -33,19 +37,25 @@ SIPunchToSMS::SIPunchToSMS(const QString &GSMPort, const QString &SIPort, QObjec
 
 void SIPunchToSMS::resetGSModule()
 {
+#ifdef RASPBERRYPI
     digitalWrite(Reset, true) ;
+#endif
 }
 
 void SIPunchToSMS::powerGSModule()
 {
+#ifdef RASPBERRYPI
     digitalWrite(Power, true) ;
+#endif
     m_ButtonTimer->start(5000);
 }
 
 void SIPunchToSMS::releaseButtons()
 {
+#ifdef RASPBERRYPI
     digitalWrite(Power, false) ;
     digitalWrite(Reset, false) ;
+#endif
 }
 
 void SIPunchToSMS::GSModuleReady()

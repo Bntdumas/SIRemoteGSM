@@ -15,6 +15,7 @@ linux-rasp-pi-g++: {
     message("setting up Sport ident GSM to run on a Raspberry PI")
     target.path = /home/pi/sportIdentGSM/
     INSTALLS += target
+    DEFINES += RASPBERRYPI
 }
 
 SOURCES += $$top_srcdir/main.cpp \
@@ -23,9 +24,12 @@ SOURCES += $$top_srcdir/main.cpp \
 HEADERS += $$top_srcdir/SIPunchToSMS.h \
 
 INCLUDEPATH += $$top_srcdir/../QtGSM/GSModule/ \
-               $$top_srcdir/../sportIdentReader/sportIdentReader/ \
-               $$top_srcdir/../wiringPi/
+               $$top_srcdir/../sportIdentReader/sportIdentReader/
 
 LIBS += -L$$top_builddir/../sportIdentReader/sportIdentReader/ -lsportIdentReader \
-        -L$$top_builddir/../QtGSM/GSModule/ -lGSModule \
-        -L$$top_srcdir/../wiringPi/ -lwiringPi
+        -L$$top_builddir/../QtGSM/GSModule/ -lGSModule
+
+linux-rasp-pi-g++: {
+    LIBS += -L$$top_srcdir/../wiringPi/ -lwiringPi
+    INCLUDEPATH += $$top_srcdir/../wiringPi/
+}
