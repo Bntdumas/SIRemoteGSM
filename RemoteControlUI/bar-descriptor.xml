@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+    <id>com.kdab.RemoteControlUI</id>
+    <name>Remote Control</name>
+    <author>KDAB</author>
+    <versionNumber>1.0.0</versionNumber>
+    <description>DESCRIPTION</description>
+
+    <initialWindow>
+        <systemChrome>none</systemChrome>
+        <transparent>false</transparent>
+        <autoOrients>true</autoOrients>
+        <aspectRatio>landscape</aspectRatio>
+    </initialWindow>
+    <publisher>KDAB</publisher>
+    <copyright>COPYRIGHT</copyright>
+
+    <env var="QML_IMPORT_PATH" value="app/native/qml"/>
+    <!--<env var="QT_PLUGIN_PATH" value="app/native/plugins"/>-->
+    <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib/"/>
+
+    <!--<arg>-platform</arg>
+    <arg>qnx</arg>-->
+
+    <action system="true">run_native</action>
+
+    <permission system="true">access_sms_mms</permission>
+    <permission system="true">access_pimdomain_messages</permission>
+
+    <!-- RemoteControlUI should point to the project binary, path can be relative -->
+    <asset entry="true" path="RemoteControlUI" type="Qnx/Elf">RemoteControlUI</asset>
+
+    <icon>
+        <image>res/icon.png</image>
+    </icon>
+
+    <!-- These values will be replaced when deploying in Qt Creator -->
+    <!--<asset path="/home/jan/bbndk/target_10_1_0_1020/qnx6/armle-v7/usr/lib/qt4/lib">lib</asset>-->
+    <!--<asset path="%QT_INSTALL_PLUGINS%">plugins</asset>-->
+    <!--<asset path="/home/jan/bbndk/target_10_1_0_1020/qnx6/armle-v7/usr/lib/qt4/imports">imports</asset>-->
+    <asset path="%SRC_DIR%/qml">qml</asset>
+    <asset path="/home/jan/RemoteControlUI/data">data</asset>
+</qnx>
