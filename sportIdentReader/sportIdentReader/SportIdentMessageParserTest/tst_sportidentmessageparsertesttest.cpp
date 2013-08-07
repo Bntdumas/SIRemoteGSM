@@ -66,9 +66,9 @@ void SportIdentMessageParserTest::testSI6()
     SportIdentMessageParser::SportIdentMessage out;
     SportIdentMessageParser::parse(inMsg1, out);
     QVERIFY2( out.cardNumber == 890510, "Card number parsing failed" );
-    QVERIFY2( out.cardSeries == 0, "Card series parsing failed");
-    QVERIFY2( out.stationID == 0, "Station ID parsing failed");
-    QVERIFY2( out.punchTime == QTime(), "Punch time parsing failed");
+    QVERIFY2( out.cardSeries == 0x0D, "Card series parsing failed");
+    QVERIFY2( out.stationID == 0x2D, "Station ID parsing failed");
+    QVERIFY2( out.punchTime == QTime(17,26,35), "Punch time parsing failed");
 
     const quint8 rawData2[] = {
         0x02, 0x53, 0x10, 0x07, 0x2D, 0x10, 0x0D, 0x96, 0x8E, 0x10, 0x00, 0x4C, 0xAF, 0x10, 0x0B, 0xA3, 0xA5, 0x03
@@ -76,9 +76,9 @@ void SportIdentMessageParserTest::testSI6()
     QByteArray inMsg2( (char*)rawData2, 18 );
     SportIdentMessageParser::parse(inMsg2, out);
     QVERIFY2( out.cardNumber == 890510, "Card number parsing failed" );
-    QVERIFY2( out.cardSeries == 0, "Card series parsing failed");
-    QVERIFY2( out.stationID == 0, "Station ID parsing failed");
-    QVERIFY2( out.punchTime == QTime(), "Punch time parsing failed");
+    QVERIFY2( out.cardSeries == 0x0D, "Card series parsing failed");
+    QVERIFY2( out.stationID == 0x2D, "Station ID parsing failed");
+    QVERIFY2( out.punchTime == QTime(17,27,11), "Punch time parsing failed");
 }
 
 
@@ -91,8 +91,8 @@ void SportIdentMessageParserTest::testSI8()
     SportIdentMessageParser::SportIdentMessage out;
     SportIdentMessageParser::parse(inMsg1, out);
     QVERIFY2( out.cardNumber == 2058198, "Card number parsing failed" );
-    QVERIFY2( out.cardSeries == 0, "Card series parsing failed");
-    QVERIFY2( out.stationID == 0, "Station ID parsing failed");
+    QVERIFY2( out.cardSeries == 0x1F, "Card series parsing failed");
+    QVERIFY2( out.stationID == 0x2D, "Station ID parsing failed");
     QVERIFY2( out.punchTime == QTime(), "Punch time parsing failed");
 
     const quint8 rawData2[] = {
@@ -101,8 +101,8 @@ void SportIdentMessageParserTest::testSI8()
     QByteArray inMsg2( (char*)rawData2, 20 );
     SportIdentMessageParser::parse(inMsg2, out);
     QVERIFY2( out.cardNumber == 2058198, "Card number parsing failed" );
-    QVERIFY2( out.cardSeries == 0, "Card series parsing failed");
-    QVERIFY2( out.stationID == 0, "Station ID parsing failed");
+    QVERIFY2( out.cardSeries == 0x1F, "Card series parsing failed");
+    QVERIFY2( out.stationID == 0x2D, "Station ID parsing failed");
     QVERIFY2( out.punchTime == QTime(), "Punch time parsing failed");
 }
 
