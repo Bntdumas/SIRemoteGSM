@@ -9,11 +9,13 @@ TEMPLATE = lib
 DEFINES += SPORTIDENTREADER_LIBRARY
 
 SOURCES += \
-       $$top_srcdir/SportIdentReader.cpp
+       $$top_srcdir/SportIdentReader.cpp \
+    sportidentmessageparser.cpp
 
 HEADERS += \
        $$top_srcdir/SportIdentReader.h\
-       $$top_srcdir/Sportidentreader_global.h
+       $$top_srcdir/Sportidentreader_global.h \
+    sportidentmessageparser.h
 
 linux-rasp-pi-g++: {
     message("setting up Sport ident reader to run on a Raspberry PI")

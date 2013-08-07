@@ -1,5 +1,6 @@
 TEMPLATE = subdirs
 SUBDIRS =  example \
-    sportIdentReader
+    sportIdentReader \
+    sportIdentReader/SportIdentMessageParserTest
 
 example.depends = sportIdentReader
