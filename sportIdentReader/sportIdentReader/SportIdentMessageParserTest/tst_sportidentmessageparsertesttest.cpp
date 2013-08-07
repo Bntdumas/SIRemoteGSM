@@ -65,7 +65,7 @@ void SportIdentMessageParserTest::testSI6()
     QByteArray inMsg1( (char*)rawData1, 18 );
     SportIdentMessageParser::SportIdentMessage out;
     SportIdentMessageParser::parse(inMsg1, out);
-    QVERIFY2( out.cardNumber == 0, "Card number parsing failed" );
+    QVERIFY2( out.cardNumber == 890510, "Card number parsing failed" );
     QVERIFY2( out.cardSeries == 0, "Card series parsing failed");
     QVERIFY2( out.stationID == 0, "Station ID parsing failed");
     QVERIFY2( out.punchTime == QTime(), "Punch time parsing failed");
@@ -75,7 +75,7 @@ void SportIdentMessageParserTest::testSI6()
     };
     QByteArray inMsg2( (char*)rawData2, 18 );
     SportIdentMessageParser::parse(inMsg2, out);
-    QVERIFY2( out.cardNumber == 0, "Card number parsing failed" );
+    QVERIFY2( out.cardNumber == 890510, "Card number parsing failed" );
     QVERIFY2( out.cardSeries == 0, "Card series parsing failed");
     QVERIFY2( out.stationID == 0, "Station ID parsing failed");
     QVERIFY2( out.punchTime == QTime(), "Punch time parsing failed");
@@ -90,7 +90,7 @@ void SportIdentMessageParserTest::testSI8()
     QByteArray inMsg1( (char*)rawData1, 19 );
     SportIdentMessageParser::SportIdentMessage out;
     SportIdentMessageParser::parse(inMsg1, out);
-    QVERIFY2( out.cardNumber == 0, "Card number parsing failed" );
+    QVERIFY2( out.cardNumber == 2058198, "Card number parsing failed" );
     QVERIFY2( out.cardSeries == 0, "Card series parsing failed");
     QVERIFY2( out.stationID == 0, "Station ID parsing failed");
     QVERIFY2( out.punchTime == QTime(), "Punch time parsing failed");
@@ -100,7 +100,7 @@ void SportIdentMessageParserTest::testSI8()
     };
     QByteArray inMsg2( (char*)rawData2, 20 );
     SportIdentMessageParser::parse(inMsg2, out);
-    QVERIFY2( out.cardNumber == 0, "Card number parsing failed" );
+    QVERIFY2( out.cardNumber == 2058198, "Card number parsing failed" );
     QVERIFY2( out.cardSeries == 0, "Card series parsing failed");
     QVERIFY2( out.stationID == 0, "Station ID parsing failed");
     QVERIFY2( out.punchTime == QTime(), "Punch time parsing failed");
