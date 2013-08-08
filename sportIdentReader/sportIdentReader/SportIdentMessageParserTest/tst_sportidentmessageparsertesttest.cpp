@@ -132,7 +132,7 @@ void SportIdentMessageParserTest::testSI_data()
     // EXTENDED PROTOCOL
     // SI5 - 204939, IKV, extended protocol, punched at
     QTest::newRow("IKV 204939-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x02\x13\x4B\x09\x37\x4B\x3C\x00\x01\x08\xB9\xC5\x03", 19)
-                                           << (quint32)204939 << (quint8)0x02 << (quint8)0x2D << QTime();
+                                           << (quint32)204939 << (quint8)0x02 << (quint8)0x2D << QTime(15,55,55);
 
     // SI5 - 204939, IKV, extended protocol, punched at
     QTest::newRow("IKV 204939-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x02\x13\x4B\x09\x37\x58\x80\x00\x01\x10\x54\xF0\x03", 19)
@@ -215,7 +215,7 @@ void SportIdentMessageParserTest::testSI_data()
                                                           << (quint32)9183776 << (quint8)0x8C << (quint8)0x2D << QTime();
 
     // SI11 - 9183776, Sven-Åke Lundberg, extended protocol, punched at
-    QTest::newRow("Sven-Åke Lundberg 9183776-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D©å\x00\x8C\x22\x20\x09\x39\x62\x82\x00\x01\xB0\x55\x57\x03", 19)
+    QTest::newRow("Sven-Åke Lundberg 9183776-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D©\x00\x8C\x22\x20\x09\x39\x62\x82\x00\x01\xB0\x55\x57\x03", 19)
                                                           << (quint32)9183776 << (quint8)0x8C << (quint8)0x2D << QTime();
 
 

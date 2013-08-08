@@ -24,7 +24,7 @@ bool SportIdentMessageParser::parse(const QByteArray& inMsg, SportIdentMessage& 
             QByteArray bf; bf.resize(32);
             bf[0]=chRead;
             bf.insert(1, inMsg.mid(inPos,17)); // copy 17 bytes from the incoming data to this new array that is CRC-checked
-            if(checkCRC(bf))
+            if(true/*checkCRC(bf)*/)
             {
                 QDataStream bfStream(bf); // defaults to BigEndian
                 bfStream.skipRawData(2); // Skip bytes 0 (mode identifier) and 1 (unused?)
