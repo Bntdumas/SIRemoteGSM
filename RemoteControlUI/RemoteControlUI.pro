@@ -38,6 +38,8 @@ qnx:BUILD_BBSMSPROVIDER = true
     }
 }
 
+OTHER_FILES += data/runners.txt
+
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp \
     incommingrunnersmodel.cpp \
