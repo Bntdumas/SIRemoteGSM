@@ -24,7 +24,7 @@ bool SportIdentMessageParser::parse(const QByteArray& inMsg, SportIdentMessage& 
             QByteArray bf; bf.resize(32);
             bf[0]=chRead;
             bf.insert(1, inMsg.mid(inPos,17)); // copy 17 bytes from the incoming data to this new array that is CRC-checked
-            if(true/*checkCRC(bf)*/)
+            if(checkCRC(bf))
             {
                 QDataStream bfStream(bf); // defaults to BigEndian
                 bfStream.skipRawData(2); // Skip bytes 0 (mode identifier) and 1 (unused?)
@@ -107,11 +107,11 @@ bool SportIdentMessageParser::parse(const QByteArray& inMsg, SportIdentMessage& 
 
             quint8 ampm = bf[1];
             out.punchTime = out.punchTime.addSecs(seconds);
-//           qDebug() << "adding " << seconds << " seconds";
-//           qDebug() << "out.punchTime = " << out.punchTime;
+            //           qDebug() << "adding " << seconds << " seconds";
+            //           qDebug() << "out.punchTime = " << out.punchTime;
             if(ampm&0x01) out.punchTime = out.punchTime.addSecs(3600*12); // PM; add twelve hours
 
-//            qDebug() << "out.punchTime = " << out.punchTime;
+            //            qDebug() << "out.punchTime = " << out.punchTime;
 
             // set the card number, series and station ID
             out.cardNumber = dcard;
@@ -219,45 +219,57 @@ bool SportIdentMessageParser::checkCRC(const QByteArray& bf)
     quint32 len=bf[1];
     quint16 crc=calcCRC(bf, len+2);
 
-    return (bf[len+2]<<8|bf[len+3]) == crc;
+    quint8 crcbyte1 = bf[len+2];
+    quint8 crcbyte2 = bf[len+3];
+
+    quint16 crcbytes = (crcbyte1<<8)+crcbyte2;
+
+    qDebug("%x %x %x %x",crcbyte1, crcbyte2, crcbytes, crc);
+
+    return crcbytes == crc;
 }
 
 quint16 SportIdentMessageParser::calcCRC(const QByteArray& data, quint32 count)
 {
-  // Return 0 for no or one data byte
-  if (count<2)
-    return 0;
+    // Return 0 for no or one data byte
+    if (count<2)
+        return 0;
 
-  quint32 index=0;
-  quint16 crc = (quint16(data[index])<<8) + quint16(data[index+1]);
-  index +=2;
-  // Return crc for two data bytes
-  if (count==2)
-    return crc;
+    quint32 index=0;
+    quint8 byte1 = data[index];
+    quint8 byte2 = data[index+1];
+    quint16 crc = (byte1<<8)+byte2;
+//    quint16 crc = (quint16(data[index])<<8) + quint16(data[index+1]);
+    index +=2;
+    // Return crc for two data bytes
+    if (count==2)
+        return crc;
 
-  quint16 value;
-  for (size_t k = count>>1; k>0; k--) {
-    if (k>1) {
-      value = (quint16(data[index])<<8) + quint16(data[index+1]);
-      index +=2;
-    }
-      else  // If the number of bytes is odd, complete with 0.
-      value = (count&1) ? data[index]<<8 : 0;
-
-    for (int j = 0; j<16; j++) {
-        if (crc & 0x8000) {
-            crc  <<= 1;
-        if (value & 0x8000)
-          crc++;
-            crc ^= 0x8005;
+    quint16 value;
+    for (size_t k = count>>1; k>0; k--) {
+        if (k>1) {
+            quint8 pos1 = data[index];
+            quint8 pos2 = data[index+1];
+            value = (pos1<<8)+pos2;
+            index +=2;
         }
-      else {
-        crc  <<= 1;
-        if (value & 0x8000)
-          crc++;
-      }
-      value <<= 1;
+        else  // If the number of bytes is odd, complete with 0.
+            value = (count&1) ? data[index]<<8 : 0;
+
+        for (int j = 0; j<16; j++) {
+            if (crc & 0x8000) {
+                crc  <<= 1;
+                if (value & 0x8000)
+                    crc++;
+                crc ^= 0x8005;
+            }
+            else {
+                crc  <<= 1;
+                if (value & 0x8000)
+                    crc++;
+            }
+            value <<= 1;
+        }
     }
-  }
-  return crc;
+    return crc;
 }
