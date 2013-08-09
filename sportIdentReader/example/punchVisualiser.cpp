@@ -2,6 +2,8 @@
 #include "ui_punchVisualiser.h"
 
 #include <QTime>
+#include <QFile>
+#include <QInputDialog>
 
 punchVisualiser::punchVisualiser(QWidget *parent) :
     QWidget(parent),
@@ -9,7 +11,9 @@ punchVisualiser::punchVisualiser(QWidget *parent) :
 {
     ui->setupUi(this);
     m_sportIdentModule = new SportIdentReader(this);
-    connect(m_sportIdentModule, SIGNAL(logText(QString,SportIdentReader::MessageType)), this, SLOT(processMessage(QString,SportIdentReader::MessageType)));
+    connect(m_sportIdentModule, SIGNAL(logText(QString,SportIdentReader::MessageType)),
+            this, SLOT(processMessage(QString,SportIdentReader::MessageType)));
+    connect(m_sportIdentModule, SIGNAL(rawData(QByteArray)), this, SLOT(dataReceived(QByteArray)));
 }
 
 punchVisualiser::~punchVisualiser()
@@ -49,4 +53,25 @@ void punchVisualiser::processMessage(const QString &msg, SportIdentReader::Messa
         break;
     }
     ui->textEdit->append(QString("%1 - %2").arg(QTime::currentTime().toString()).arg(msg));
+}
+
+void punchVisualiser::dataReceived(const QByteArray &data)
+{
+    static QString latestText = QString();
+    if (ui->dumpToFileBox->isChecked()) {
+        QFile file("SIFrames");
+        if (file.open(QFile::WriteOnly | QFile::Append)) {
+            bool ok = true;
+            QString siNumber = QInputDialog::getText(this, tr("Enter SI Number"), "",
+                                                     QLineEdit::Normal, latestText, &ok);
+            if (ok) {
+                latestText = siNumber;
+                file.write(siNumber.toLatin1());
+                file.write(":");
+                file.write(data.toHex());
+                file.write("\n");
+            }
+            file.close();
+        }
+    }
 }

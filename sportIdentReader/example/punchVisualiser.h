@@ -29,6 +29,8 @@ private Q_SLOTS:
      */
     void processMessage(const QString &msg, SportIdentReader::MessageType msgType);
 
+    void dataReceived(const QByteArray& data);
+
 
 private:
     Ui::punchVisualiser *ui;
