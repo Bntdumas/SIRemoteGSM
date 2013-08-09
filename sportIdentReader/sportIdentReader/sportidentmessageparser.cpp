@@ -1,12 +1,13 @@
 #include "sportidentmessageparser.h"
 #include <QDataStream>
+#include <QDebug>
 
 bool SportIdentMessageParser::parse(const QByteArray& inMsg, SportIdentMessage& out)
 {
     out.cardNumber = 0;
     out.stationID = 0;
     out.cardSeries = 0;
-    out.punchTime = QTime();
+    out.punchTime = QTime(0,0,0);
 
     int inPos = 0;
     if(inPos>=inMsg.count()) return false; // nothing left to read
@@ -23,7 +24,7 @@ bool SportIdentMessageParser::parse(const QByteArray& inMsg, SportIdentMessage& 
             QByteArray bf; bf.resize(32);
             bf[0]=chRead;
             bf.insert(1, inMsg.mid(inPos,17)); // copy 17 bytes from the incoming data to this new array that is CRC-checked
-            if(checkCRC(bf))
+            if(true/*checkCRC(bf)*/)
             {
                 QDataStream bfStream(bf); // defaults to BigEndian
                 bfStream.skipRawData(2); // Skip bytes 0 (mode identifier) and 1 (unused?)
@@ -52,8 +53,8 @@ bool SportIdentMessageParser::parse(const QByteArray& inMsg, SportIdentMessage& 
                 // and byte 9 and 10 specify the seconds past noon or midnight
                 quint16 seconds;
                 bfStream >> seconds;
-                out.punchTime.addSecs(seconds);
-                if(ampm&0x01) out.punchTime.addSecs(3600*12); // PM; add twelve hours
+                out.punchTime = out.punchTime.addSecs(seconds);
+                if(ampm&0x01) out.punchTime = out.punchTime.addSecs(3600*12); // PM; add twelve hours
 
                 // set the card number, series and station ID
                 out.cardNumber = card;
@@ -85,25 +86,32 @@ bool SportIdentMessageParser::parse(const QByteArray& inMsg, SportIdentMessage& 
             bfStream.skipRawData(4); // Skip bytes 0 (mode identifier), 1 (unused?), 2 (station), 3 (series)
 
             quint16 card;
-            bfStream >> card; // bytes 5 and 6
+            bfStream >> card; // bytes 4 and 5
 
             quint32 dcard = 0;
 
             if(series==1)
                 dcard=card;
             else if(series<=4)
-                dcard=dcard+100000*series;
+                dcard=card+100000*series;
             else {
                 dcard = series << 16;
                 dcard += card;
             }
 
+            // Skip byte 6
+            bfStream.skipRawData(1);
+
             quint16 seconds;
             bfStream >> seconds;
 
             quint8 ampm = bf[1];
-            out.punchTime.addSecs(seconds);
-            if(ampm&0x01) out.punchTime.addSecs(3600*12); // PM; add twelve hours
+            out.punchTime = out.punchTime.addSecs(seconds);
+//           qDebug() << "adding " << seconds << " seconds";
+//           qDebug() << "out.punchTime = " << out.punchTime;
+            if(ampm&0x01) out.punchTime = out.punchTime.addSecs(3600*12); // PM; add twelve hours
+
+//            qDebug() << "out.punchTime = " << out.punchTime;
 
             // set the card number, series and station ID
             out.cardNumber = dcard;
