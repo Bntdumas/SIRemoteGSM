@@ -130,93 +130,93 @@ void SportIdentMessageParserTest::testSI_data()
 
 
     // EXTENDED PROTOCOL
-    // SI5 - 204939, IKV, extended protocol, punched at
+    // SI5 - 204939, IKV, extended protocol, punched at 15:55:55
     QTest::newRow("IKV 204939-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x02\x13\x4B\x09\x37\x4B\x3C\x00\x01\x08\xB9\xC5\x03", 19)
                                            << (quint32)204939 << (quint8)0x02 << (quint8)0x2D << QTime(15,55,55);
 
-    // SI5 - 204939, IKV, extended protocol, punched at
+    // SI5 - 204939, IKV, extended protocol, punched at 15:56:08
     QTest::newRow("IKV 204939-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x02\x13\x4B\x09\x37\x58\x80\x00\x01\x10\x54\xF0\x03", 19)
-                                           << (quint32)204939 << (quint8)0x02 << (quint8)0x2D << QTime();
+                                           << (quint32)204939 << (quint8)0x02 << (quint8)0x2D << QTime(15,56,8);
 
-    // SI5 - 204948, IKV, extended protocol, punched at
+    // SI5 - 204948, IKV, extended protocol, punched at 15:56:47
     QTest::newRow("IKV 204948-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x02\x13\x54\x09\x37\x7F\x29\x00\x01\x18\xA6\x38\x03", 19)
-                                           << (quint32)204948 << (quint8)0x02 << (quint8)0x2D << QTime();
+                                           << (quint32)204948 << (quint8)0x02 << (quint8)0x2D << QTime(15,56,47);
 
-    // SI5 - 204948, IKV, extended protocol, punched at
+    // SI5 - 204948, IKV, extended protocol, punched at 15:56:57
     QTest::newRow("IKV 204948-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x02\x13\x54\x09\x37\x89\xA1\x00\x01\x20\x2C\xB0\x03", 19)
-                                           << (quint32)204948 << (quint8)0x02 << (quint8)0x2D << QTime();
+                                           << (quint32)204948 << (quint8)0x02 << (quint8)0x2D << QTime(15,56,57);
 
-    // SI6 - 890510, Benoit Dumas, extended protocol, punched at
+    // SI6 - 890510, Benoit Dumas, extended protocol, punched at 15:57:39
     QTest::newRow("Benoit Dumas 890510-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x0D\x96\x8E\x09\x37\xB3\x50\x00\x01\x28\x44\xC3\x03", 19)
-                                                    << (quint32)890510 << (quint8)0x0D << (quint8)0x2D << QTime();
+                                                    << (quint32)890510 << (quint8)0x0D << (quint8)0x2D << QTime(15,57,39);
 
-    // SI6 - 890510, Benoit Dumas, extended protocol, punched at
+    // SI6 - 890510, Benoit Dumas, extended protocol, punched at 15:57:47
     QTest::newRow("Benoit Dumas 890510-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x0D\x96\x8E\x09\x37\xBB\x74\x00\x01\x30\x7E\x10\x03", 19)
-                                                    << (quint32)890510 << (quint8)0x0D << (quint8)0x2D << QTime();
+                                                    << (quint32)890510 << (quint8)0x0D << (quint8)0x2D << QTime(15,57,47);
 
-    // SI6 - 540022, Tim Dalheimer, extended protocol, punched at
+    // SI6 - 540022, Tim Dalheimer, extended protocol, punched at 15:58:26
     QTest::newRow("Tim Dalheimer 540022-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x08\x3D\x76\x09\x37\xE2\x70\x00\x01\x38\x59\xFD\x03", 19)
-                                                     << (quint32)540022 << (quint8)0x08 << (quint8)0x2D << QTime();
+                                                     << (quint32)540022 << (quint8)0x08 << (quint8)0x2D << QTime(15,58,26);
 
-    // SI6 - 540022, Tim Dalheimer, extended protocol, punched at
+    // SI6 - 540022, Tim Dalheimer, extended protocol, punched at 15:58:36
     QTest::newRow("Tim Dalheimer 540022-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x08\x3D\x76\x09\x37\xEC\x65\x00\x01\x40\xF8\xF9\x03", 19)
-                                                     << (quint32)540022 << (quint8)0x08 << (quint8)0x2D << QTime();
+                                                     << (quint32)540022 << (quint8)0x08 << (quint8)0x2D << QTime(15,58,36);
 
-    // SI6 - 700527, Kalle Dalheimer, extended protocol, punched at
+    // SI6 - 700527, Kalle Dalheimer, extended protocol, punched at 15:59:06
     QTest::newRow("Kalle Dalheimer 700527-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x0A\xB0\x6F\x09\x38\x0A\x4F\x00\x01\x48\xCF\x39\x03", 19)
-                                                       << (quint32)700527 << (quint8)0x0A << (quint8)0x2D << QTime();
+                                                       << (quint32)700527 << (quint8)0x0A << (quint8)0x2D << QTime(15,59,06);
 
-    // SI6 - 700527, Kalle Dalheimer, extended protocol, punched at
+    // SI6 - 700527, Kalle Dalheimer, extended protocol, punched at 15:59:20
     QTest::newRow("Kalle Dalheimer 700527-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x0A\xB0\x6F\x09\x38\x18\xCE\x00\x01\x50\x35\x28\x03", 19)
-                                                       << (quint32)700527 << (quint8)0x0A << (quint8)0x2D << QTime();
+                                                       << (quint32)700527 << (quint8)0x0A << (quint8)0x2D << QTime(15,59,20);
 
-    // SI6 - 647656, Tanja Dalheimer, extended protocol, punched at
+    // SI6 - 647656, Tanja Dalheimer, extended protocol, punched at 15:59:48
     QTest::newRow("Tanja Dalheimer 647656-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x09\xE1\xE8\x09\x38\x34\xED\x00\x01\x58\x5B\xB3\x03", 19)
-                                                       << (quint32)647656 << (quint8)0x09 << (quint8)0x2D << QTime();
+                                                       << (quint32)647656 << (quint8)0x09 << (quint8)0x2D << QTime(15,59,48);
 
-    // SI6 - 647656, Tanja Dalheimer, extended protocol, punched at
+    // SI6 - 647656, Tanja Dalheimer, extended protocol, punched at 16:00:14
     QTest::newRow("Tanja Dalheimer 647656-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x09\xE1\xE8\x09\x38\x4E\x24\x00\x01\x60\xA4\x10\x03", 19)
-                                                       << (quint32)647656 << (quint8)0x09 << (quint8)0x2D << QTime();
+                                                       << (quint32)647656 << (quint8)0x09 << (quint8)0x2D << QTime(16,0,14);
 
-    // SI6 - 684897, Jan Dalheimer, extended protocol, punched at
+    // SI6 - 684897, Jan Dalheimer, extended protocol, punched at 16:01:51
     QTest::newRow("Jan Dalheimer 684897-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x0A\x73\x61\x09\x38\xAF\x64\x00\x01\x78\x05\x57\x03", 19)
-                                                     << (quint32)684897 << (quint8)0x0A << (quint8)0x2D << QTime();
+                                                     << (quint32)684897 << (quint8)0x0A << (quint8)0x2D << QTime(16,1,51);
 
-    // SI6 - 684897, Jan Dalheimer, extended protocol, punched at
+    // SI6 - 684897, Jan Dalheimer, extended protocol, punched at 16:02:01
     QTest::newRow("Jan Dalheimer 684897-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x0A\x73\x61\x09\x38\xB9\x74\x00\x01\x80\x44\x12\x03", 19)
-                                                     << (quint32)684897 << (quint8)0x0A << (quint8)0x2D << QTime();
+                                                     << (quint32)684897 << (quint8)0x0A << (quint8)0x2D << QTime(16,2,1);
 
-    // SI6 - 721209, Per-Martin Svärd, extended protocol, punched at
+    // SI6 - 721209, Per-Martin Svärd, extended protocol, punched at 16:02:35
     QTest::newRow("Per-Martin Svärd 721209-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x0B\x01\x39\x09\x38\xDB\x7D\x00\x01\x88\x1E\x69\x03", 19)
-                                                        << (quint32)721209 << (quint8)0x0B << (quint8)0x2D << QTime();
+                                                        << (quint32)721209 << (quint8)0x0B << (quint8)0x2D << QTime(16,2,35);
 
-    // SI6 - 721209, Per-Martin Svärd, extended protocol, punched at
+    // SI6 - 721209, Per-Martin Svärd, extended protocol, punched at 16:02:45
     QTest::newRow("Per-Martin Svärd 721209-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x0B\x01\x39\x09\x38\xE5\xE8\x00\x01\x90\x95\x64\x03", 19)
-                                                        << (quint32)721209 << (quint8)0x0B << (quint8)0x2D << QTime();
+                                                        << (quint32)721209 << (quint8)0x0B << (quint8)0x2D << QTime(16,2,45);
 
-    // SI8 - 2058198, IKV, extended protocol, punched at
+    // SI8 - 2058198, IKV, extended protocol, punched at 16:03:21
     QTest::newRow("IKV 2058198-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x1F\x67\xD6\x09\x39\x09\x3A\x00\x01\x98\x1C\x6A\x03", 19)
-                                            << (quint32)2058198 << (quint8)0x1F << (quint8)0x2D << QTime();
+                                            << (quint32)2058198 << (quint8)0x1F << (quint8)0x2D << QTime(16,3,21);
 
-    // SI8 - 2058198, IKV, extended protocol, punched at
+    // SI8 - 2058198, IKV, extended protocol, punched at 16:04:13
     QTest::newRow("IKV 2058198-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x1F\x67\xD6\x09\x39\x3D\x14\x00\x01\xA0\x36\x3B\x03", 19)
-                                            << (quint32)2058198 << (quint8)0x1F << (quint8)0x2D << QTime();
+                                            << (quint32)2058198 << (quint8)0x1F << (quint8)0x2D << QTime(16,4,13);
 
-    // SI8 - 2058126, IKV, extended protocol, punched at
+    // SI8 - 2058126, IKV, extended protocol, punched at 16:00:56
     QTest::newRow("IKV 2058126-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x1F\x67\x8E\x09\x38\x78\xF9\x00\x01\x68\x6A\xBA\x03", 19)
-                                            << (quint32)2058126 << (quint8)0x1F << (quint8)0x2D << QTime();
+                                            << (quint32)2058126 << (quint8)0x1F << (quint8)0x2D << QTime(16,0,56);
 
-    // SI8 - 2058126, IKV, extended protocol, punched at
+    // SI8 - 2058126, IKV, extended protocol, punched at 16:01:10
     QTest::newRow("IKV 2058126-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x1F\x67\x8E\x09\x38\x86\x7C\x00\x01\x70\x60\xD6\x03", 19)
-                                            << (quint32)2058126 << (quint8)0x1F << (quint8)0x2D << QTime();
+                                            << (quint32)2058126 << (quint8)0x1F << (quint8)0x2D << QTime(16,1,10);
 
-    // SI11 - 9183776, Sven-Åke Lundberg, extended protocol, punched at
+    // SI11 - 9183776, Sven-Åke Lundberg, extended protocol, punched at 16:04:36
     QTest::newRow("Sven-Åke Lundberg 9183776-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x8C\x22\x20\x09\x39\x54\x5C\x00\x01\xA8\xFB\xC5\x03", 19)
-                                                          << (quint32)9183776 << (quint8)0x8C << (quint8)0x2D << QTime();
+                                                          << (quint32)9183776 << (quint8)0x8C << (quint8)0x2D << QTime(16,4,36);
 
-    // SI11 - 9183776, Sven-Åke Lundberg, extended protocol, punched at
-    QTest::newRow("Sven-Åke Lundberg 9183776-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D©\x00\x8C\x22\x20\x09\x39\x62\x82\x00\x01\xB0\x55\x57\x03", 19)
-                                                          << (quint32)9183776 << (quint8)0x8C << (quint8)0x2D << QTime();
+    // SI11 - 9183776, Sven-Åke Lundberg, extended protocol, punched at 16:04:50
+    QTest::newRow("Sven-Åke Lundberg 9183776-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x8C\x22\x20\x09\x39\x62\x82\x00\x01\xB0\x55\x57\x03", 19)
+                                                          << (quint32)9183776 << (quint8)0x8C << (quint8)0x2D << QTime(16,4,50);
 
 
 }
