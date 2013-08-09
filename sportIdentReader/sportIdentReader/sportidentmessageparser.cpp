@@ -224,8 +224,6 @@ bool SportIdentMessageParser::checkCRC(const QByteArray& bf)
 
     quint16 crcbytes = (crcbyte1<<8)+crcbyte2;
 
-    qDebug("%x %x %x %x",crcbyte1, crcbyte2, crcbytes, crc);
-
     return crcbytes == crc;
 }
 
@@ -239,7 +237,6 @@ quint16 SportIdentMessageParser::calcCRC(const QByteArray& data, quint32 count)
     quint8 byte1 = data[index];
     quint8 byte2 = data[index+1];
     quint16 crc = (byte1<<8)+byte2;
-//    quint16 crc = (quint16(data[index])<<8) + quint16(data[index+1]);
     index +=2;
     // Return crc for two data bytes
     if (count==2)
