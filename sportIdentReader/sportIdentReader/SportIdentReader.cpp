@@ -123,6 +123,8 @@ void SportIdentReader::processIncomingMessage(const QByteArray &msg)
         return;
     }
 
+    emit rawData(msg);
+
     const QByteArray trimmedMessage = removeSeparationCharacters(msg);
     //emit logText(byteArrayToHexaString(msg), RawSerial);
     emit logText(byteArrayToHexaString(trimmedMessage), RawSerial);

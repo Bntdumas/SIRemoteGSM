@@ -76,6 +76,12 @@ Q_SIGNALS:
      */
     void SIPunch(const int SICardNUmber, const QTime &punchDateStamp);
 
+    /**
+     * @brief Emitted when a punch is detected, no parsing is done on this data
+     * @param The raw data as received from the unit
+     */
+    void rawData(const QByteArray& data);
+
 private:
 
     QSerialPort *m_serialPort;
