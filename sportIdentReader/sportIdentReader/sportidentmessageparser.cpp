@@ -68,11 +68,12 @@ bool SportIdentMessageParser::parse(const QByteArray& inMsg, SportIdentMessage& 
         case 0x53:{ //Control Punch, old mode
             QByteArray bf; bf.resize(1);
             bf[0]=chRead;
-            // Copy data (max 30 bytes) from inMsg to bf, erasing all the DLEs
+            // Copy data (max 30 bytes) from inMsg to bf, erasing all the DLEs,
+            // unless there are two consecutive DLEs in which case we keep only one.
             for(int i = 0; i < 30; i++) {
                 if(inPos >= inMsg.count()) break;
                 quint8 byte = inMsg[inPos++];
-                if(byte==DLE) continue;
+                if(byte==DLE) byte=inMsg[inPos++]; // if there was a DLE, take the next one, no matter what
                 bf.append(byte);
             }
 
