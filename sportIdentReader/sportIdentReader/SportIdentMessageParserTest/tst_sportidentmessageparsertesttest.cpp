@@ -249,7 +249,7 @@ void SportIdentMessageParserTest::massTestSI_data()
     QTest::addColumn<quint32>("cardNumber");
 
     QDir dir("data");
-    QFileInfoList files = dir.entryInfoList(QDir::Files);
+    QFileInfoList files = dir.entryInfoList(QStringList() << "*.txt", QDir::Files);
     foreach (const QFileInfo& fileInfo, files) {
         QFile file(fileInfo.absoluteFilePath());
         if (file.open(QFile::ReadOnly)) {
@@ -261,7 +261,7 @@ void SportIdentMessageParserTest::massTestSI_data()
                     qWarning(qPrintable(QString("The file %1 (line %2) is malformed").arg(fileInfo.fileName()).arg(lineNumber)));
                 } else {
                     QTest::newRow(qPrintable(fileInfo.fileName() + ": " + QString::number(lineNumber)))
-                            << parts[1].toLatin1() << (quint32)parts[0].toUInt();
+                            << QByteArray::fromHex(parts[1].toLatin1()) << (quint32)parts[0].toUInt();
                 }
                 lineNumber++;
             }
