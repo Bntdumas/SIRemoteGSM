@@ -5,6 +5,8 @@
 #include <QFile>
 #include <QInputDialog>
 
+#include "sinumberchooserdialog.h"
+
 punchVisualiser::punchVisualiser(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::punchVisualiser)
@@ -57,16 +59,15 @@ void punchVisualiser::processMessage(const QString &msg, SportIdentReader::Messa
 
 void punchVisualiser::dataReceived(const QByteArray &data)
 {
-    static QString latestText = QString();
     if (ui->dumpToFileBox->isChecked()) {
         QFile file("SIFrames");
         if (file.open(QFile::WriteOnly | QFile::Append)) {
-            bool ok = true;
-            QString siNumber = QInputDialog::getText(this, tr("Enter SI Number"), "",
-                                                     QLineEdit::Normal, latestText, &ok);
-            if (ok) {
-                latestText = siNumber;
-                file.write(siNumber.toLatin1());
+            SINumberChooserDialog dialog(this);
+            dialog.setSINumbers(QStringList()
+                                << "204948" << "540022" << "700527" << "647656" << "204939"
+                                << "684897" << "2058198" << "2058126" << "890510");
+            if (dialog.exec() == QDialog::Accepted) {
+                file.write(dialog.selectedNumber().toLatin1());
                 file.write(":");
                 file.write(data.toHex());
                 file.write("\n");

@@ -11,9 +11,11 @@ TEMPLATE = app
 
 
 SOURCES += $$top_srcdir/main.cpp\
-        $$top_srcdir/punchVisualiser.cpp
+        $$top_srcdir/punchVisualiser.cpp \
+    sinumberchooserdialog.cpp
 
-HEADERS  += $$top_srcdir/punchVisualiser.h
+HEADERS  += $$top_srcdir/punchVisualiser.h \
+    sinumberchooserdialog.h
 
 FORMS    += $$top_srcdir/punchVisualiser.ui
 

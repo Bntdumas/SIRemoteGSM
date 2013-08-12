@@ -68,7 +68,7 @@ void SIPunchToSMS::punchToSMS(const int SInumber, const QTime &punchTimeSTamp)
     qDebug() << Q_FUNC_INFO;
     if (m_GSModuleIsReady) {
         const QString SMS = QString("%1@%2").arg(SInumber).arg(punchTimeSTamp.toString());
-        m_GSModule->sendSMS(SMS, QLatin1String("+46708783740"));
+        m_GSModule->sendSMS(SMS, QLatin1String("+46722230141"));
     }
 }
 
