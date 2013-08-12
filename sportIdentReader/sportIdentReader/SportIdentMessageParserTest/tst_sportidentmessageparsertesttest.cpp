@@ -1,5 +1,7 @@
 #include <QString>
 #include <QtTest>
+#include <QDir>
+#include <QFile>
 
 #include "../sportidentmessageparser.h"
 
@@ -15,6 +17,8 @@ private Q_SLOTS:
     void cleanupTestCase();
     void testSI();
     void testSI_data();
+    void massTestSI();
+    void massTestSI_data();
 };
 
 SportIdentMessageParserTest::SportIdentMessageParserTest()
@@ -39,6 +43,7 @@ void SportIdentMessageParserTest::testSI_data()
     QTest::addColumn<QTime>("punchTime");
 
     // OLD PROTOCOL
+    {
 
     // SI 204939, IKV, type 5, old protocol, punched at 17:28:07
     QTest::newRow("IKV 204939-1") << QByteArray("\x02\x53\x10\x07\x2D\x10\x02\x10\x13\x4B\x10\x00\x4C\xE7\x10\x06\xA7\x6B\x03", 19 )
@@ -127,9 +132,10 @@ void SportIdentMessageParserTest::testSI_data()
     // SI 9183776, Sven-Åke Lundberg, type 11, old protocol, punched at 9:36:07
     QTest::newRow("Sven-Åke Lundberg 9183776-2") << QByteArray("\x02\x53\x10\x08\x2D\x8C\x22\x20\x10\x00\x87\x10\x07\x10\x0D\x24\x7A\x03", 18)
                       << (quint32)9183776 << (quint8)0x8C << (quint8)0x2D << QTime(9,36,7);
-
+    }
 
     // EXTENDED PROTOCOL
+    {
     // SI5 - 204939, IKV, extended protocol, punched at 15:55:55
     QTest::newRow("IKV 204939-1 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x02\x13\x4B\x09\x37\x4B\x3C\x00\x01\x08\xB9\xC5\x03", 19)
                                            << (quint32)204939 << (quint8)0x02 << (quint8)0x2D << QTime(15,55,55);
@@ -217,10 +223,8 @@ void SportIdentMessageParserTest::testSI_data()
     // SI11 - 9183776, Sven-Åke Lundberg, extended protocol, punched at 16:04:50
     QTest::newRow("Sven-Åke Lundberg 9183776-2 extended") << QByteArray("\x02\xD3\x0D\x00\x2D\x00\x8C\x22\x20\x09\x39\x62\x82\x00\x01\xB0\x55\x57\x03", 19)
                                                           << (quint32)9183776 << (quint8)0x8C << (quint8)0x2D << QTime(16,4,50);
-
-
+    }
 }
-
 
 void SportIdentMessageParserTest::testSI()
 {
@@ -239,7 +243,45 @@ void SportIdentMessageParserTest::testSI()
     QCOMPARE( out.punchTime, punchTime );
 }
 
+void SportIdentMessageParserTest::massTestSI_data()
+{
+    QTest::addColumn<QByteArray>("frames");
+    QTest::addColumn<quint32>("cardNumber");
 
+    QDir dir("data");
+    QFileInfoList files = dir.entryInfoList(QDir::Files);
+    foreach (const QFileInfo& fileInfo, files) {
+        QFile file(fileInfo.absoluteFilePath());
+        if (file.open(QFile::ReadOnly)) {
+            int lineNumber = 1;
+            while (!file.atEnd()) {
+                QString line = QString::fromLatin1(file.readLine());
+                QStringList parts = line.split(':');
+                if (parts.size() < 2) {
+                    qWarning(qPrintable(QString("The file %1 (line %2) is malformed").arg(fileInfo.fileName()).arg(lineNumber)));
+                } else {
+                    QTest::newRow(qPrintable(file.fileName() + ": " + QString::number(lineNumber)))
+                            << parts[1].toLatin1() << (quint32)parts[0].toUInt();
+                }
+                lineNumber++;
+            }
+        } else {
+            qWarning("Unable to open data file %s: %s",
+                     qPrintable(fileInfo.fileName()),
+                     qPrintable(file.errorString()));
+        }
+    }
+}
+
+void SportIdentMessageParserTest::massTestSI()
+{
+    QFETCH(QByteArray, frames);
+    QFETCH(quint32, cardNumber);
+
+    SportIdentMessageParser::SportIdentMessage out;
+    QVERIFY(SportIdentMessageParser::parse(frames, out));
+    QCOMPARE(out.cardNumber, cardNumber);
+}
 
 #ifdef K
 void SportIdentMessageParserTest::testSI8()

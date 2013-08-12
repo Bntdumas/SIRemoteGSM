@@ -14,6 +14,8 @@ CONFIG   -= app_bundle
 
 TEMPLATE = app
 
+OTHER_FILES += data/*
+
 
 SOURCES += tst_sportidentmessageparsertesttest.cpp ../sportidentmessageparser.cpp
 DEFINES += SRCDIR=\\\"$$PWD/\\\"
