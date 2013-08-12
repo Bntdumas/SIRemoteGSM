@@ -32,8 +32,8 @@ typedef QString QStringLiteral;
 #endif
 #ifdef BBSMSPROVIDER
 # include "bbsmsprovider.h"
-# include "basicfilemapper.h"
 #endif
+#include "basicfilemapper.h"
 
 #ifdef CUSTOMDEBUGHANDLER
 #include <stdio.h>
@@ -90,6 +90,7 @@ int main(int argc, char *argv[])
 #ifdef DUMMYPROVIDER
     registry->registerProvider(new DummyProvider());
 #endif
+
 #ifdef BBSMSPROVIDER
     registry->registerMapper(new BasicFileMapper(), new BBSMSProvider());
 #endif

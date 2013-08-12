@@ -16,12 +16,14 @@ private:
     {
         QString name;
         QString team;
+        QString bibnumber;
         int lap;
     };
 
     QMap<int, MappedRunner> m_runners;
 
     void loadRunners();
+    void loadRunnersFromXML();
 
 protected:
     bool map(const int si, const QTime &realTime, QString *name, QString *team, QTime *time, int *lap);

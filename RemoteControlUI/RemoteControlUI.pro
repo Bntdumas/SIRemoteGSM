@@ -38,7 +38,7 @@ qnx:BUILD_BBSMSPROVIDER = true
     }
 }
 
-OTHER_FILES += data/runners.txt
+OTHER_FILES += data/runners.txt data/startlista.xml
 
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp \
@@ -61,7 +61,7 @@ HEADERS += \
 
 OTHER_FILES += icon.png
 
-QT += core
+QT += core xml
 
 contains(QT_MAJOR_VERSION, 5):QT += qml quick
 !contains(QT_MAJOR_VERSION, 5):QT += declarative
