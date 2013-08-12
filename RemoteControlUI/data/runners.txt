@@ -1,12 +1,29 @@
 # si,,,name,,,team,,,lap
-684897,,,Jan Dalheimer,,,Hagfors 1,,,5
-540022,,,Tim Dalheimer,,,Hagfors 2,,,2
-700527,,,Kalle Dalheimer,,,Hagfors 1,,,3
-647656,,,Tanja Dalheimer,,,Hagfors 2,,,3
-890510,,,Benoit Dumas,,,Hagfors 2,,,5
-9183776,,,Ford Prefect,,,Hagfors 2,,,1
-2058198,,,Arthur Philip Dent,,,Hagfors 1,,,4
-721209,,,Prostetnic Jeltz,,,Hagfors 2,,,4
-2058126,,,Jelena Persson,,,Hagfors 1,,,1
-204948,,,Zaphod Beeblebrox,,,Hagfors 1,,,2
-204939,,,God,,,42,,,1
+42790,,,Anders Alamaa,,,Kalevan Rasti 1,,,1
+17019,,,Valter Alamaa,,,Kalevan Rasti 1,,,2
+452084,,,Julia Andersson,,,Kalevan Rasti 1,,,3
+362589,,,Jörgen Aurén,,,Kalevan Rasti 1,,,4
+547283,,,Elias Bergenfur,,,Kalevan Rasti 1,,,5
+47283,,,Hugo Bergenfur,,,Halden SK 1,,,1
+684897,,,Jan Dalheimer,,,Halden SK 1,,,2
+700527,,,Matthias Kalle Dalheimer,,,Halden SK 1,,,3
+647656,,,Tanja Dalheimer,,,Halden SK 1,,,4
+540022,,,Tim Dalheimer,,,Halden SK 1,,,5
+890510,,,Benoit Dumas,,,OK Linné 1,,,1
+42252,,,Lars-Gunnar Jansson,,,OK Linné 1,,,2
+17028,,,Anders Jonsson,,,OK Linné 1,,,3
+2058233,,,Leif Lind,,,OK Linné 1,,,4
+442066,,,Haidi Lindgren,,,OK Linné 1,,,5
+438113,,,Adrian Lundberg,,,Stora Tuna OK 1,,,1
+438153,,,Anders Lundberg,,,Stora Tuna OK 1,,,2
+438151,,,Ewa Lundberg,,,Stora Tuna OK 1,,,3
+438127,,,Simon Lundberg,,,Stora Tuna OK 1,,,4
+9183776,,,Sven-Åke Lundberg,,,Stora Tuna OK 1,,,5
+418036,,,Lars-Erik Nilsson,,,Helsingin Sunnistajat 1,,,1
+442017,,,Alfred Moen,,,Helsingin Sunnistajat 1,,,2
+42060,,,Karl-Erik Persson,,,Helsingin Sunnistajat 1,,,3
+512495,,,Sven-Olof Pettersson,,,Helsingin Sunnistajat 1,,,4
+347293,,,Åsa Pettersson,,,Helsingin Sunnistajat 1,,,5
+597012,,,Olof Skoghammar,,,Leksands OK 1,,,1
+721209,,,Per-Martin Svärd,,,Leksands OK 1,,,2
+441281,,,Henrik Zetterqvist,,,Leksands OK 1,,,3
