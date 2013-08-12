@@ -260,7 +260,7 @@ void SportIdentMessageParserTest::massTestSI_data()
                 if (parts.size() < 2) {
                     qWarning(qPrintable(QString("The file %1 (line %2) is malformed").arg(fileInfo.fileName()).arg(lineNumber)));
                 } else {
-                    QTest::newRow(qPrintable(file.fileName() + ": " + QString::number(lineNumber)))
+                    QTest::newRow(qPrintable(fileInfo.fileName() + ": " + QString::number(lineNumber)))
                             << parts[1].toLatin1() << (quint32)parts[0].toUInt();
                 }
                 lineNumber++;
