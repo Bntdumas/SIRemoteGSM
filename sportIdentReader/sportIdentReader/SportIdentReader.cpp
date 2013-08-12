@@ -1,4 +1,5 @@
 #include "SportIdentReader.h"
+#include "sportidentmessageparser.h"
 
 #include <QSerialPort>
 #include <QSerialPortInfo>
@@ -125,21 +126,15 @@ void SportIdentReader::processIncomingMessage(const QByteArray &msg)
 
     emit rawData(msg);
 
-    const QByteArray trimmedMessage = removeSeparationCharacters(msg);
-    //emit logText(byteArrayToHexaString(msg), RawSerial);
-    emit logText(byteArrayToHexaString(trimmedMessage), RawSerial);
+    // We cannot remove the delete characters here yet because we don't know the protocol yet
+    // (extended "new" protocol) doesn't know about these characters.
+    emit logText(byteArrayToHexaString(msg),RawSerial);
 
-    // retrieve SI card number
-    QByteArray SINumberHex;
-    for (int i = 0; i < 3; ++i) {
-        SINumberHex.append(trimmedMessage.at(SICardNumber + i));
-    }
-    // TODO handle SI cards better, this method does not work for SI 5
-    const int SINumber = SINumberHex.toHex().toInt(0, 16);
+    SportIdentMessageParser::SportIdentMessage parsedData;
+    SportIdentMessageParser::parse(msg, parsedData);
 
-
-    emit logText(tr("SI Card number: %1").arg(SINumber), DebugInformation);
-    emit SIPunch(SINumber, QTime::currentTime());
+    emit logText(tr("SI Card number: %1").arg(parsedData.cardNumber), DebugInformation);
+    emit SIPunch(parsedData.cardNumber, parsedData.punchTime);
 
    // emit logText(byteArrayToHexaString(removeSeparationCharacters(msg)), RawSerial);
 
