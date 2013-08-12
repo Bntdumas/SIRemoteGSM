@@ -5,7 +5,7 @@
 647656,,,Tanja Dalheimer,,,Hagfors 2,,,3
 890510,,,Benoit Dumas,,,Hagfors 2,,,5
 9183776,,,Ford Prefect,,,Hagfors 2,,,1
-2058198,,,Athur Philip Dent,,,Hagfors 1,,,4
+2058198,,,Arthur Philip Dent,,,Hagfors 1,,,4
 721209,,,Prostetnic Jeltz,,,Hagfors 2,,,4
 2058126,,,Jelena Persson,,,Hagfors 1,,,1
 204948,,,Zaphod Beeblebrox,,,Hagfors 1,,,2
