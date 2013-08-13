@@ -1,8 +1,9 @@
-import QtQuick 1.0
+import QtQuick 1.1
 
-Item {
+Rectangle {
     id: clock
     height: 50
+    color: "transparent"
 
     property string hours1: ""
     property string hours2: "0"

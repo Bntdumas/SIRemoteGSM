@@ -1,6 +1,58 @@
 #include "runnermapper.h"
 
 #include <QDebug>
+#include <QAbstractListModel>
+
+class RunnerListModel : public QAbstractListModel
+{
+    Q_OBJECT
+public:
+    RunnerListModel(QObject* parent = 0) : QAbstractListModel(parent)
+    {
+#if QT_VERSION < 0x050000
+        setRoleNames(roleNames());
+#endif
+    }
+
+    enum {
+        NameRole = Qt::UserRole,
+        SIRole
+    };
+
+    int rowCount(const QModelIndex & = QModelIndex()) const
+    {
+        return m_runners.size();
+    }
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const
+    {
+        int row = index.row();
+
+        switch (role) {
+        case NameRole:
+            return m_runners.values()[row];
+        case SIRole:
+            return m_runners.keys()[row];
+        }
+        return QVariant();
+    }
+    QHash<int, QByteArray> roleNames() const
+    {
+        QHash<int, QByteArray> roles;
+        roles[NameRole] = "name";
+        roles[SIRole] = "si";
+        return roles;
+    }
+
+    void setRunners(QMap<int, QString> runners)
+    {
+        beginResetModel();
+        m_runners = runners;
+        endResetModel();
+    }
+
+private:
+    QMap<int, QString> m_runners;
+};
 
 SIProvider::SIProvider(QObject *parent) :
     QObject(parent)
@@ -11,6 +63,7 @@ SIProvider::SIProvider(QObject *parent) :
 RunnerMapper::RunnerMapper(QObject *parent) :
     Provider(parent), m_provider(0)
 {
+    m_model = new RunnerListModel(this);
 }
 
 void RunnerMapper::setProvider(SIProvider *provider)
@@ -24,15 +77,40 @@ void RunnerMapper::setProvider(SIProvider *provider)
     }
 }
 
+int RunnerMapper::siForIndex(const int index)
+{
+    RunnerListModel* model = qobject_cast<RunnerListModel*>(m_model);
+    return model->index(index).data(RunnerListModel::SIRole).toInt();
+}
+
+QString RunnerMapper::nameForIndex(const int index)
+{
+    RunnerListModel* model = qobject_cast<RunnerListModel*>(m_model);
+    return model->index(index).data(RunnerListModel::NameRole).toString();
+}
+
+void RunnerMapper::reloadRunners()
+{
+    RunnerListModel* model = qobject_cast<RunnerListModel*>(m_model);
+    model->setRunners(runners());
+    emit modelChanged();
+}
+
+void RunnerMapper::error(const QString &message)
+{
+    m_errorMessage = message;
+    emit errorMessage(m_errorMessage);
+}
+
 void RunnerMapper::punched(const int si, const QTime &realTime)
 {
     QString name;
     QString team;
     QTime time;
     int lap;
-    qDebug() << "NOTE: Requesting mapping";
     if (map(si, realTime, &name, &team, &time, &lap)) {
-        qDebug() << "NOTE: Emitting runnerPunched";
         emit runnerPunched(name, team , time, realTime, lap);
     }
 }
+
+#include "runnermapper.moc"

@@ -84,6 +84,8 @@ int main(int argc, char *argv[])
     proxyModel->resort();
     QObject::connect(model, SIGNAL(rowsInserted(QModelIndex,int,int)), proxyModel, SLOT(resort()));
 
+    BasicFileMapper* mapper = new BasicFileMapper();
+
 #ifdef DBUSPROVIDER
     registry->registerProvider(new DBusProvider());
 #endif
@@ -92,7 +94,7 @@ int main(int argc, char *argv[])
 #endif
 
 #ifdef BBSMSPROVIDER
-    registry->registerMapper(new BasicFileMapper(), new BBSMSProvider());
+    registry->registerMapper(mapper, new BBSMSProvider());
 #endif
 
 #if QT_VERSION >= 0x050000
@@ -103,6 +105,8 @@ int main(int argc, char *argv[])
     viewer.setResizeMode(QmlApplicationViewer::SizeRootObjectToView);
 #endif
     viewer.rootContext()->setContextProperty("incommingRunnersModel", proxyModel);
+    viewer.rootContext()->setContextProperty("runnersModel", QVariant::fromValue(qobject_cast<QObject*>(mapper->model())));
+    viewer.rootContext()->setContextProperty("mapper", mapper);
     viewer.setMainQmlFile(QStringLiteral("qml/RemoteControlUI/main.qml"));
     viewer.showExpanded();
 

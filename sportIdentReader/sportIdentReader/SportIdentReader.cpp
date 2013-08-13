@@ -107,7 +107,7 @@ void SportIdentReader::messageAsDebug(const QString &message, SportIdentReader::
     case DebugInformation:
         qDebug() << "SI - error" << message;
     case Error:
-        qWarning(message.toLocal8Bit().constData());
+        qWarning("%s", message.toLocal8Bit().constData());
         break;
     case Warning:
         qDebug() << "SI - Warning : " << message;

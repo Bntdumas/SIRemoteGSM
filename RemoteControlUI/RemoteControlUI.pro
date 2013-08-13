@@ -59,6 +59,12 @@ HEADERS += \
     registry.h \
     basicfilemapper.h
 
+contains(QT_MAJOR_VERSION, 5):system(for f in $(ls $$PWD/qml/RemoteControlUI/ | grep -P ".*\.qml"); do sed -i \"s/QtQuick 1.1/QtQuick 2.0/\" $$PWD/qml/RemoteControlUI/$f; done)
+!contains(QT_MAJOR_VERSION, 5):system(for f in $(ls $$PWD/qml/RemoteControlUI/ | grep -P ".*\.qml"); do sed -i \"s/QtQuick 2.0/QtQuick 1.1/\" $$PWD/qml/RemoteControlUI/$f; done)
+system(ln -sf $$PWD/qml/RemoteControlUI/RunnersDialogDesktop.qml qml/RemoteControlUI/RunnersDialog.qml)
+system(mkdir --parents app/native/data)
+system(cp -f data/runners.txt app/native/data)
+
 OTHER_FILES += icon.png
 
 QT += core xml

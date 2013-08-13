@@ -49,12 +49,28 @@ public:
     void sendSMS(const QString &message, const QString &phoneNumber);
 
 Q_SIGNALS:
+    /**
+     * @brief Sends a message with information on the module
+     * @param message
+     * @param The type of message (see @MessageType)
+     */
     void message(const QString &message, GSModule::MessageType type);
+
+    /**
+     * @brief Emitted when the module is ready to transmit data.
+     */
     void readyToTransmit();
+
 
 private Q_SLOTS:
     void serialDataAvailable();
     void messageAsDebug(const QString &message, GSModule::MessageType type);
+
+    /**
+     * @brief Send the next command in the command queue
+     * @note declared as slot so it can be triggered by the command timer
+     */
+    void sendNextCommandInLine();
 
 private:
     QSerialPort *m_serialPort;
@@ -65,21 +81,23 @@ private:
     void processIncomingMessage(const QString &msg);
 
     /**
-     * @brief Used to store the currently recieved data when waiting for more.
+     * @brief Used to store the currently recieved data to be handled
      */
     QString m_dataBuffer;
 
     /**
-     * @brief When bytes are available, wait until the SIM module is done transmitting data.
+     * @brief store the queue of SMS messages to be sent. each message can only be send after the previous one was sent.
+     * Using the m_readyForNextSMS boolean
      */
-    bool m_waitingForEndOfTransmission;
-    QTimer m_transmissionWaitTimer;
+    QStringList m_SMSMessagesList;
+    QStringList m_SMSPhoneNumberList;
+    bool m_readyForNextSMS;
+    QString m_nextSMS;
 
     /**
-     * @brief We need to wait for the SMS module to answer the SMS request before sending it.
-     * We store the message in the meantime.
+     * @brief Result of the query asking the module if it is ready to transmit data.
      */
-    QString m_SMSMessageText;
+    bool m_isReadyToTransmit;
 
     /**
      * @brief timer to delay reception of data. Usefull when sending commands where the SIM is
@@ -88,17 +106,28 @@ private:
     QTimer m_tempoTimer;
 
     /**
-     * @brief FOr most AT commands, the SIM will answer "OK" or "ERROR". When a AT command is issued
+     * @brief For most AT commands, the SIM will answer "OK" or "ERROR". When a AT command is issued
      * we wait for the OK/ERROR answer before sending more commands
      */
     QStringList m_commandsQueue;
-    void sendNextCommandInLine();
     void requestSendCommand(const QString &command);
+
+    /**
+     * @brief Safety timer, if no answer is recieved (OK/ERROR) after 30 seconds, send the next command in line
+     */
+    QTimer m_commandQueueTimer;
+
 
     /**
       * display message in debug output
       */
     bool m_debugOutputEnabled;
+
+    /**
+     * @brief sends the next SMS in line
+     */
+    void sendNextSMS();
+
 };
 Q_DECLARE_METATYPE(GSModule::MessageType)
 #endif // GSMMODULE_H
