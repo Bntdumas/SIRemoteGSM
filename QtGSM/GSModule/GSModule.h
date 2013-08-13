@@ -97,7 +97,7 @@ private:
     QTimer m_tempoTimer;
 
     /**
-     * @brief FOr most AT commands, the SIM will answer "OK" or "ERROR". When a AT command is issued
+     * @brief For most AT commands, the SIM will answer "OK" or "ERROR". When a AT command is issued
      * we wait for the OK/ERROR answer before sending more commands
      */
     QStringList m_commandsQueue;
