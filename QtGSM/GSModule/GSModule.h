@@ -49,7 +49,16 @@ public:
     void sendSMS(const QString &message, const QString &phoneNumber);
 
 Q_SIGNALS:
+    /**
+     * @brief Sends a message with information on the module
+     * @param message
+     * @param The type of message (see @MessageType)
+     */
     void message(const QString &message, GSModule::MessageType type);
+
+    /**
+     * @brief Emitted when the module is ready to transmit data.
+     */
     void readyToTransmit();
 
 private Q_SLOTS:
