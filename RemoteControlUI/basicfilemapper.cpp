@@ -5,14 +5,116 @@
 #include <QDebug>
 #include <QDomDocument>
 #include <QDomElement>
+#include <QDataStream>
 
 BasicFileMapper::BasicFileMapper(QObject *parent) :
     RunnerMapper(parent)
 {
-    //loadRunnersFromXML();
-    loadRunners();
+    if (!hasCache()) {
+        loadPermanentData();
+    } else {
+        loadCache();
+    }
+    reloadRunners();
 }
 
+QString BasicFileMapper::generateCache() const
+{
+    QStringList rows;
+    foreach (const int si, m_runners.keys()) {
+        MappedRunner runner = m_runners[si];
+        QString row = "%1,,,%2,,,%3,,,%4,,,%5";
+        row = row.arg(si)
+                .arg(runner.name)
+                .arg(runner.bibnumber)
+                .arg(runner.team)
+                .arg(runner.lap);
+        rows.append(row);
+    }
+
+    return rows.join("\n") + '\n';
+}
+
+void BasicFileMapper::readCache(const QString &data)
+{
+    QStringList rows = data.split('\n');
+    foreach (const QString& entry, rows) {
+        if (entry.isEmpty()) {
+            continue;
+        }
+        MappedRunner runner;
+        QStringList row = entry.split(",,,");
+        if (row.size() < 5) {
+            qWarning("Not enough cells");
+            continue;
+        }
+        runner.name = row[1];
+        runner.bibnumber = row[2];
+        runner.team = row[3];
+        runner.lap = row[4].toInt();
+        m_runners.insert(row[0].toInt(), runner);
+    }
+}
+
+bool BasicFileMapper::hasCache() const
+{
+    QDir dir;
+    if (!dir.exists("app")) {
+        return false;
+    }
+    dir.cd("app");
+    if (!dir.exists("native")) {
+        return false;
+    }
+    dir.cd("native");
+    if (!dir.exists("data")) {
+        return false;
+    }
+    dir.cd("data");
+    return dir.exists("BasicFileMapperCache.json");
+}
+
+void BasicFileMapper::saveToCache()
+{
+    QDir dir;
+    dir.mkpath("app/native/data");
+    dir.cd("app");
+    dir.cd("native");
+    dir.cd("data");
+    QFile file(dir.filePath("BasicFileMapperCache.json"));
+    if (!file.open(QFile::WriteOnly | QFile::Truncate)) {
+        qDebug() << "Error opening cache for writing:" << file.errorString();
+    } else {
+        file.write(generateCache().toUtf8());
+        file.close();
+    }
+}
+
+void BasicFileMapper::loadCache()
+{
+    if (!hasCache()) {
+        return;
+    }
+    QDir dir;
+    dir.cd("app");
+    dir.cd("native");
+    dir.cd("data");
+    QFile file(dir.filePath("BasicFileMapperCache.json"));
+    if (!file.open(QFile::ReadOnly)) {
+        qDebug() << "Error opening cache for reading:" << file.errorString();
+    } else {
+        readCache(QString::fromUtf8(file.readAll()));
+        file.close();
+    }
+}
+
+void BasicFileMapper::loadPermanentData()
+{
+    //loadRunnersFromXML();
+    loadRunners();
+
+    saveToCache();
+}
 
 void BasicFileMapper::loadRunnersFromXML()
 {
@@ -112,9 +214,8 @@ void BasicFileMapper::loadRunnersFromXML()
         }
         
     }
-    file.close();        
+    file.close();
 }
-
 
 void BasicFileMapper::loadRunners()
 {
@@ -124,12 +225,9 @@ void BasicFileMapper::loadRunners()
     dir.cd("data");
     QFile file(dir.filePath("runners.txt"));
     if (file.open(QFile::ReadOnly)) {
-        qDebug() << "NOTE: Opened runners.txt";
-        qDebug() << "NOTE: The size of runners.txt is" << file.size();
         while (!file.atEnd()) {
-            const QString line = QString::fromLatin1(file.readLine());
+            const QString line = QString::fromUtf8(file.readLine());
             if (line.startsWith('#')) {
-                qDebug() << "NOTE: Commented line:" << line;
                 continue;
             }
             MappedRunner runner;
@@ -137,7 +235,6 @@ void BasicFileMapper::loadRunners()
             runner.name = line.section(",,,", 1, 1);
             runner.team = line.section(",,,", 2, 2);
             runner.lap = line.section(",,,", 3, 3).toInt();
-            qDebug() << "NOTE: Added runner to mapping:" << si << "->" << runner.name;
             m_runners.insert(si, runner);
         }
     } else {
@@ -145,18 +242,105 @@ void BasicFileMapper::loadRunners()
     }
 }
 
-bool BasicFileMapper::map(const int si, const QTime &realTime, QString *name, QString *team, QTime *time, int *lap)
+bool BasicFileMapper::map(const int si, const QTime &, QString *name, QString *team, QTime *time, int *lap)
 {
     if (!m_runners.contains(si)) {
-        qDebug() << "NOTE: No such runner found";
         return false;
     }
 
     const MappedRunner runner = m_runners[si];
-    qDebug() << "NOTE: Found runner with name" << runner.name;
     *name = runner.name;
     *team = runner.team;
     *lap = runner.lap;
     *time = QTime();
     return true;
+}
+
+QMap<int, QString> BasicFileMapper::runners()
+{
+    QMap<int, QString> out;
+    foreach (const int si, m_runners.keys()) {
+        out.insert(si, m_runners[si].name);
+    }
+    return out;
+}
+
+void BasicFileMapper::changeSINumber(const int si, const int newSI)
+{
+    if (!m_runners.contains(newSI)) {
+        m_runners[newSI] = m_runners[si];
+        m_runners.remove(si);
+        reloadRunners();
+        saveToCache();
+    } else {
+        error("There is already a runner with this SI number. No change will be made.");
+    }
+}
+
+void BasicFileMapper::changeName(const int si, const QString &newName)
+{
+    if (m_runners.contains(si)) {
+        m_runners[si].name = newName;
+        reloadRunners();
+        saveToCache();
+    } else {
+        error("There is no runner with this SI number. No change will be made.");
+    }
+}
+
+void BasicFileMapper::changeLap(const int si, const int newLap)
+{
+    if (m_runners.contains(si)) {
+        m_runners[si].lap = newLap;
+        reloadRunners();
+        saveToCache();
+    } else {
+        error("There is no runner with this SI number. No change will be made.");
+    }
+}
+
+void BasicFileMapper::removeRunner(const int si)
+{
+    if (m_runners.contains(si)) {
+        m_runners.remove(si);
+        reloadRunners();
+        saveToCache();
+    } else {
+        error("There is no runner with this SI number. No change will be made.");
+    }
+}
+
+void BasicFileMapper::addRunner(const int si, const QString &name, const QString &team, const int lap)
+{
+    if (m_runners.contains(si)) {
+        error("There is already a runner with this SI number. No change will be made.");
+        return;
+    }
+
+    MappedRunner runner;
+    runner.name = name;
+    runner.team = team;
+    runner.lap = lap;
+    m_runners.insert(si, runner);
+    reloadRunners();
+    saveToCache();
+}
+
+int BasicFileMapper::lapForIndex(const int index)
+{
+    return m_runners.values()[index].lap;
+}
+
+void BasicFileMapper::invalidateCache()
+{
+    if (hasCache()) {
+        QDir dir;
+        dir.cd("app");
+        dir.cd("native");
+        dir.cd("data");
+        dir.remove("BasicFileMapperCache.json");
+        m_runners.clear();
+        loadPermanentData();
+        reloadRunners();
+    }
 }

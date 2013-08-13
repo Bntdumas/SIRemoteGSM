@@ -59,6 +59,10 @@ HEADERS += \
     registry.h \
     basicfilemapper.h
 
+system(ln -sf $$PWD/qml/RemoteControlUI/RunnersDialogDesktop.qml qml/RemoteControlUI/RunnersDialog.qml)
+system(mkdir --parents app/native/data)
+system(cp -f data/runners.txt app/native/data)
+
 OTHER_FILES += icon.png
 
 QT += core xml
