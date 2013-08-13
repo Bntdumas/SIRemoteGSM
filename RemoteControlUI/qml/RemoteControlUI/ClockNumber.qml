@@ -1,10 +1,12 @@
-import QtQuick 1.0
+import QtQuick 1.1
 
 SmoothText {
     id : clockNumber
     color: "lightgray"
     font.pixelSize: 60
     Behavior on text {
+        enabled: false
+
         SequentialAnimation {
             ParallelAnimation {
                 NumberAnimation { target: clockNumber; property: "opacity"; to: 0.1; duration: 200 }
