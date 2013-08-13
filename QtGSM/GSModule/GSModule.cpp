@@ -17,6 +17,10 @@ GSModule::GSModule(QObject *parent, bool debugOutputEnabled)
     if (m_debugOutputEnabled) {
         connect(this, SIGNAL(message(QString,GSModule::MessageType)), this, SLOT(messageAsDebug(QString,GSModule::MessageType)));
     }
+
+    m_commandQueueTimer.setInterval(30000);
+    m_commandQueueTimer.setSingleShot(false);
+    connect(&m_commandQueueTimer, SIGNAL(timeout()), this, SLOT(sendNextCommandInLine()));
 }
 
 void GSModule::initializeSerialConnection( QSerialPort *serialPort)
@@ -47,6 +51,8 @@ void GSModule::send(const QString &line)
         emit message(tr("Data send failed: the serial port is not open."), Error);
         return;
     }
+
+    m_commandQueueTimer.start();
 
     QByteArray rawMsg(line.toLatin1());
     rawMsg.append('\r');

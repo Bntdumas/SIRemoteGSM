@@ -61,9 +61,16 @@ Q_SIGNALS:
      */
     void readyToTransmit();
 
+
 private Q_SLOTS:
     void serialDataAvailable();
     void messageAsDebug(const QString &message, GSModule::MessageType type);
+
+    /**
+     * @brief Send the next command in the command queue
+     * @note declared as slot so it can be triggered by the command timer
+     */
+    void sendNextCommandInLine();
 
 private:
     QSerialPort *m_serialPort;
@@ -101,10 +108,14 @@ private:
      * we wait for the OK/ERROR answer before sending more commands
      */
     QStringList m_commandsQueue;
-    void sendNextCommandInLine();
     void requestSendCommand(const QString &command);
 
     /**
+     * @brief Safety timer, if no answer is recieved (OK/ERROR) after 30 seconds, send the next command in line
+     */
+    QTimer m_commandQueueTimer;
+
+
       * display message in debug output
       */
     bool m_debugOutputEnabled;
