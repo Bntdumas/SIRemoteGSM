@@ -20,6 +20,8 @@ private:
     QTimer * m_timer;
     GSModule *m_gsm;
 
+    int m_sentSMS;
+
 };
 
 #endif // AUTOSMS_H
