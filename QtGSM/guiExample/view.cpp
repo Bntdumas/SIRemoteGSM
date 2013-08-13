@@ -26,10 +26,10 @@ void view::on_btConnect_clicked()
     QSerialPort *serialPort = new QSerialPort(m_gsm);
 
     serialPort->setPort(QSerialPortInfo("ttyUSB0"));
-   serialPort->setBaudRate(QSerialPort::Baud19200);
-   serialPort->setDataBits(QSerialPort::Data8);
-   serialPort->setParity(QSerialPort::OddParity);
-   serialPort->setStopBits(QSerialPort::OneStop);
+    serialPort->setBaudRate(QSerialPort::Baud19200);
+    serialPort->setDataBits(QSerialPort::Data8);
+    serialPort->setParity(QSerialPort::OddParity);
+    serialPort->setStopBits(QSerialPort::OneStop);
 
     m_gsm->initializeSerialConnection(serialPort);
 }

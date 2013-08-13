@@ -29,4 +29,7 @@
 441281,,,Henrik Zetterqvist,,,Leksands OK 1,,,3
 46800,,,Christer Söderström,,,Leksands OK 1,,,4
 41170,,,Stefan Söderström,,,Leksands OK 1,,,5
+301862,,,Eva-Lill Bergenfur,,,OK Kåre 1,,,1
+970209,,,Mats Bergenfur,,,OK Kåre 1,,,2
+
 
