@@ -31,7 +31,7 @@
     <asset entry="true" path="RemoteControlUI" type="Qnx/Elf">RemoteControlUI</asset>
 
     <icon>
-        <image>res/icon.png</image>
+        <image>icons/icon.png</image>
     </icon>
 
     <!-- These values will be replaced when deploying in Qt Creator -->
@@ -40,4 +40,5 @@
     <!--<asset path="/home/jan/bbndk/target_10_1_0_1020/qnx6/armle-v7/usr/lib/qt4/imports">imports</asset>-->
     <asset path="%SRC_DIR%/qml">qml</asset>
     <asset path="%SRC_DIR%/data">data</asset>
+    <asset path="%SRC_DIR%/icons">icons</asset>
 </qnx>
