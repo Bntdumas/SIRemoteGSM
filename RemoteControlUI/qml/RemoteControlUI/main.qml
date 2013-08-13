@@ -2,10 +2,6 @@ import QtQuick 1.1
 
 Rectangle {
     id: root
-    width: height * ratio
-    height: 480
-
-    property double ratio: 1920 / 1080
 
     property int secondsHighlighted: 10
 
@@ -32,7 +28,6 @@ Rectangle {
         id: image1
         anchors.fill: parent
         source: "images/background.jpg"
-        fillMode: Image.PreserveAspectFit
         visible: !dialog.visible
 
         Rectangle {
