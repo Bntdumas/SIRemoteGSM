@@ -12,6 +12,7 @@ linux-rasp-pi-g++: {
     message("setting up CLI Example to run on a Raspberry PI")
     target.path = /home/pi/sportIdentGSM/
     INSTALLS += target
+    DEFINES += RASPBERRYPI
 }
 
 TEMPLATE = app
@@ -19,6 +20,11 @@ TEMPLATE = app
 INCLUDEPATH += $$top_srcdir/../GSModule/
 
 LIBS += -L$$top_builddir/../GSModule/ -lGSModule
+
+linux-rasp-pi-g++: {
+    LIBS += -L$$top_srcdir/../../wiringPi/ -lwiringPi
+    INCLUDEPATH += $$top_srcdir/../../wiringPi/
+}
 
 SOURCES += $$top_srcdir/main.cpp \
            $$top_srcdir/autoSMS.cpp

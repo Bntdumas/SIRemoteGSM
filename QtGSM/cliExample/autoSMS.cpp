@@ -7,9 +7,26 @@
 
 #include "GSModule.h"
 
+#ifdef RASPBERRYPI
+#include "wiringPi.h"
+#endif
+
 autoSMS::autoSMS(QObject *parent) :
     QObject(parent)
 {
+
+#ifdef RASPBERRYPI
+    const int ret = wiringPiSetup();
+    if (ret == -1) {
+        qFatal("failed to setup wiringPi lib.");
+    }
+    pinMode(0, OUTPUT);
+    pinMode(1, OUTPUT);
+
+    digitalWrite(0, false) ;
+    digitalWrite(1, false) ;
+#endif
+
     m_gsm = new GSModule(0, true);
     connect(m_gsm, SIGNAL(readyToTransmit()), m_timer, SLOT(start()));
 
