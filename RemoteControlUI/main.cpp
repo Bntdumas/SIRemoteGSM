@@ -35,32 +35,8 @@ typedef QString QStringLiteral;
 #endif
 #include "basicfilemapper.h"
 
-#ifdef CUSTOMDEBUGHANDLER
-#include <stdio.h>
-void customMessageHandler(QtMsgType type, const char* msg)
-{
-    switch (type) {
-    case QtDebugMsg:
-        fprintf(stderr, "%s\n", msg);
-        break;
-    case QtWarningMsg:
-        fprintf(stderr, "%s\n", msg);
-        break;
-    case QtCriticalMsg:
-        fprintf(stderr, "%s\n", msg);
-        break;
-    case QtFatalMsg:
-        fprintf(stderr, "%s\n", msg);
-        abort();
-    }
-}
-#endif
-
 int main(int argc, char *argv[])
 {
-#ifdef CUSTOMDEBUGHANDLER
-    qInstallMsgHandler(customMessageHandler);
-#endif
 #if QT_VERSION >= 0x050000
     QGuiApplication app(argc, argv);
 #else
