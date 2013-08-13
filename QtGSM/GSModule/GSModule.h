@@ -74,7 +74,7 @@ private:
     void processIncomingMessage(const QString &msg);
 
     /**
-     * @brief Used to store the currently recieved data when waiting for more.
+     * @brief Used to store the currently recieved data to be handled
      */
     QString m_dataBuffer;
 
