@@ -107,7 +107,7 @@ void GSModule::messageAsDebug(const QString &message, GSModule::MessageType type
         qDebug() << "DEBUG : " << message;
         break;
     case Error:
-        qWarning(message.toLocal8Bit().constData());
+        qWarning("%s", message.toLocal8Bit().constData());
         break;
     case ATFormatted:
         qDebug() << "AT : " << message;
