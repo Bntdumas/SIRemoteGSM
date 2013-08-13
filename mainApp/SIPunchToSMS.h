@@ -33,7 +33,7 @@ public:
      */
     enum GSMModuleButtons {
         Power = 0,
-        Reset = 0
+        Reset = 1
     };
 
 Q_SIGNALS:
