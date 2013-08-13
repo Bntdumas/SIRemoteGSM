@@ -42,8 +42,11 @@ autoSMS::autoSMS(QObject *parent) :
 
     // Creates the serial port here because it changes a lots depending on the system it's run from.
     QSerialPort *serialPort = new QSerialPort();
-
+#ifdef RASPBERRYPI
+    serialPort->setPort(QSerialPortInfo("ttyAMA0"));
+#else
     serialPort->setPort(QSerialPortInfo("ttyUSB0"));
+#endif
     serialPort->setBaudRate(QSerialPort::Baud19200);
     serialPort->setDataBits(QSerialPort::Data8);
     serialPort->setParity(QSerialPort::OddParity);
