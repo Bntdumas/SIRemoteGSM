@@ -86,16 +86,18 @@ private:
     QString m_dataBuffer;
 
     /**
-     * @brief When bytes are available, wait until the SIM module is done transmitting data.
+     * @brief store the queue of SMS messages to be sent. each message can only be send after the previous one was sent.
+     * Using the m_readyForNextSMS boolean
      */
-    bool m_waitingForEndOfTransmission;
-    QTimer m_transmissionWaitTimer;
+    QStringList m_SMSMessagesList;
+    QStringList m_SMSPhoneNumberList;
+    bool m_readyForNextSMS;
+    QString m_nextSMS;
 
     /**
-     * @brief We need to wait for the SMS module to answer the SMS request before sending it.
-     * We store the message in the meantime.
+     * @brief Result of the query asking the module if it is ready to transmit data.
      */
-    QString m_SMSMessageText;
+    bool m_isReadyToTransmit;
 
     /**
      * @brief timer to delay reception of data. Usefull when sending commands where the SIM is
@@ -116,9 +118,16 @@ private:
     QTimer m_commandQueueTimer;
 
 
+    /**
       * display message in debug output
       */
     bool m_debugOutputEnabled;
+
+    /**
+     * @brief sends the next SMS in line
+     */
+    void sendNextSMS();
+
 };
 Q_DECLARE_METATYPE(GSModule::MessageType)
 #endif // GSMMODULE_H
