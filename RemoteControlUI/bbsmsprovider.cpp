@@ -33,6 +33,5 @@ void BBSMSProvider::messageReceived(AccountKey accountId, ConversationKey /*conv
 
     const int si = parts.at(0).toInt();
     const QTime time = QTime::fromString(parts.at(1), "hh:mm:ss");
-    qDebug() << "NOTE: Emitting signal with parameters" << si << "and" << time;
     emit runnerPunched(si, time);
 }
