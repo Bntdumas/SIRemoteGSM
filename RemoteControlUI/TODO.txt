@@ -1,0 +1,7 @@
+4. Make edit gui less ugly
+3. Find out name "" and si 0
+3. Find out if possible emulate add animatio for listview in QQ1
+1. Test punches (if they show the punched time)
+1. Remove "ddd" from debug output
+1. Test what the clock shows if before starting time
+2. A green dot is shown left of the runner name for 10 seconds after he arrived IN REAL TIME. This dot should show for 10 seconds after shown on the display (otherwise it might never be visible if the SMS is late)
