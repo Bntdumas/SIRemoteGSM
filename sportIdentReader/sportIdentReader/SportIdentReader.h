@@ -44,14 +44,6 @@ public:
         RawSerial
     };
 
-    //02 53 10 09 24 10 0D 96 8E 10 00 60 10 1C 10 12 BD FF 03
-
-    enum messageStructure {
-       BeginMarker = 0,
-        SICardNumber = 4,
-        SIPunchTimeStamp = 8
-    };
-
 private Q_SLOTS:
     /**
      * @brief reach when data is available on the open port

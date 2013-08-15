@@ -135,9 +135,6 @@ void SportIdentReader::processIncomingMessage(const QByteArray &msg)
 
     emit logText(tr("SI Card number: %1").arg(parsedData.cardNumber), DebugInformation);
     emit SIPunch(parsedData.cardNumber, parsedData.punchTime);
-
-   // emit logText(byteArrayToHexaString(removeSeparationCharacters(msg)), RawSerial);
-
 }
 
 QString SportIdentReader::byteArrayToHexaString(const QByteArray &array) const
