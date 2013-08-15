@@ -350,6 +350,9 @@ void BasicFileMapper::addRunner(const int si, const QString &name, const QString
 
 int BasicFileMapper::lapForIndex(const int index)
 {
+    if (index < 0 || m_runners.values().count() < index) {
+        return -1;
+    }
     return m_runners.values()[index].lap;
 }
 
