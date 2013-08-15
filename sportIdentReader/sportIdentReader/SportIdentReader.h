@@ -33,6 +33,7 @@ public:
     void setserialSpeed(const int serialSpeed);
     inline int serialSpeed() { return m_serialSpeed; }
 
+    const bool SerialPortIsOpen() { return m_serialPort->isOpen(); }
 
     /**
      * @brief The different messages types
