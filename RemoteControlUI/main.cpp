@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
     viewer.rootContext()->setContextProperty("mapper", mapper);
     viewer.rootContext()->setContextProperty("Util", Util::instance);
     viewer.setMainQmlFile(QStringLiteral("qml/RemoteControlUI/main.qml"));
-    viewer.showFullScreen();
+    viewer.showMaximized();
 
     return app.exec();
 }
