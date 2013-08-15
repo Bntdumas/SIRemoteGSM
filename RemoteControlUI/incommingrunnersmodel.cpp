@@ -41,6 +41,7 @@ QHash<int, QByteArray> IncommingRunnersModel::roleNames() const
     hash.insert(NameRole, "name");
     hash.insert(TeamRole, "team");
     hash.insert(TimeRole, "time");
+    hash.insert(RawTimeRole, "rawTime");
     hash.insert(RealTimeRole, "realTime");
     hash.insert(LapRole, "lap");
     return hash;
@@ -70,9 +71,14 @@ QVariant IncommingRunnersModel::data(const QModelIndex &index, int role) const
         int minutes = runner.time.minute() + runner.time.hour() * 60;
         return QString::number(minutes) + ((seconds < 10) ? ":0" : ":") + QString::number(seconds);
     }
+    case RawTimeRole:
+        return runner.time;
     case RealTimeRole:
         return runner.realTime;
     case LapRole:
+        if (runner.lap == -1) {
+            return QVariant();
+        }
         return runner.lap;
     default:
         return QVariant();
@@ -81,6 +87,10 @@ QVariant IncommingRunnersModel::data(const QModelIndex &index, int role) const
 bool IncommingRunnersModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
     int row = index.row();
+
+    if(row < 0 || row > m_runners.size()) {
+        return false;
+    }
 
     switch(role)
     {

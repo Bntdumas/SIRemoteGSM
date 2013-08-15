@@ -7,6 +7,8 @@
 #include <QDomElement>
 #include <QDataStream>
 
+#include "util.h"
+
 BasicFileMapper::BasicFileMapper(QObject *parent) :
     RunnerMapper(parent)
 {
@@ -148,6 +150,26 @@ void BasicFileMapper::loadRunnersFromXML()
             qDebug() << "Not found <ClassStart> element";
             return;
         }
+
+        QDomElement classElement = classStartElement.firstChildElement("Class");
+        if (classElement.isNull()) {
+            qDebug() << "Not found <Class> element";
+            return;
+        } else {
+            QDomElement raceClassElement = classElement.firstChildElement("RaceClass");
+            if (raceClassElement.isNull()) {
+                qDebug() << "Not found <RaceClass> element";
+                return;
+            }
+
+            QDomElement firstStartElement = raceClassElement.firstChildElement("FirstStart");
+            if (firstStartElement.isNull()) {
+                qDebug() << "Not found <FirstClass> element";
+                return;
+            }
+
+            Util::instance->setCompetitionTime(QDateTime::fromString(firstStartElement.text(), Qt::ISODate));
+        }
         
         // Inside <ClassStart> is a <Class> element that we don't need here, and then one <TeamStart> element per team,
         // loop over all the <TeamStart> elements
@@ -252,7 +274,7 @@ bool BasicFileMapper::map(const int si, const QTime &, QString *name, QString *t
     *name = runner.name;
     *team = runner.team;
     *lap = runner.lap;
-    *time = QTime();
+    *time = Util::instance->competitionTime().time();
     return true;
 }
 

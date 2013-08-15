@@ -29,21 +29,15 @@ Rectangle {
                 anchors.fill: parent
                 currentIndex: -1
                 model: runnersModel
-                delegate: Item {
+                delegate:
                     Text {
-                        anchors.leftMargin: 5
-                        anchors.left: parent.left
-                        anchors.verticalCenter: parent.verticalCenter
                         text: name + " (" + si + ")"
                     }
-                    height: 20
-                    width: view.width
-                }
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        editor.index = parent.indexAt(mouse.x, mouse.y);
+                        editor.index = parent.indexAt(mouse.x + parent.contentX, mouse.y + parent.contentY);
                         if (editor.index !== -1 && mapper.supportsEdit) {
                             selector.visible = false;
                         }
@@ -62,20 +56,13 @@ Rectangle {
             onClicked: adder.visible = true
         }
 
-        Button {
+        LockedButton {
             id: invalidateCacheButton
             anchors.bottom: parent.bottom
             anchors.left: parent.left
             anchors.right: parent.right
-            text: "Invalidate Cache (click " + (10-clicks) + " times)"
-            property int clicks: 0
-            onClicked: {
-                clicks++;
-                if (clicks > 9) {
-                    mapper.invalidateCache();
-                    clicks = 0;
-                }
-            }
+            text: "Invalidate Cache"
+            onClicked: mapper.invalidateCache();
         }
     }
 
@@ -87,15 +74,20 @@ Rectangle {
         width: parent.width
         visible: !selector.visible
 
-        onVisibleChanged: removeButton.clicks = 0;
-
         property int index: -1
 
-        onIndexChanged: {
+        function clear()
+        {
             newSiTextField.placeholderText = mapper.siForIndex(index);
-            newNameTextField.placeholderText = mapper.nameForIndex(index)
-            newLapTextField.placeholderText = mapper.lapForIndex(index)
+            newNameTextField.placeholderText = mapper.nameForIndex(index);
+            newLapTextField.placeholderText = mapper.lapForIndex(index);
+            newSiTextField.text = "";
+            newNameTextField.text = "";
+            newLapTextField.text = "";
         }
+
+        onIndexChanged: clear();
+        onVisibleChanged: clear();
 
         Column {
             anchors.fill: parent
@@ -104,13 +96,17 @@ Rectangle {
                 text: "Change SI card:"
             }
             Row {
-                spacing: 2
+                spacing: 10
+                anchors.left: parent.left
+                anchors.right: parent.right
                 TextField {
                     id: newSiTextField
+                    width: parent.width - 80 - 10
                 }
 
                 Button {
                     text: "Save"
+                    width: 80
                     onClicked: {
                         if (newSiTextField.text.length > 0) {
                             mapper.changeSINumber(mapper.siForIndex(editor.index),
@@ -119,6 +115,11 @@ Rectangle {
                         }
                     }
                 }
+            }
+
+            Item {
+                width: parent.width
+                height: 6
             }
 
             Rectangle {
@@ -132,12 +133,16 @@ Rectangle {
                 text: "Change Name:"
             }
             Row {
-                spacing: 2
+                spacing: 10
+                anchors.left: parent.left
+                anchors.right: parent.right
                 TextField {
                     id: newNameTextField
+                    width: parent.width - 80 - 10
                 }
 
                 Button {
+                    width: 80
                     text: "Save"
                     onClicked: {
                         if (newNameTextField.text.length > 0) {
@@ -147,6 +152,11 @@ Rectangle {
                         }
                     }
                 }
+            }
+
+            Item {
+                width: parent.width
+                height: 6
             }
 
             Rectangle {
@@ -160,21 +170,32 @@ Rectangle {
                 text: "Change Lap:"
             }
             Row {
-                spacing: 2
+                spacing: 10
+                anchors.left: parent.left
+                anchors.right: parent.right
                 TextField {
                     id: newLapTextField
+                    width: parent.width - 80 - 10
                 }
 
                 Button {
+                    width: 80
                     text: "Save"
                     onClicked: {
+                        console.debug(newLapTextField.text.length);
                         if (newLapTextField.text.length > 0) {
                             mapper.changeLap(mapper.siForIndex(editor.index),
                                                   newLapTextField.text);
                             selector.visible = true;
+                            console.debug("save clicked");
                         }
                     }
                 }
+            }
+
+            Item {
+                width: parent.width
+                height: 6
             }
 
             Rectangle {
@@ -184,17 +205,19 @@ Rectangle {
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
-            Button {
+            Item {
+                width: parent.width
+                height: 6
+            }
+
+            LockedButton {
+                anchors.left: parent.left
+                anchors.right: parent.right
                 id: removeButton
-                text: "Remove (click " + (5-clicks) + " times)"
-                property int clicks: 0
+                text: "Remove"
                 onClicked: {
-                    clicks++;
-                    if (clicks > 4) {
-                        mapper.removeRunner(mapper.siForIndex(editor.index));
-                        clicks = 0;
-                        selector.visible = true;
-                    }
+                    mapper.removeRunner(mapper.siForIndex(editor.index));
+                    selector.visible = true;
                 }
             }
         }
@@ -238,6 +261,7 @@ Rectangle {
                     placeholderText: "Lap"
                 }
                 Button {
+                    width: 60
                     text: "Save"
                     onClicked: {
                         mapper.addRunner(addSiCard.text, addName.text, addTeam.text, addLap.text);

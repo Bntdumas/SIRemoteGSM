@@ -23,6 +23,7 @@ typedef QString QStringLiteral;
 #include "sortfilterproxymodel.h"
 #include "provider.h"
 #include "registry.h"
+#include "util.h"
 
 #ifdef DBUSPROVIDER
 # include "dbusprovider.h"
@@ -62,6 +63,8 @@ int main(int argc, char *argv[])
 
     BasicFileMapper* mapper = new BasicFileMapper();
 
+    Util::instance->setParent(model);
+
 #ifdef DBUSPROVIDER
     registry->registerProvider(new DBusProvider());
 #endif
@@ -83,8 +86,9 @@ int main(int argc, char *argv[])
     viewer.rootContext()->setContextProperty("incommingRunnersModel", proxyModel);
     viewer.rootContext()->setContextProperty("runnersModel", QVariant::fromValue(qobject_cast<QObject*>(mapper->model())));
     viewer.rootContext()->setContextProperty("mapper", mapper);
+    viewer.rootContext()->setContextProperty("Util", Util::instance);
     viewer.setMainQmlFile(QStringLiteral("qml/RemoteControlUI/main.qml"));
-    viewer.showExpanded();
+    viewer.showFullScreen();
 
     return app.exec();
 }

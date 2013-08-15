@@ -110,6 +110,8 @@ void RunnerMapper::punched(const int si, const QTime &realTime)
     int lap;
     if (map(si, realTime, &name, &team, &time, &lap)) {
         emit runnerPunched(name, team , time, realTime, lap);
+    } else {
+        emit runnerPunched(QString("SI %1").arg(si), "", QTime(), realTime, -1);
     }
 }
 

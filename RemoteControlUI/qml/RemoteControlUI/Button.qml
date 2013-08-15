@@ -4,8 +4,8 @@ Rectangle {
     id: button
 
     radius: 5
-    height: Math.max(label.contentHeight + 4, 15)
-    width: Math.max(label.contentWidth + 10, 100)
+    height: 80
+    z: 5
     gradient: Gradient {
         GradientStop {
             color: "gray"
@@ -18,7 +18,7 @@ Rectangle {
     }
 
     signal clicked
-    property string text: ""
+    property string text: "Button"
     property bool pressed: mouseArea.pressed
 
     Text {
@@ -30,6 +30,9 @@ Rectangle {
     MouseArea {
         id: mouseArea
         anchors.fill: parent
-        onClicked: parent.clicked()
+        onClicked: {
+            console.debug("ddd");
+            parent.clicked();
+        }
     }
 }

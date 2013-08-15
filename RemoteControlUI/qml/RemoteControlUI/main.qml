@@ -40,8 +40,8 @@ Rectangle {
                 id: header
                 anchors.left: parent.left
                 anchors.right: parent.right
-                anchors.top: parent.to
-                height: 50
+                anchors.top: parent.top
+                height: 75
                 color: "transparent"
 
                 Image {
@@ -50,14 +50,9 @@ Rectangle {
                     anchors.verticalCenter: parent.verticalCenter
                     source: "images/viking-logo.png"
                     fillMode: Image.PreserveAspectFit
-                    width: 50
-                    height: width
+                    width: height
+                    height: parent.height
                     opacity: 0.5
-
-                    MouseArea {
-                        anchors.fill: parent
-                        onDoubleClicked: dialog.visible = true
-                    }
                 }
 
                 Image {
@@ -66,8 +61,8 @@ Rectangle {
                     anchors.verticalCenter: parent.verticalCenter
                     source: "images/viking-logo.png"
                     fillMode: Image.PreserveAspectFit
-                    width: 50
-                    height: width
+                    width: height
+                    height: parent.height
                     opacity: 0.5
                 }
 
@@ -76,6 +71,7 @@ Rectangle {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
                     anchors.topMargin: -9
+                    timeOffset: Util.competitionTime
                 }
             }
 
@@ -119,18 +115,20 @@ Rectangle {
                         running: parent.visible
                         triggeredOnStart: true
 
-                        function timeToSeconds(time) {
-                            return time.getHours() * 60 * 60 + time.getMinutes() * 60 + time.getSeconds();
+                        function timeToSeconds(t) {
+                            console.debug(t);
+                            return t.getHours() * 60 * 60 + t.getMinutes() * 60 + t.getSeconds();
                         }
 
                         onTriggered: {
-                            parent.highlighted = timeToSeconds(realTime) + root.secondsHighlighted > timeToSeconds(new Date());
+                            parent.highlighted = Util.timeToString(realTime) + root.secondsHighlighted > Util.timeToString(new Date());
                         }
                     }
 
                     property bool highlighted: false
 
                     Rectangle {
+                        id: line
                         anchors.top: parent.top
                         anchors.left: parent.left
                         anchors.right: parent.right
@@ -142,6 +140,8 @@ Rectangle {
                     }
                     Rectangle {
                         height: parent.height
+                        anchors.top: line.bottom
+                        anchors.bottom: parent.bottom
                         anchors.left: parent.left
                         anchors.right: parent.right
                         anchors.leftMargin: 10
@@ -151,7 +151,7 @@ Rectangle {
                         Row {
                             id: row
                             anchors.fill: parent
-                            anchors.topMargin: parent.parent.buffer / 2
+                            anchors.topMargin: 5
                             anchors.bottomMargin: anchors.topMargin
 
                             Rectangle {
@@ -205,6 +205,14 @@ Rectangle {
                 }
             }
         }
+    }
+
+    LockedButton {
+        opacity: 0.001
+        anchors.fill: parent
+        numClicks: 5
+        onClicked: dialog.visible = true
+        z: dialog.visible ? -10 : 10
     }
 }
 

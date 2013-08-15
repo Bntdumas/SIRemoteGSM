@@ -13,6 +13,7 @@ Rectangle {
     property string seconds2: "0"
     property color textColor: "lightgray"
     property int textSize: 60
+    property date timeOffset: new Date(0, 0, 0);
 
     Timer {
         interval: 1000
@@ -22,9 +23,9 @@ Rectangle {
 
         onTriggered: {
             var time = new Date();
-            var hours = time.getHours();
-            var minutes = time.getMinutes();
-            var seconds = time.getSeconds();
+            var hours = time.getHours() - clock.timeOffset.getHours();
+            var minutes = time.getMinutes() - clock.timeOffset.getMinutes();
+            var seconds = time.getSeconds() - clock.timeOffset.getSeconds();
             parent.hours1 = Math.floor(hours / 10);
             parent.hours2 = hours - parent.hours1 * 10;
             if(parent.hours1 == "0")

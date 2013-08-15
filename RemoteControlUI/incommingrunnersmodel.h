@@ -20,6 +20,7 @@ public:
         NameRole = Qt::UserRole,
         TeamRole,
         TimeRole,
+        RawTimeRole,
         RealTimeRole,
         LapRole
     };

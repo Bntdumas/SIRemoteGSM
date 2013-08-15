@@ -9,7 +9,7 @@ Rectangle {
     border.color: "gray"
     color: "#EEE"
     width: 150
-    height: 17
+    height: 80
     clip: true
 
     Text {
