@@ -61,6 +61,11 @@ void SIPunchToSMS::releaseButtons()
 void SIPunchToSMS::GSModuleReady()
 {
     m_GSModuleIsReady = true;
+    const QString SMS = QString("SI Reader ready for action. \nSI module: %1. \nLocal timestamp: %2")
+            .arg(m_SIReader->SerialPortIsOpen()? tr("opened"):tr("closed"))
+            .arg(QTime::currentTime().toString(("hh:mm:ss.zzz")));
+    m_GSModule->sendSMS(SMS, QLatin1String("+46722230141"));
+    m_GSModule->sendSMS(SMS, QLatin1String("+46708783740"));
 }
 
 void SIPunchToSMS::punchToSMS(const int SInumber, const QTime &punchTimeSTamp)
