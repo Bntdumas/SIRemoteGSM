@@ -95,11 +95,6 @@ private:
     QString m_nextSMS;
 
     /**
-     * @brief Result of the query asking the module if it is ready to transmit data.
-     */
-    bool m_isReadyToTransmit;
-
-    /**
      * @brief timer to delay reception of data. Usefull when sending commands where the SIM is
      *      expected ot take time to answer.
      */

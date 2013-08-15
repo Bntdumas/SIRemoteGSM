@@ -9,7 +9,6 @@
 GSModule::GSModule(QObject *parent, bool debugOutputEnabled)
     : QObject(parent),
     m_serialPort(0),
-    m_isReadyToTransmit(false),
     m_debugOutputEnabled(debugOutputEnabled),
     m_readyForNextSMS(true)
 {
@@ -134,7 +133,6 @@ void GSModule::processIncomingMessage(const QString &msg)
 
     // ##### SIM PIN request #####
     if (msg.contains(QLatin1String("+CPIN: SIM PIN"))) {
-        m_isReadyToTransmit = false;
         emit message(tr("GSM module requested PIN code, sending %1").arg(SIM_PIN), ATFormatted);
         requestSendCommand(QString("AT+CPIN=\"%1\"").arg(SIM_PIN));
         return;
@@ -143,8 +141,6 @@ void GSModule::processIncomingMessage(const QString &msg)
     } else if (msg.contains(QLatin1String("Call Ready"))) {
         // make sure we sent SMS in text mode
         requestSendCommand(QLatin1String("AT+CMGF=1"));
-        m_isReadyToTransmit = true;
-        emit readyToTransmit();
 
 //    // ##### SMS prompt #####
 //    } else if (msg.contains(QLatin1String(">")) && !m_SMSMessageText.isEmpty()) {
@@ -155,11 +151,9 @@ void GSModule::processIncomingMessage(const QString &msg)
     // ##### Call ready query response #####
     } else if (msg.contains(QLatin1String("+CCALR: 1"))) {
         emit message(tr("GSM module ready to transmit"), ATFormatted);
-        m_isReadyToTransmit = true;
         sendNextCommandInLine();
     } else if (msg.contains(QLatin1String("+CCALR: 0"))) {
         emit message(tr("GSM module NOT ready to transmit"), ATFormatted);
-        m_isReadyToTransmit = false;
         sendNextCommandInLine();
 
     // ##### SMS sent #####
