@@ -19,6 +19,10 @@ GSModule::GSModule(QObject *parent, bool debugOutputEnabled)
     m_commandQueueTimer.setInterval(30000);
     m_commandQueueTimer.setSingleShot(false);
     connect(&m_commandQueueTimer, SIGNAL(timeout()), this, SLOT(sendNextCommandInLine()));
+
+    m_tempoTimer.setInterval(5000);
+    m_tempoTimer.setSingleShot(true);
+    connect(&m_tempoTimer, SIGNAL(timeout()), this, SIGNAL(readyToTransmit()));
 }
 
 void GSModule::initializeSerialConnection( QSerialPort *serialPort)
@@ -141,6 +145,7 @@ void GSModule::processIncomingMessage(const QString &msg)
     } else if (msg.contains(QLatin1String("Call Ready"))) {
         // make sure we sent SMS in text mode
         requestSendCommand(QLatin1String("AT+CMGF=1"));
+        m_tempoTimer.start();
 
 //    // ##### SMS prompt #####
 //    } else if (msg.contains(QLatin1String(">")) && !m_SMSMessageText.isEmpty()) {
