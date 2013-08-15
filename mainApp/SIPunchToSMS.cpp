@@ -106,7 +106,7 @@ void SIPunchToSMS::initialiseSportIdentReader(const QString &port)
 
     m_SIReader = new SportIdentReader(this, true);
     m_SIReader->setserialPort(port);
-    m_SIReader->setserialSpeed(38400);
+    m_SIReader->setserialSpeed(4800);
     m_SIReader->initSerialConnection();
 
     connect(m_SIReader, SIGNAL(SIPunch(int,QTime)), this, SLOT(punchToSMS(int,QTime)));
