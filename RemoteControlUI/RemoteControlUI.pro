@@ -38,7 +38,8 @@ qnx:BUILD_BBSMSPROVIDER = true
     }
 }
 
-OTHER_FILES += data/runners.txt data/startlista.xml
+OTHER_FILES += data/runners.txt data/startlista.xml \
+    TODO.txt
 
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp \
