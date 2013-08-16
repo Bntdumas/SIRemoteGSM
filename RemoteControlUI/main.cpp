@@ -88,7 +88,10 @@ int main(int argc, char *argv[])
     viewer.rootContext()->setContextProperty("mapper", mapper);
     viewer.rootContext()->setContextProperty("Util", Util::instance);
     viewer.setMainQmlFile(QStringLiteral("qml/RemoteControlUI/main.qml"));
-    viewer.showMaximized();
+#ifndef Q_OS_BLACKBERRY
+    viewer.resize(640, 480);
+#endif
+    viewer.show();
 
     return app.exec();
 }
