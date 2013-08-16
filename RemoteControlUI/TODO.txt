@@ -1,3 +1,2 @@
 4. Make edit gui less ugly
 3. Find out if possible emulate add animatio for listview in QQ1
-1. Test punches (if they show the punched time)

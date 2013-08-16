@@ -8,6 +8,8 @@
 #include <QHash>
 //#include <QRegularExpression>
 
+#include "util.h"
+
 IncommingRunnersModel::IncommingRunnersModel(QObject *parent) :
     QAbstractListModel(parent)
 {
@@ -68,12 +70,15 @@ QVariant IncommingRunnersModel::data(const QModelIndex &index, int role) const
         if (!runner.time.isValid() || runner.time.isNull()) {
             return "";
         }
-        int seconds = runner.time.second();
-        int minutes = runner.time.minute() + runner.time.hour() * 60;
+        // FIXME this is currently a hack. sort out what realTime and time are supposed to do instead!!!
+        QTime time = Util::instance->timeDifference(runner.realTime, runner.time).time();
+        int seconds = time.second();
+        int minutes = time.minute() + time.hour() * 60;
         return QString::number(minutes) + ((seconds < 10) ? ":0" : ":") + QString::number(seconds);
     }
     case RawTimeRole:
-        return runner.time;
+        // FIXME this is currently a hack. sort out what realTime and time are supposed to do instead!!!
+        return Util::instance->timeDifference(runner.realTime, runner.time).time();
     case RealTimeRole:
         return runner.realTime;
     case LapRole:
