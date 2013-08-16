@@ -3,6 +3,8 @@
 #include <QDebug>
 #include <QAbstractListModel>
 
+#include "util.h"
+
 class RunnerListModel : public QAbstractListModel
 {
     Q_OBJECT
@@ -111,7 +113,7 @@ void RunnerMapper::punched(const int si, const QTime &realTime)
     if (map(si, realTime, &name, &team, &time, &lap)) {
         emit runnerPunched(name, team , time, realTime, lap);
     } else {
-        emit runnerPunched(QString("SI %1").arg(si), "", QTime(), realTime, -1);
+        emit runnerPunched(QString("SI %1").arg(si), "", Util::instance->competitionTime().time(), realTime, -1);
     }
 }
 
