@@ -120,12 +120,11 @@ Rectangle {
                         triggeredOnStart: true
 
                         function timeToSeconds(t) {
-                            console.debug(t);
                             return t.getHours() * 60 * 60 + t.getMinutes() * 60 + t.getSeconds();
                         }
 
                         onTriggered: {
-                            parent.highlighted = Util.timeToString(realTime) + root.secondsHighlighted > Util.timeToString(new Date());
+                            parent.highlighted = Util.timeToString(arrivalTime) + root.secondsHighlighted > Util.timeToString(new Date());
                         }
                     }
 
@@ -164,7 +163,7 @@ Rectangle {
                                 radius: height/2
                                 anchors.verticalCenter: parent.verticalCenter
                                 color: "green"
-                                opacity: parent.parent.parent.highlighted ? 1.0 : 0.0
+                                opacity: parent.parent.parent.highlighted ? 1.0 : 0.001
                             }
                             Rectangle {
                                 width: 5

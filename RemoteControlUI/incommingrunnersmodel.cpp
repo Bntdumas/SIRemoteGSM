@@ -44,6 +44,7 @@ QHash<int, QByteArray> IncommingRunnersModel::roleNames() const
     hash.insert(RawTimeRole, "rawTime");
     hash.insert(RealTimeRole, "realTime");
     hash.insert(LapRole, "lap");
+    hash.insert(ArrivalTimeRole, "arrivalTime");
     return hash;
 }
 
@@ -80,6 +81,8 @@ QVariant IncommingRunnersModel::data(const QModelIndex &index, int role) const
             return QVariant("");
         }
         return runner.lap;
+    case ArrivalTimeRole:
+        return runner.arrivalTime;
     default:
         return QVariant();
     }

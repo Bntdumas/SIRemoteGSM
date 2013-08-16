@@ -22,7 +22,8 @@ public:
         TimeRole,
         RawTimeRole,
         RealTimeRole,
-        LapRole
+        LapRole,
+        ArrivalTimeRole
     };
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
@@ -60,12 +61,13 @@ private:
     {
         IncommingRunner() {}
         IncommingRunner(const QString& name, const QString& team, const QTime& time, const QTime& realTime,
-                        const int lap) : name(name), team(team), time(time), realTime(realTime), lap(lap) {}
+                        const int lap) : name(name), team(team), time(time), realTime(realTime), lap(lap), arrivalTime(QTime::currentTime()) {}
         QString name;
         QString team;
         QTime time;
         QTime realTime;
         int lap;
+        QTime arrivalTime;
 
         bool operator<(const IncommingRunner& other);
     };
