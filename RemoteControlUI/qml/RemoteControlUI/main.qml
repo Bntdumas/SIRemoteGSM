@@ -7,7 +7,7 @@ Rectangle {
     width: 1
     height: 1
 
-    property int secondsHighlighted: 10
+    property int secondsHighlighted: 60
 
     Rectangle {
         id: dialog
@@ -140,14 +140,6 @@ Rectangle {
                             anchors.bottomMargin: anchors.topMargin
 
                             Rectangle {
-                                width: 10
-                                height: width
-                                radius: height/2
-                                anchors.verticalCenter: parent.verticalCenter
-                                color: "green"
-                                opacity: parent.parent.parent.highlighted ? 1.0 : 0.001
-                            }
-                            Rectangle {
                                 width: 5
                                 height: 5
                                 color: "transparent"
@@ -161,6 +153,8 @@ Rectangle {
                                 font.pixelSize: height
                                 color: parent.textColor
                                 text: name
+                                font.bold: parent.parent.parent.highlighted
+                                font.italic: parent.parent.parent.highlighted
                             }
                             SmoothText {
                                 height: parent.height
@@ -168,6 +162,8 @@ Rectangle {
                                 font.pixelSize: height
                                 color: parent.textColor
                                 text: team
+                                font.bold: parent.parent.parent.highlighted
+                                font.italic: parent.parent.parent.highlighted
                             }
                             SmoothText {
                                 height: parent.height
@@ -176,6 +172,8 @@ Rectangle {
                                 color: parent.textColor
                                 text: time
                                 horizontalAlignment: Text.AlignLeft
+                                font.bold: parent.parent.parent.highlighted
+                                font.italic: parent.parent.parent.highlighted
                             }
                             SmoothText {
                                 height: parent.height
@@ -184,6 +182,8 @@ Rectangle {
                                 color: parent.textColor
                                 text: lap
                                 horizontalAlignment: Text.AlignHCenter
+                                font.bold: parent.parent.parent.highlighted
+                                font.italic: parent.parent.parent.highlighted
                             }
                         }
                     }
