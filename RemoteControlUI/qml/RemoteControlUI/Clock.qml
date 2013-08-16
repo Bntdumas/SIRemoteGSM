@@ -22,10 +22,10 @@ Rectangle {
         triggeredOnStart: true
 
         onTriggered: {
-            var time = new Date();
-            var hours = time.getHours() - clock.timeOffset.getHours();
-            var minutes = time.getMinutes() - clock.timeOffset.getMinutes();
-            var seconds = time.getSeconds() - clock.timeOffset.getSeconds();
+            var time = Util.timeDifference(new Date(), clock.timeOffset);
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
             parent.hours1 = Math.floor(hours / 10);
             parent.hours2 = hours - parent.hours1 * 10;
             if(parent.hours1 == "0")
