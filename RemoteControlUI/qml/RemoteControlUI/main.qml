@@ -31,7 +31,7 @@ Rectangle {
     Image {
         id: image1
         anchors.fill: parent
-        source: "images/background.jpg"
+        source: "images/background.jpeg"
         visible: !dialog.visible
 
         Rectangle {
@@ -49,6 +49,14 @@ Rectangle {
                 color: "transparent"
 
                 Image {
+                    anchors.centerIn: root.center
+                    source: "images/viking-logo.png"
+                    fillMode: Image.PreserveAspectFit
+                    height: root.height
+                    opacity: 0.1
+                }
+
+                Image {
                     anchors.right: parent.right
                     anchors.rightMargin: 10
                     anchors.verticalCenter: parent.verticalCenter
@@ -59,16 +67,16 @@ Rectangle {
                     opacity: 0.5
                 }
 
-                Image {
-                    anchors.left: parent.left
-                    anchors.leftMargin: 10
-                    anchors.verticalCenter: parent.verticalCenter
-                    source: "images/viking-logo.png"
-                    fillMode: Image.PreserveAspectFit
-                    width: height
-                    height: parent.height
-                    opacity: 0.5
-                }
+//                Image {
+//                    anchors.left: parent.left
+//                    anchors.leftMargin: 10
+//                    anchors.verticalCenter: parent.verticalCenter
+//                    source: "images/viking-logo.png"
+//                    fillMode: Image.PreserveAspectFit
+//                    width: height
+//                    height: parent.height
+//                    opacity: 0.5
+//                }
 
                 Clock {
                     id: clock
