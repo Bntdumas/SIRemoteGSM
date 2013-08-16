@@ -118,12 +118,16 @@ void BasicFileMapper::loadPermanentData()
     saveToCache();
 }
 
+// TODO this should be a freestanding class
 void BasicFileMapper::loadRunnersFromXML()
 {
     QDir dir;
     dir.cd("app");
     dir.cd("native");
     dir.cd("data");
+
+    int noSiCounter = 1;
+
     QFile file(dir.filePath("startlista.xml"));
     if (file.open(QFile::ReadOnly)) {
         qDebug() << "NOTE: Opened startlista.xml";
@@ -183,12 +187,12 @@ void BasicFileMapper::loadRunnersFromXML()
             QDomElement nameElement = teamStartElement.firstChildElement("Name");
             if(!nameElement.isNull()) {
                 runner.team = nameElement.text();
-                qDebug() << "Found team " << runner.team;
+                //qDebug() << "Found team " << runner.team;
             }
             QDomElement bibnumberElement = teamStartElement.firstChildElement("BibNumber");
             if(!bibnumberElement.isNull()) {
                 runner.bibnumber = bibnumberElement.text();
-                qDebug() << "Found bib number " << runner.bibnumber;
+                //qDebug() << "Found bib number " << runner.bibnumber;
             }
             QDomElement teamMemberStartElement = teamStartElement.firstChildElement("TeamMemberStart");
             while(!teamMemberStartElement.isNull()) {
@@ -221,6 +225,10 @@ void BasicFileMapper::loadRunnersFromXML()
                                 }
 
                             startChildElement = startChildElement.nextSiblingElement();
+                        }
+                        if (si == 0) {
+                            si = noSiCounter;
+                            noSiCounter++;
                         }
                     } ; // not interested in any children of <TeamMemberStart> other than <Person> and <Start>
                         
