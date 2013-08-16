@@ -72,9 +72,7 @@ QVariant IncommingRunnersModel::data(const QModelIndex &index, int role) const
         }
         // FIXME this is currently a hack. sort out what realTime and time are supposed to do instead!!!
         QTime time = Util::instance->timeDifference(runner.realTime, runner.time).time();
-        int seconds = time.second();
-        int minutes = time.minute() + time.hour() * 60;
-        return QString::number(minutes) + ((seconds < 10) ? ":0" : ":") + QString::number(seconds);
+        return time.toString("hh:mm:ss");
     }
     case RawTimeRole:
         // FIXME this is currently a hack. sort out what realTime and time are supposed to do instead!!!
