@@ -249,7 +249,7 @@ void BasicFileMapper::loadRunners()
     if (file.open(QFile::ReadOnly)) {
         while (!file.atEnd()) {
             const QString line = QString::fromUtf8(file.readLine());
-            if (line.startsWith('#')) {
+            if (line.startsWith('#') || line.trimmed().isEmpty()) {
                 continue;
             }
             MappedRunner runner;

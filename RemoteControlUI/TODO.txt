@@ -1,5 +1,4 @@
 4. Make edit gui less ugly
-3. Find out name "" and si 0
 3. Find out if possible emulate add animatio for listview in QQ1
 1. Test punches (if they show the punched time)
 1. Test what the clock shows if before starting time
