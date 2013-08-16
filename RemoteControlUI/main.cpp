@@ -90,8 +90,10 @@ int main(int argc, char *argv[])
     viewer.setMainQmlFile(QStringLiteral("qml/RemoteControlUI/main.qml"));
 #ifndef Q_OS_BLACKBERRY
     viewer.resize(640, 480);
-#endif
     viewer.show();
+#else
+    viewer.showFullScreen();
+#endif
 
     return app.exec();
 }

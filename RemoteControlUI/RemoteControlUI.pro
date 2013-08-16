@@ -8,7 +8,7 @@ QML_IMPORT_PATH =
 
 qnx:BUILD_BBSMSPROVIDER = true
 
-#debug:BUILD_DUMMYPROVIDER = true
+debug:BUILD_DUMMYPROVIDER = true
 
 !isEmpty(BUILD_DBUSPROVIDER) {
     QT += dbus
@@ -39,7 +39,8 @@ qnx:BUILD_BBSMSPROVIDER = true
 }
 
 OTHER_FILES += data/runners.txt data/startlista.xml \
-    TODO.txt
+    TODO.txt \
+    qml/RemoteControlUI/images/background.jpeg
 
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp \
