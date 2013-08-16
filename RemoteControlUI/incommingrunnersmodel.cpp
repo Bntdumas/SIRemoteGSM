@@ -77,7 +77,7 @@ QVariant IncommingRunnersModel::data(const QModelIndex &index, int role) const
         return runner.realTime;
     case LapRole:
         if (runner.lap == -1) {
-            return QVariant();
+            return QVariant("");
         }
         return runner.lap;
     default:
