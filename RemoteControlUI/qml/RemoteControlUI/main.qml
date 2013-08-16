@@ -105,12 +105,8 @@ Rectangle {
                         running: parent.visible
                         triggeredOnStart: true
 
-                        function timeToSeconds(t) {
-                            return t.getHours() * 60 * 60 + t.getMinutes() * 60 + t.getSeconds();
-                        }
-
                         onTriggered: {
-                            parent.highlighted = Util.timeToString(arrivalTime) + root.secondsHighlighted > Util.timeToString(new Date());
+                            parent.highlighted = Util.timeToSeconds(arrivalTime) + root.secondsHighlighted > Util.timeToSeconds(new Date());
                         }
                     }
 
