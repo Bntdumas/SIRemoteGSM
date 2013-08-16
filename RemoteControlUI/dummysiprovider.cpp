@@ -23,7 +23,7 @@ void DummySIProvider::timeout()
     if (m_runners.contains(m_index)) {
         emit runnerPunched(m_runners[m_index], QTime::currentTime());
     } else if (20 < m_index) {
-        if (qrand() % 5) {
+        if (qrand() % 5 == 0) {
             QTime time = QTime::currentTime();
             time.addSecs(qrand() % 7200);
             emit runnerPunched(qrand() % 9999999, time);
