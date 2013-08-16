@@ -29,7 +29,7 @@ typedef QString QStringLiteral;
 # include "dbusprovider.h"
 #endif
 #ifdef DUMMYPROVIDER
-# include "dummyprovider.h"
+# include "dummysiprovider.h"
 #endif
 #ifdef BBSMSPROVIDER
 # include "bbsmsprovider.h"
@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
     registry->registerProvider(new DBusProvider());
 #endif
 #ifdef DUMMYPROVIDER
-    registry->registerProvider(new DummyProvider());
+    registry->registerMapper(mapper, new DummySIProvider());
 #endif
 
 #ifdef BBSMSPROVIDER

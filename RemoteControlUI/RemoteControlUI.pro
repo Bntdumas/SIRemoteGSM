@@ -49,7 +49,8 @@ SOURCES += main.cpp \
     util.cpp \
     runnermapper.cpp \
     registry.cpp \
-    basicfilemapper.cpp
+    basicfilemapper.cpp \
+    dummysiprovider.cpp
 
 HEADERS += \
     incommingrunnersmodel.h \
@@ -58,7 +59,8 @@ HEADERS += \
     util.h \
     runnermapper.h \
     registry.h \
-    basicfilemapper.h
+    basicfilemapper.h \
+    dummysiprovider.h
 
 contains(QT_MAJOR_VERSION, 5):system(for f in $(ls $$PWD/qml/RemoteControlUI/ | grep -P ".*\.qml"); do sed -i \"s/QtQuick 1.1/QtQuick 2.0/\" $$PWD/qml/RemoteControlUI/$f; done)
 !contains(QT_MAJOR_VERSION, 5):system(for f in $(ls $$PWD/qml/RemoteControlUI/ | grep -P ".*\.qml"); do sed -i \"s/QtQuick 2.0/QtQuick 1.1/\" $$PWD/qml/RemoteControlUI/$f; done)
