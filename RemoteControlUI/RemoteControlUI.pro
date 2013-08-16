@@ -8,7 +8,7 @@ QML_IMPORT_PATH =
 
 qnx:BUILD_BBSMSPROVIDER = true
 
-#debug:BUILD_DUMMYPROVIDER = true
+debug:BUILD_DUMMYPROVIDER = true
 
 !isEmpty(BUILD_DBUSPROVIDER) {
     QT += dbus
