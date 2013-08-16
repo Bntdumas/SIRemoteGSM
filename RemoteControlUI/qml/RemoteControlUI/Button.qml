@@ -31,7 +31,6 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
-            console.debug("ddd");
             parent.clicked();
         }
     }
