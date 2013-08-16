@@ -3,6 +3,10 @@ import QtQuick 1.1
 Rectangle {
     id: root
 
+    // needed to display anything at all on desktop
+    width: 1
+    height: 1
+
     property int secondsHighlighted: 10
 
     Rectangle {
