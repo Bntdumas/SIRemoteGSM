@@ -1,3955 +1,4018 @@
 <?xml version="1.0" encoding="UTF-8"?>
  <StartList xmlns="http://www.orienteering.org/datastandard/3.0"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   iofVersion="3.0"
-   createTime="2013-08-12T08:13:48.708+02:00"
-   creator="SportSoftware OS2010 V.11.0">
-  <Event>
-    <Name>Klarälvskavlen 2013</Name>
-  </Event>
-  <ClassStart>
-    <Class>
-      <Id>900</Id>
-      <Name>Klarälvkavlen</Name>
-      <ShortName>Kavle</ShortName>
-      <Leg maxNumberOfCompetitors="9"/>
-      <Leg/>
-      <Leg/>
-      <Leg maxNumberOfCompetitors="9"/>
-      <Leg/>
-      <TeamFee>
-	<Name>Default</Name>
-	<Amount>450.00</Amount>
-      </TeamFee>
-      <TeamFee>
-	<Name>Startfee 2</Name>
-	<Amount>0.00</Amount>
-      </TeamFee>
-      <Fee>
-	<Name>Xtra</Name>
-	<Amount>50.00</Amount>
-      </Fee>
-      <RaceClass>
-	<FirstStart>2013-08-17T11:00:00.000+02:00</FirstStart>
-      </RaceClass>
-    </Class>
-    <TeamStart>
-      <EntryId>1815599</EntryId>
-      <Name>OK Djerf 1</Name>
-      <Organisation>
-	<Id>74</Id>
-	<Name>OK Djerf</Name>
-	<ShortName>OK Djerf</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>1</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>23476</Id>
-	  <Name>
-	    <Family>Lindberg</Family>
-	    <Given>Viktoria</Given>
-	  </Name>
-	  <BirthDate>1971-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>9710509</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>18166</Id>
-	  <Name>
-	    <Family>Lindberg</Family>
-	    <Given>Stina</Given>
-	  </Name>
-	  <BirthDate>1999-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>9990203</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>18169</Id>
-	  <Name>
-	    <Family>Lindberg</Family>
-	    <Given>Elin</Given>
-	  </Name>
-	  <BirthDate>1996-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>960708</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>90617</Id>
-	  <Name>
-	    <Family>Wester</Family>
-	    <Given>Simon</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>2</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>2050713</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>90623</Id>
-	  <Name>
-	    <Family>Sjöberg</Family>
-	    <Given>Marcus</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>3</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>42097</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>41302</Id>
-	  <Name>
-	    <Family>Lindberg</Family>
-	    <Given>Håkan</Given>
-	  </Name>
-	  <BirthDate>1965-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>651103</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-      <AssignedFee>
-	<Fee>
-	  <Name>Xtra</Name>
-	  <Amount>50.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1815604</EntryId>
-      <Name>OK Djerf 3</Name>
-      <Organisation>
-	<Id>74</Id>
-	<Name>OK Djerf</Name>
-	<ShortName>OK Djerf</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>2</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>82044</Id>
-	  <Name>
-	    <Family>Hansson</Family>
-	    <Given>Anton</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>2</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>42204</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>90592</Id>
-	  <Name>
-	    <Family>Eriksson</Family>
-	    <Given>Tova</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>3</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>42099</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>34922</Id>
-	  <Name>
-	    <Family>Olsson</Family>
-	    <Given>Erica</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>742300</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>82045</Id>
-	  <Name>
-	    <Family>Hansson</Family>
-	    <Given>Jan</Given>
-	  </Name>
-	  <BirthDate>1968-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>42201</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>88018</Id>
-	  <Name>
-	    <Family>Andersson</Family>
-	    <Given>Hugo</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>42098</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>40825</Id>
-	  <Name>
-	    <Family>Olsson</Family>
-	    <Given>Peter</Given>
-	  </Name>
-	  <BirthDate>1970-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>700418</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-      <AssignedFee>
-	<Fee>
-	  <Name>Xtra</Name>
-	  <Amount>50.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1817205</EntryId>
-      <Name>OK Tyr 3</Name>
-      <Organisation>
-	<Id>416</Id>
-	<Name>OK Tyr</Name>
-	<ShortName>OK Tyr</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>3</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>30124</Id>
-	  <Name>
-	    <Family>Kindlund</Family>
-	    <Given>Johanna</Given>
-	  </Name>
-	  <BirthDate>1975-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>213737</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>2355</Id>
-	  <Name>
-	    <Family>Brodin</Family>
-	    <Given>Maria</Given>
-	  </Name>
-	  <BirthDate>1987-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>870906</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>6020</Id>
-	  <Name>
-	    <Family>Råberg</Family>
-	    <Given>Erik</Given>
-	  </Name>
-	  <BirthDate>1979-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>790314</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>31558</Id>
-	  <Name>
-	    <Family>Kindlund</Family>
-	    <Given>David</Given>
-	  </Name>
-	  <BirthDate>2001-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>2</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>2058194</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>31557</Id>
-	  <Name>
-	    <Family>Kindlund</Family>
-	    <Given>Cornelia</Given>
-	  </Name>
-	  <BirthDate>2004-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>3</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>451751</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>29897</Id>
-	  <Name>
-	    <Family>Kindlund</Family>
-	    <Given>Sören</Given>
-	  </Name>
-	  <BirthDate>1975-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>260646</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-      <AssignedFee>
-	<Fee>
-	  <Name>Xtra</Name>
-	  <Amount>50.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1818094</EntryId>
-      <Name>Kils OK 4</Name>
-      <Organisation>
-	<Id>526</Id>
-	<Name>Kils OK</Name>
-	<ShortName>Kils OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>4</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>47106</Id>
-	  <Name>
-	    <Family>Skoglund</Family>
-	    <Given>Charlotte</Given>
-	  </Name>
-	  <BirthDate>1968-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>2</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>258542</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>56107</Id>
-	  <Name>
-	    <Family>Hedin</Family>
-	    <Given>Ida</Given>
-	  </Name>
-	  <BirthDate>1998-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>3</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>981021</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>47105</Id>
-	  <Name>
-	    <Family>Skoglund</Family>
-	    <Given>Ulf</Given>
-	  </Name>
-	  <BirthDate>1960-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>258538</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>27622</Id>
-	  <Name>
-	    <Family>Mellerdahl</Family>
-	    <Given>Ulf</Given>
-	  </Name>
-	  <BirthDate>1970-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>418040</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>51079</Id>
-	  <Name>
-	    <Family>Skoglund</Family>
-	    <Given>Olof</Given>
-	  </Name>
-	  <BirthDate>1999-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>258545</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>28841</Id>
-	  <Name>
-	    <Family>Lundqvist</Family>
-	    <Given>Elin</Given>
-	  </Name>
-	  <BirthDate>1990-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>229318</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-      <AssignedFee>
-	<Fee>
-	  <Name>Xtra</Name>
-	  <Amount>50.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1818095</EntryId>
-      <Name>Kils OK 5</Name>
-      <Organisation>
-	<Id>526</Id>
-	<Name>Kils OK</Name>
-	<ShortName>Kils OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>5</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>12329</Id>
-	  <Name>
-	    <Family>Olm</Family>
-	    <Given>Ylva</Given>
-	  </Name>
-	  <BirthDate>1969-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>407205</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>47033</Id>
-	  <Name>
-	    <Family>Olm</Family>
-	    <Given>Måns</Given>
-	  </Name>
-	  <BirthDate>1998-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>980903</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>1524</Id>
-	  <Name>
-	    <Family>Nordström</Family>
-	    <Given>Magnus</Given>
-	  </Name>
-	  <BirthDate>1969-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>690321</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>35171</Id>
-	  <Name>
-	    <Family>Olm</Family>
-	    <Given>Lukas</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>2</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>874122</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>47034</Id>
-	  <Name>
-	    <Family>Olm</Family>
-	    <Given>Lisa</Given>
-	  </Name>
-	  <BirthDate>2003-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>3</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>630413</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>37074</Id>
-	  <Name>
-	    <Family>Carlberg</Family>
-	    <Given>Peter</Given>
-	  </Name>
-	  <BirthDate>1971-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>417683</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-      <AssignedFee>
-	<Fee>
-	  <Name>Xtra</Name>
-	  <Amount>50.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1819026</EntryId>
-      <Name>SK Örnen 1</Name>
-      <Organisation>
-	<Id>472</Id>
-	<Name>SK Örnen</Name>
-	<ShortName>SK Örnen</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>6</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>34513</Id>
-	  <Name>
-	    <Family>Augustsson</Family>
-	    <Given>Elin</Given>
-	  </Name>
-	  <BirthDate>1996-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>226764</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>28418</Id>
-	  <Name>
-	    <Family>Modin</Family>
-	    <Given>Mattias</Given>
-	  </Name>
-	  <BirthDate>1972-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>887117</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>91410</Id>
-	  <Name>
-	    <Family>Skog</Family>
-	    <Given>Robert</Given>
-	  </Name>
-	  <BirthDate>1980-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>444161</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>33234</Id>
-	  <Name>
-	    <Family>Åsberg</Family>
-	    <Given>Erika</Given>
-	  </Name>
-	  <BirthDate>2001-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>2</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>444160</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>76266</Id>
-	  <Name>
-	    <Family>Wikström</Family>
-	    <Given>Sara</Given>
-	  </Name>
-	  <BirthDate>2001-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>3</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>226740</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>33862</Id>
-	  <Name>
-	    <Family>Svensson</Family>
-	    <Given>Björn</Given>
-	  </Name>
-	  <BirthDate>1960-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>226715</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-      <AssignedFee>
-	<Fee>
-	  <Name>Xtra</Name>
-	  <Amount>50.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1821454</EntryId>
-      <Name>Säffle OK 1</Name>
-      <Organisation>
-	<Id>380</Id>
-	<Name>Säffle OK</Name>
-	<ShortName>Säffle OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>7</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>52178</Id>
-	  <Name>
-	    <Family>Nyqvist</Family>
-	    <Given>Oscar</Given>
-	  </Name>
-	  <BirthDate>2001-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>2</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>417705</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>94222</Id>
-	  <Name>
-	    <Family>Andersson</Family>
-	    <Given>Daniel</Given>
-	  </Name>
-	  <BirthDate>2003-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>3</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>417707</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>73491</Id>
-	  <Name>
-	    <Family>Bergström</Family>
-	    <Given>Emil</Given>
-	  </Name>
-	  <BirthDate>1995-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>417708</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>53187</Id>
-	  <Name>
-	    <Family>Nyquist</Family>
-	    <Given>Fredrik</Given>
-	  </Name>
-	  <BirthDate>1974-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>417710</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>94223</Id>
-	  <Name>
-	    <Family>Almberg</Family>
-	    <Given>Elin</Given>
-	  </Name>
-	  <BirthDate>2001-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>2</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>417716</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>57849</Id>
-	  <Name>
-	    <Family>Nyqvist</Family>
-	    <Given>Elin</Given>
-	  </Name>
-	  <BirthDate>2003-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>3</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>417718</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>997</Id>
-	  <Name>
-	    <Family>Lidén</Family>
-	    <Given>Hans</Given>
-	  </Name>
-	  <BirthDate>1943-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>417719</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-      <AssignedFee>
-	<Fee>
-	  <Name>Xtra</Name>
-	  <Amount>100.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1817677</EntryId>
-      <Name>IK Vikings OK 1</Name>
-      <Organisation>
-	<Id>564</Id>
-	<Name>IK Vikings OK</Name>
-	<ShortName>IK Vikings OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>8</BibNumber>
-      <TeamMemberStart>
-        <Person sex="F">
-	  <Name>
-            <Family>Andersson</Family>
-            <Given>Julia</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>452084</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-        <Person sex="M">
-          <Name>
-            <Family>Bergenfur</Family>
-            <Given>Elias</Given>
-          </Name>
-        </Person>
-        <Start>
-          <Leg>1</Leg>
-          <LegOrder>2</LegOrder>
-          <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-          <Course>
-            <Id>1</Id>
-            <Name>#1 Bana1</Name>
-            <Length>3110</Length>
-            <NumberOfControls>10</NumberOfControls>
-          </Course>
-          <ControlCard>547283</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Lundberg</Family>
-            <Given>Simon</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>438127</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Dumas</Family>
-            <Given>Benoit</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-          <ControlCard>890510</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-        <Person sex="F">
-	  <Name>
-            <Family>Fischer</Family>
-            <Given>Hanna</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>911282</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-        <Person sex="F">
-          <Name>
-            <Family>Fischer</Family>
-            <Given>Elsa</Given>
-          </Name>
-        </Person>
-        <Start>
-          <Leg>4</Leg>
-          <LegOrder>2</LegOrder>
-          <Course>
-            <Id>4</Id>
-            <Name>#1 Bana4</Name>
-            <Length>2400</Length>
-            <NumberOfControls>10</NumberOfControls>
-          </Course>
-          <ControlCard>700325</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Dalheimer</Family>
-            <Given>Jan</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>684897</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1818559</EntryId>
-      <Name>Malungs OK Skogsmårdarna 2</Name>
-      <Organisation>
-	<Id>342</Id>
-	<Name>Malungs OK Skogsmårdarna</Name>
-	<ShortName>Malungs OK Skogsmårdarna</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>11</BibNumber>
-      <TeamMemberStart>
-        <Person sex="F">
-	  <Name>
-            <Family>Jonsson</Family>
-            <Given>Elisabeth</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>782011</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Harkman</Family>
-            <Given>Lars</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>782012</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Norén</Family>
-            <Given>Jörgen</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-          <ControlCard>782013</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Gunnarsson</Family>
-            <Given>Julia</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>782014</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-        <Person sex="M">
-          <Name>
-            <Family>Gunnarsson</Family>
-            <Given>Sebastian</Given>
-          </Name>
-        </Person>
-        <Start>
-          <Leg>4</Leg>
-          <LegOrder>1</LegOrder>
-          <Course>
-            <Id>4</Id>
-            <Name>#1 Bana4</Name>
-            <Length>2400</Length>
-            <NumberOfControls>10</NumberOfControls>
-          </Course>
-          <ControlCard>782016</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Halses</Family>
-            <Given>Lars</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>782015</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1819037</EntryId>
-      <Name>Västvärmlands OK 2</Name>
-      <Organisation>
-	<Id>629</Id>
-	<Name>Västvärmlands OK</Name>
-	<ShortName>Västvärmlands OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>12</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>24375</Id>
-	  <Name>
-	    <Family>Fogelberg</Family>
-	    <Given>Jan</Given>
-	  </Name>
-	  <BirthDate>1945-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>43996</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>30647</Id>
-	  <Name>
-	    <Family>Jansson</Family>
-	    <Given>Thord</Given>
-	  </Name>
-	  <BirthDate>1957-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>261439</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>30850</Id>
-	  <Name>
-	    <Family>Fogelberg</Family>
-	    <Given>Martin</Given>
-	  </Name>
-	  <BirthDate>1973-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>46703</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>1082</Id>
-	  <Name>
-	    <Family>Andersson</Family>
-	    <Given>Ingrid</Given>
-	  </Name>
-	  <BirthDate>1947-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>44022</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>36902</Id>
-	  <Name>
-	    <Family>Fogelberg</Family>
-	    <Given>Jonas</Given>
-	  </Name>
-	  <BirthDate>1976-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>46719</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1817772</EntryId>
-      <Name>Lustens OK 4</Name>
-      <Organisation>
-	<Id>640</Id>
-	<Name>Lustens OK</Name>
-	<ShortName>Lustens OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>13</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>21592</Id>
-	  <Name>
-	    <Family>Boman</Family>
-	    <Given>Cecilia</Given>
-	  </Name>
-	  <BirthDate>1996-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>961013</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>37111</Id>
-	  <Name>
-	    <Family>Karlsson</Family>
-	    <Given>Niklas</Given>
-	  </Name>
-	  <BirthDate>1973-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>342516</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>37075</Id>
-	  <Name>
-	    <Family>Olsson</Family>
-	    <Given>Anders</Given>
-	  </Name>
-	  <BirthDate>1964-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>353554</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>33445</Id>
-	  <Name>
-	    <Family>Modin</Family>
-	    <Given>Sven-Åke</Given>
-	  </Name>
-	  <BirthDate>1935-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>353560</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>1411</Id>
-	  <Name>
-	    <Family>Eriksson</Family>
-	    <Given>Anders</Given>
-	  </Name>
-	  <BirthDate>1960-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>226738</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1815496</EntryId>
-      <Name>Kristinehamns OK/OK Hällen/OK Djerf</Name>
-      <Organisation>
-	<Id>214</Id>
-	<Name>Kristinehamns OK</Name>
-	<ShortName>Kristinehamns OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>14</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Ericsson</Family>
-            <Given>Anne-Marie</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>1112345</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Gunnarsson</Family>
-            <Given>Stefan</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>340286</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Öberg</Family>
-            <Given>Peter</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-          <ControlCard>902300</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Wester</Family>
-            <Given>Simon</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>2050713</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Larsson</Family>
-            <Given>Jonas</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>1973921</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1815106</EntryId>
-      <Name>OK Älgen 1</Name>
-      <Organisation>
-	<Id>522</Id>
-	<Name>OK Älgen</Name>
-	<ShortName>OK Älgen</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>15</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>10788</Id>
-	  <Name>
-	    <Family>Umeland</Family>
-	    <Given>Erika</Given>
-	  </Name>
-	  <BirthDate>1976-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>409521</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>7033</Id>
-	  <Name>
-	    <Family>Lind</Family>
-	    <Given>Mikael</Given>
-	  </Name>
-	  <BirthDate>1971-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>710123</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>35154</Id>
-	  <Name>
-	    <Family>Tallberg</Family>
-	    <Given>Morgan</Given>
-	  </Name>
-	  <BirthDate>1973-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>306178</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>55312</Id>
-	  <Name>
-	    <Family>Lindh</Family>
-	    <Given>Felix</Given>
-	  </Name>
-	  <BirthDate>2006-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>970207</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>699</Id>
-	  <Name>
-	    <Family>Lind</Family>
-	    <Given>Lottie</Given>
-	  </Name>
-	  <BirthDate>1964-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>600699</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1815497</EntryId>
-      <Name>Kristinehamns OK/OK Hällen 2</Name>
-      <Organisation>
-	<Id>214</Id>
-	<Name>Kristinehamns OK</Name>
-	<ShortName>Kristinehamns OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>16</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Gunnarsson</Family>
-            <Given>Britt</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>262886</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Brodin</Family>
-            <Given>Sven-Erik</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>12179</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Öberg</Family>
-            <Given>Johanna</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-          <ControlCard>820407</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Forslund</Family>
-            <Given>Emilie</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>354375</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Gillenäs</Family>
-            <Given>Christer</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>28936</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1817771</EntryId>
-      <Name>Lustens OK 3</Name>
-      <Organisation>
-	<Id>640</Id>
-	<Name>Lustens OK</Name>
-	<ShortName>Lustens OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>17</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>30036</Id>
-	  <Name>
-	    <Family>Nilsson</Family>
-	    <Given>Mariann</Given>
-	  </Name>
-	  <BirthDate>1941-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>44433</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>30038</Id>
-	  <Name>
-	    <Family>Eriksson</Family>
-	    <Given>Anders</Given>
-	  </Name>
-	  <BirthDate>1959-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>209699</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>19502</Id>
-	  <Name>
-	    <Family>Westerlund</Family>
-	    <Given>Lars-Ola</Given>
-	  </Name>
-	  <BirthDate>1972-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>343849</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>56281</Id>
-	  <Name>
-	    <Family>Åkerlind</Family>
-	    <Given>David</Given>
-	  </Name>
-	  <BirthDate>2002-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>228761</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>30040</Id>
-	  <Name>
-	    <Family>Andersson</Family>
-	    <Given>Per</Given>
-	  </Name>
-	  <BirthDate>1972-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>228786</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1817769</EntryId>
-      <Name>Lustens OK 1</Name>
-      <Organisation>
-	<Id>640</Id>
-	<Name>Lustens OK</Name>
-	<ShortName>Lustens OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>18</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>30115</Id>
-	  <Name>
-	    <Family>Campbell</Family>
-	    <Given>Eric</Given>
-	  </Name>
-	  <BirthDate>1999-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>990526</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>39545</Id>
-	  <Name>
-	    <Family>Campbell</Family>
-	    <Given>Greg</Given>
-	  </Name>
-	  <BirthDate>1965-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>228779</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>30114</Id>
-	  <Name>
-	    <Family>Campbell</Family>
-	    <Given>Tom</Given>
-	  </Name>
-	  <BirthDate>1997-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>970309</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>47068</Id>
-	  <Name>
-	    <Family>Bad</Family>
-	    <Given>Thea</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>344977</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>39546</Id>
-	  <Name>
-	    <Family>Sörlin</Family>
-	    <Given>Åsa</Given>
-	  </Name>
-	  <BirthDate>1964-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>228775</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1813324</EntryId>
-      <Name>Skattkärrs IF 3</Name>
-      <Organisation>
-	<Id>334</Id>
-	<Name>Skattkärrs IF</Name>
-	<ShortName>Skattkärrs IF</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>19</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Ekberg</Family>
-            <Given>Ylva</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>262853</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Hyvönen</Family>
-            <Given>Ann</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>761125</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Johansson</Family>
-            <Given>Hanna</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-          <ControlCard>901146</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Ekberg</Family>
-            <Given>Axel</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>426151</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Ekberg</Family>
-            <Given>Jan</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>47287</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1812132</EntryId>
-      <Name>Degerfors OK / IK Vikings OK</Name>
-      <Organisation>
-	<Id>25</Id>
-	<Name>Degerfors OK</Name>
-	<ShortName>Degerfors OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>20</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>16703</Id>
-	  <Name>
-	    <Family>Jacobsson</Family>
-	    <Given>Anna-Lena</Given>
-	  </Name>
-	  <BirthDate>1968-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>341224</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>13988</Id>
-	  <Name>
-	    <Family>Jacobsson</Family>
-	    <Given>Amanda</Given>
-	  </Name>
-	  <BirthDate>1994-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>940430</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>15568</Id>
-	  <Name>
-	    <Family>Jacobsson</Family>
-	    <Given>Filip</Given>
-	  </Name>
-	  <BirthDate>1997-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>979706</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>29752</Id>
-	  <Name>
-	    <Family>Lundberg</Family>
-	    <Given>Adrian</Given>
-	  </Name>
-	  <BirthDate>1999-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>438113</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>9416</Id>
-	  <Name>
-	    <Family>Jacobsson</Family>
-	    <Given>Lars</Given>
-	  </Name>
-	  <BirthDate>1965-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>231356</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1813323</EntryId>
-      <Name>Skattkärrs IF 2</Name>
-      <Organisation>
-	<Id>334</Id>
-	<Name>Skattkärrs IF</Name>
-	<ShortName>Skattkärrs IF</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>21</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Johansson</Family>
-            <Given>Elin</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>262865</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Bergenfur</Family>
-            <Given>Jonas</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>710209</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Boström</Family>
-            <Given>Per</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-          <ControlCard>347060</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Ekberg</Family>
-            <Given>Johan</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>520224</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Risberg</Family>
-            <Given>Peter</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>405457</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1818558</EntryId>
-      <Name>Malungs OK Skogsmårdarna 1</Name>
-      <Organisation>
-	<Id>342</Id>
-	<Name>Malungs OK Skogsmårdarna</Name>
-	<ShortName>Malungs OK Skogsmårdarna</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>22</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Masapärs</Family>
-            <Given>Sofie</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>782001</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Gunnarsson</Family>
-            <Given>Lars</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>782002</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Allerhed</Family>
-            <Given>Marcus</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-          <ControlCard>782003</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Gunnarsson</Family>
-            <Given>Emilia</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>782004</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-        <Person sex="M">
-          <Name>
-            <Family>Masapärs</Family>
-            <Given>Joel</Given>
-          </Name>
-        </Person>
-        <Start>
-          <Leg>4</Leg>
-          <LegOrder>2</LegOrder>
-          <Course>
-            <Id>4</Id>
-            <Name>#1 Bana4</Name>
-            <Length>2400</Length>
-            <NumberOfControls>10</NumberOfControls>
-          </Course>
-          <ControlCard>782006</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Sigfrids</Family>
-            <Given>Jörgen</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>782005</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1815603</EntryId>
-      <Name>OK Djerf 2</Name>
-      <Organisation>
-	<Id>74</Id>
-	<Name>OK Djerf</Name>
-	<ShortName>OK Djerf</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>23</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>47369</Id>
-	  <Name>
-	    <Family>Johansson</Family>
-	    <Given>Kristina</Given>
-	  </Name>
-	  <BirthDate>1968-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>903029</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>19271</Id>
-	  <Name>
-	    <Family>Welander</Family>
-	    <Given>Maja</Given>
-	  </Name>
-	  <BirthDate>1999-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>990211</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>26507</Id>
-	  <Name>
-	    <Family>Svensson</Family>
-	    <Given>Björn</Given>
-	  </Name>
-	  <BirthDate>1965-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>902984</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>47374</Id>
-	  <Name>
-	    <Family>Johansson</Family>
-	    <Given>Ylva</Given>
-	  </Name>
-	  <BirthDate>2002-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>520817</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>47310</Id>
-	  <Name>
-	    <Family>Johansson</Family>
-	    <Given>Frida</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>600218</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1792730</EntryId>
-      <Name>Västvärmlands OK 1</Name>
-      <Organisation>
-	<Id>629</Id>
-	<Name>Västvärmlands OK</Name>
-	<ShortName>Västvärmlands OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>24</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>3930</Id>
-	  <Name>
-	    <Family>Johansson</Family>
-	    <Given>Kristin</Given>
-	  </Name>
-	  <BirthDate>1971-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>37839</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>1631</Id>
-	  <Name>
-	    <Family>Johansson</Family>
-	    <Given>Anders</Given>
-	  </Name>
-	  <BirthDate>1968-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>681206</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>12275</Id>
-	  <Name>
-	    <Family>Johansson</Family>
-	    <Given>Oskar</Given>
-	  </Name>
-	  <BirthDate>1996-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>245892</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>23461</Id>
-	  <Name>
-	    <Family>Johansson</Family>
-	    <Given>Arvid</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>261405</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>56056</Id>
-	  <Name>
-	    <Family>Jonsson</Family>
-	    <Given>Magnus</Given>
-	  </Name>
-	  <BirthDate>1976-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>46718</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1608788</EntryId>
-      <Name>Kils OK 2</Name>
-      <Organisation>
-	<Id>526</Id>
-	<Name>Kils OK</Name>
-	<ShortName>Kils OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>25</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>21450</Id>
-	  <Name>
-	    <Family>Holmgård</Family>
-	    <Given>Elsa</Given>
-	  </Name>
-	  <BirthDate>1999-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>990504</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>21493</Id>
-	  <Name>
-	    <Family>Holmgård</Family>
-	    <Given>Klara</Given>
-	  </Name>
-	  <BirthDate>1996-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>960720</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>49844</Id>
-	  <Name>
-	    <Family>Holmgård</Family>
-	    <Given>Sofia</Given>
-	  </Name>
-	  <BirthDate>1970-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>701212</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>49822</Id>
-	  <Name>
-	    <Family>Holmgård</Family>
-	    <Given>Nora</Given>
-	  </Name>
-	  <BirthDate>2002-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>920716</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>21619</Id>
-	  <Name>
-	    <Family>Holmgård</Family>
-	    <Given>Lars</Given>
-	  </Name>
-	  <BirthDate>1964-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>640101</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1794941</EntryId>
-      <Name>OK Tyr 1</Name>
-      <Organisation>
-	<Id>416</Id>
-	<Name>OK Tyr</Name>
-	<ShortName>OK Tyr</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>26</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>35421</Id>
-	  <Name>
-	    <Family>Gustafsson</Family>
-	    <Given>Jan</Given>
-	  </Name>
-	  <BirthDate>1958-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>580628</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>67552</Id>
-	  <Name>
-	    <Family>Beckius</Family>
-	    <Given>Marcus</Given>
-	  </Name>
-	  <BirthDate>1997-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>970302</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>14841</Id>
-	  <Name>
-	    <Family>Gustafsson</Family>
-	    <Given>Johan</Given>
-	  </Name>
-	  <BirthDate>1997-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>970817</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>14842</Id>
-	  <Name>
-	    <Family>Gustafsson</Family>
-	    <Given>Linda</Given>
-	  </Name>
-	  <BirthDate>1999-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>990111</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>7023</Id>
-	  <Name>
-	    <Family>Beckius</Family>
-	    <Given>Örjan</Given>
-	  </Name>
-	  <BirthDate>1968-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>37564</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1815520</EntryId>
-      <Name>OK Tyr 2</Name>
-      <Organisation>
-	<Id>416</Id>
-	<Name>OK Tyr</Name>
-	<ShortName>OK Tyr</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>27</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>36379</Id>
-	  <Name>
-	    <Family>Nyman</Family>
-	    <Given>Oskar</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>747574</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>6259</Id>
-	  <Name>
-	    <Family>Nyman</Family>
-	    <Given>Pär</Given>
-	  </Name>
-	  <BirthDate>1965-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>260697</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>48679</Id>
-	  <Name>
-	    <Family>Simes</Family>
-	    <Given>Egil</Given>
-	  </Name>
-	  <BirthDate>1997-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>440888</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>48680</Id>
-	  <Name>
-	    <Family>Simes</Family>
-	    <Given>Nial</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>440890</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>17560</Id>
-	  <Name>
-	    <Family>Nyman</Family>
-	    <Given>Malin</Given>
-	  </Name>
-	  <BirthDate>1998-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>866413</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1602789</EntryId>
-      <Name>Kils OK 1</Name>
-      <Organisation>
-	<Id>526</Id>
-	<Name>Kils OK</Name>
-	<ShortName>Kils OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>28</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>47075</Id>
-	  <Name>
-	    <Family>Uller</Family>
-	    <Given>Jonathan</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>602000</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>47074</Id>
-	  <Name>
-	    <Family>Uller</Family>
-	    <Given>Anna</Given>
-	  </Name>
-	  <BirthDate>1972-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>418032</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>47032</Id>
-	  <Name>
-	    <Family>Uller</Family>
-	    <Given>Andreas</Given>
-	  </Name>
-	  <BirthDate>1998-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>980227</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>47076</Id>
-	  <Name>
-	    <Family>Uller</Family>
-	    <Given>Anton</Given>
-	  </Name>
-	  <BirthDate>2003-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>602303</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>28707</Id>
-	  <Name>
-	    <Family>Uller</Family>
-	    <Given>Jonas</Given>
-	  </Name>
-	  <BirthDate>1973-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>362571</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1793995</EntryId>
-      <Name>Kils OK 3</Name>
-      <Organisation>
-	<Id>526</Id>
-	<Name>Kils OK</Name>
-	<ShortName>Kils OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>29</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>35637</Id>
-	  <Name>
-	    <Family>Nordström</Family>
-	    <Given>Ella</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>866399</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>22913</Id>
-	  <Name>
-	    <Family>Nordström</Family>
-	    <Given>Elis</Given>
-	  </Name>
-	  <BirthDate>1997-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>970423</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>38181</Id>
-	  <Name>
-	    <Family>Nordström</Family>
-	    <Given>Lars</Given>
-	  </Name>
-	  <BirthDate>1958-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>511800</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>41855</Id>
-	  <Name>
-	    <Family>Nordström</Family>
-	    <Given>Klara</Given>
-	  </Name>
-	  <BirthDate>2003-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>407209</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>21970</Id>
-	  <Name>
-	    <Family>Nordström</Family>
-	    <Given>Anna</Given>
-	  </Name>
-	  <BirthDate>1971-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>711022</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1817770</EntryId>
-      <Name>Lustens OK 2</Name>
-      <Organisation>
-	<Id>640</Id>
-	<Name>Lustens OK</Name>
-	<ShortName>Lustens OK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>30</BibNumber>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>24154</Id>
-	  <Name>
-	    <Family>Landfors</Family>
-	    <Given>Kristina</Given>
-	  </Name>
-	  <BirthDate>1967-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>343873</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>19265</Id>
-	  <Name>
-	    <Family>Landfors</Family>
-	    <Given>Pelle</Given>
-	  </Name>
-	  <BirthDate>1967-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>343867</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>36882</Id>
-	  <Name>
-	    <Family>Larsson</Family>
-	    <Given>Johan</Given>
-	  </Name>
-	  <BirthDate>1985-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>44431</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>36317</Id>
-	  <Name>
-	    <Family>Jonsson</Family>
-	    <Given>Viktor</Given>
-	  </Name>
-	  <BirthDate>2000-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>342543</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>14778</Id>
-	  <Name>
-	    <Family>Landfors</Family>
-	    <Given>Linnea</Given>
-	  </Name>
-	  <BirthDate>1995-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>951015</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1813322</EntryId>
-      <Name>Skattkärrs IF 1</Name>
-      <Organisation>
-	<Id>334</Id>
-	<Name>Skattkärrs IF</Name>
-	<ShortName>Skattkärrs IF</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>31</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Johansson</Family>
-            <Given>Kajsa</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>970909</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Rööhs</Family>
-            <Given>Lina</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#1 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>780211</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Risberg</Family>
-            <Given>David</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#1 Bana3A</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-          <ControlCard>980506</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Johansson</Family>
-            <Given>Maja</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>426169</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Larsson</Family>
-            <Given>Mikael</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#1 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-          <ControlCard>701016</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-    <TeamStart>
-      <EntryId>1819065</EntryId>
-      <Name>Lesjöfors SK / IK Vikings OK</Name>
-      <Organisation>
-	<Id>236</Id>
-	<Name>Lesjöfors SK</Name>
-	<ShortName>Lesjöfors SK</ShortName>
-	<Country code="SWE">SWE</Country>
-      </Organisation>
-      <BibNumber>32</BibNumber>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Name>
-            <Family>Carlsson-Ekelund</Family>
-            <Given>Albin</Given>
-	  </Name>
-	</Person>
-	<Start>
-	  <Leg>1</Leg>
-	  <LegOrder>1</LegOrder>
-	  <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-	  <Course>
-	    <Id>1</Id>
-	    <Name>#1 Bana1</Name>
-	    <Length>3110</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-          <ControlCard>450728</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-        <Person sex="M">
-          <Name>
-            <Family>Dalheimer</Family>
-            <Given>Tim</Given>
-          </Name>
-        </Person>
-        <Start>
-          <Leg>1</Leg>
-          <LegOrder>2</LegOrder>
-          <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
-          <Course>
-            <Id>1</Id>
-            <Name>#1 Bana1</Name>
-            <Length>3110</Length>
-            <NumberOfControls>10</NumberOfControls>
-          </Course>
-          <ControlCard>540022</ControlCard>
-        </Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>53147</Id>
-	  <Name>
-	    <Family>Widman</Family>
-	    <Given>Camilla</Given>
-	  </Name>
-	  <BirthDate>1968-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>2</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>2</Id>
-	    <Name>#2 Bana5</Name>
-	    <Length>4170</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>680809</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="M">
-	  <Id>32758</Id>
-	  <Name>
-	    <Family>Andersson</Family>
-	    <Given>Matz</Given>
-	  </Name>
-	  <BirthDate>1966-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>3</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>3</Id>
-	    <Name>#2 Bana3B</Name>
-	    <Length>6310</Length>
-	    <NumberOfControls>18</NumberOfControls>
-	  </Course>
-	  <ControlCard>661022</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>53146</Id>
-	  <Name>
-	    <Family>Widman</Family>
-	    <Given>Saga</Given>
-	  </Name>
-	  <BirthDate>2001-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>4</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>4</Id>
-	    <Name>#1 Bana4</Name>
-	    <Length>2400</Length>
-	    <NumberOfControls>10</NumberOfControls>
-	  </Course>
-	  <ControlCard>660720</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <TeamMemberStart>
-	<Person sex="F">
-	  <Id>19143</Id>
-	  <Name>
-	    <Family>Pettersson</Family>
-	    <Given>Åsa</Given>
-	  </Name>
-	  <BirthDate>1977-01-01</BirthDate>
-	</Person>
-	<Start>
-	  <Leg>5</Leg>
-	  <LegOrder>1</LegOrder>
-	  <Course>
-	    <Id>5</Id>
-	    <Name>#2 Bana2</Name>
-	    <Length>4280</Length>
-	    <NumberOfControls>13</NumberOfControls>
-	  </Course>
-	  <ControlCard>347293</ControlCard>
-	</Start>
-      </TeamMemberStart>
-      <AssignedFee>
-	<Fee>
-	  <Name>Actual</Name>
-	  <Amount>450.00</Amount>
-	</Fee>
-      </AssignedFee>
-    </TeamStart>
-  </ClassStart>
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ iofVersion="3.0"
+ createTime="2013-08-16T23:36:00.884+02:00"
+ creator="SportSoftware OS2010 V.11.0">
+<Event>
+<Name>Klarälvskavlen 2013</Name>
+</Event>
+<ClassStart>
+<Class>
+<Id>900</Id>
+<Name>Klarälvkavlen</Name>
+<ShortName>Kavle</ShortName>
+<Leg maxNumberOfCompetitors="9"/>
+<Leg/>
+<Leg/>
+<Leg maxNumberOfCompetitors="9"/>
+<Leg/>
+<TeamFee>
+<Name>Default</Name>
+<Amount>450.00</Amount>
+</TeamFee>
+<TeamFee>
+<Name>Startfee 2</Name>
+<Amount>0.00</Amount>
+</TeamFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>50.00</Amount>
+</Fee>
+<RaceClass>
+<FirstStart>2013-08-17T11:00:00.000+02:00</FirstStart>
+</RaceClass>
+</Class>
+<TeamStart>
+<EntryId>1815599</EntryId>
+<Name>OK Djerf 1</Name>
+<Organisation>
+<Id>74</Id>
+<Name>OK Djerf</Name>
+<ShortName>OK Djerf</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>1</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>23476</Id>
+<Name>
+<Family>Lindberg</Family>
+<Given>Viktoria</Given>
+</Name>
+<BirthDate>1971-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>9710509</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>18166</Id>
+<Name>
+<Family>Lindberg</Family>
+<Given>Stina</Given>
+</Name>
+<BirthDate>1999-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>9990203</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>18169</Id>
+<Name>
+<Family>Lindberg</Family>
+<Given>Elin</Given>
+</Name>
+<BirthDate>1996-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>960708</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>90623</Id>
+<Name>
+<Family>Sjöberg</Family>
+<Given>Marcus</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>42097</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>41302</Id>
+<Name>
+<Family>Lindberg</Family>
+<Given>Håkan</Given>
+</Name>
+<BirthDate>1965-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>651103</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1815604</EntryId>
+<Name>OK Djerf 3</Name>
+<Organisation>
+<Id>74</Id>
+<Name>OK Djerf</Name>
+<ShortName>OK Djerf</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>2</BibNumber>
+<TeamMemberStart>
+<Person sex="M">
+<Id>82044</Id>
+<Name>
+<Family>Hansson</Family>
+<Given>Anton</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>2</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>42204</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>90592</Id>
+<Name>
+<Family>Eriksson</Family>
+<Given>Tova</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>3</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>42099</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>34922</Id>
+<Name>
+<Family>Olsson</Family>
+<Given>Erica</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>742300</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>82045</Id>
+<Name>
+<Family>Hansson</Family>
+<Given>Jan</Given>
+</Name>
+<BirthDate>1968-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>42201</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>88018</Id>
+<Name>
+<Family>Andersson</Family>
+<Given>Hugo</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>42098</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>40825</Id>
+<Name>
+<Family>Olsson</Family>
+<Given>Peter</Given>
+</Name>
+<BirthDate>1970-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>700418</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>50.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1817205</EntryId>
+<Name>OK Tyr 3</Name>
+<Organisation>
+<Id>416</Id>
+<Name>OK Tyr</Name>
+<ShortName>OK Tyr</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>3</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>30124</Id>
+<Name>
+<Family>Kindlund</Family>
+<Given>Johanna</Given>
+</Name>
+<BirthDate>1975-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>213737</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>2355</Id>
+<Name>
+<Family>Brodin</Family>
+<Given>Maria</Given>
+</Name>
+<BirthDate>1987-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>870906</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>6020</Id>
+<Name>
+<Family>Råberg</Family>
+<Given>Erik</Given>
+</Name>
+<BirthDate>1979-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>790314</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>31558</Id>
+<Name>
+<Family>Kindlund</Family>
+<Given>David</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>2</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>2058194</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>31557</Id>
+<Name>
+<Family>Kindlund</Family>
+<Given>Cornelia</Given>
+</Name>
+<BirthDate>2004-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>3</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>451751</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>29897</Id>
+<Name>
+<Family>Kindlund</Family>
+<Given>Sören</Given>
+</Name>
+<BirthDate>1975-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>260646</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>50.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1818094</EntryId>
+<Name>Kils OK 4</Name>
+<Organisation>
+<Id>526</Id>
+<Name>Kils OK</Name>
+<ShortName>Kils OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>4</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>47106</Id>
+<Name>
+<Family>Skoglund</Family>
+<Given>Charlotte</Given>
+</Name>
+<BirthDate>1968-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>2</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>258542</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>56107</Id>
+<Name>
+<Family>Hedin</Family>
+<Given>Ida</Given>
+</Name>
+<BirthDate>1998-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>3</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>981021</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>47105</Id>
+<Name>
+<Family>Skoglund</Family>
+<Given>Ulf</Given>
+</Name>
+<BirthDate>1960-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>258538</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>27622</Id>
+<Name>
+<Family>Mellerdahl</Family>
+<Given>Ulf</Given>
+</Name>
+<BirthDate>1970-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>418040</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>51079</Id>
+<Name>
+<Family>Skoglund</Family>
+<Given>Olof</Given>
+</Name>
+<BirthDate>1999-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>258545</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>28841</Id>
+<Name>
+<Family>Lundqvist</Family>
+<Given>Elin</Given>
+</Name>
+<BirthDate>1990-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>229318</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>50.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1818095</EntryId>
+<Name>Kils OK 5</Name>
+<Organisation>
+<Id>526</Id>
+<Name>Kils OK</Name>
+<ShortName>Kils OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>5</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Name>
+<Family>Olm</Family>
+<Given>Ylva</Given>
+</Name>
+<BirthDate>1969-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>2</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>407205</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Name>
+<Family>Olm</Family>
+<Given>Lukas</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>3</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>874122</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>47033</Id>
+<Name>
+<Family>Olm</Family>
+<Given>Måns</Given>
+</Name>
+<BirthDate>1998-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>980903</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>1524</Id>
+<Name>
+<Family>Nordström</Family>
+<Given>Magnus</Given>
+</Name>
+<BirthDate>1969-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>690321</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Name>
+<Family>Olm</Family>
+<Given>Lisa</Given>
+</Name>
+<BirthDate>2003-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>630413</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>37074</Id>
+<Name>
+<Family>Carlberg</Family>
+<Given>Peter</Given>
+</Name>
+<BirthDate>1971-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>417683</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>50.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1819026</EntryId>
+<Name>SK Örnen 1</Name>
+<Organisation>
+<Id>472</Id>
+<Name>SK Örnen</Name>
+<ShortName>SK Örnen</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>6</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>34513</Id>
+<Name>
+<Family>Augustsson</Family>
+<Given>Elin</Given>
+</Name>
+<BirthDate>1996-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>226764</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>28418</Id>
+<Name>
+<Family>Modin</Family>
+<Given>Mattias</Given>
+</Name>
+<BirthDate>1972-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>887117</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>91410</Id>
+<Name>
+<Family>Skog</Family>
+<Given>Robert</Given>
+</Name>
+<BirthDate>1980-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>444161</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>33234</Id>
+<Name>
+<Family>Åsberg</Family>
+<Given>Erika</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>2</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>444160</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>76266</Id>
+<Name>
+<Family>Wikström</Family>
+<Given>Sara</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>3</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>226740</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>33862</Id>
+<Name>
+<Family>Svensson</Family>
+<Given>Björn</Given>
+</Name>
+<BirthDate>1960-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>226715</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>50.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1821454</EntryId>
+<Name>Säffle OK 1</Name>
+<Organisation>
+<Id>380</Id>
+<Name>Säffle OK</Name>
+<ShortName>Säffle OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>7</BibNumber>
+<TeamMemberStart>
+<Person sex="M">
+<Id>52178</Id>
+<Name>
+<Family>Nyqvist</Family>
+<Given>Oscar</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>2</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>417705</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>94222</Id>
+<Name>
+<Family>Andersson</Family>
+<Given>Daniel</Given>
+</Name>
+<BirthDate>2003-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>3</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>417707</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>73491</Id>
+<Name>
+<Family>Bergström</Family>
+<Given>Emil</Given>
+</Name>
+<BirthDate>1995-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>417708</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>53187</Id>
+<Name>
+<Family>Nyquist</Family>
+<Given>Fredrik</Given>
+</Name>
+<BirthDate>1974-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>417710</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>94223</Id>
+<Name>
+<Family>Almberg</Family>
+<Given>Elin</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>2</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>417716</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>57849</Id>
+<Name>
+<Family>Nyqvist</Family>
+<Given>Elin</Given>
+</Name>
+<BirthDate>2003-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>3</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>417718</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>997</Id>
+<Name>
+<Family>Lidén</Family>
+<Given>Hans</Given>
+</Name>
+<BirthDate>1943-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>417719</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>100.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1817677</EntryId>
+<Name>IK Vikings OK Ungdom</Name>
+<Organisation>
+<Id>564</Id>
+<Name>IK Vikings OK</Name>
+<ShortName>IK Vikings OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>8</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>61385</Id>
+<Name>
+<Family>Andersson</Family>
+<Given>Julia</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>2</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>452084</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>34658</Id>
+<Name>
+<Family>Bergenfur</Family>
+<Given>Elias</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>3</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<ControlCard>547283</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>29751</Id>
+<Name>
+<Family>Lundberg</Family>
+<Given>Simon</Given>
+</Name>
+<BirthDate>1998-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>438127</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>76627</Id>
+<Name>
+<Family>Dumas</Family>
+<Given>Benoit</Given>
+</Name>
+<BirthDate>1989-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>890510</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>54639</Id>
+<Name>
+<Family>Fischer</Family>
+<Given>Hanna</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>2</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>911282</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>54640</Id>
+<Name>
+<Family>Fischer</Family>
+<Given>Elsa</Given>
+</Name>
+<BirthDate>2003-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>3</LegOrder>
+<ControlCard>700325</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>54167</Id>
+<Name>
+<Family>Dalheimer</Family>
+<Given>Jan</Given>
+</Name>
+<BirthDate>1996-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>684897</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>100.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1818559</EntryId>
+<Name>Malungs OK Skogsmårdarna 2</Name>
+<Organisation>
+<Id>342</Id>
+<Name>Malungs OK Skogsmårdarna</Name>
+<ShortName>Malungs OK Skogsmårdarna</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>11</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>39859</Id>
+<Name>
+<Family>Jonsson</Family>
+<Given>Elisabeth</Given>
+</Name>
+<BirthDate>1952-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>782011</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>1584</Id>
+<Name>
+<Family>N.N</Family>
+<Given></Given>
+</Name>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>782012</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>13750</Id>
+<Name>
+<Family>N.N</Family>
+<Given></Given>
+</Name>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>782013</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>46368</Id>
+<Name>
+<Family>N.N</Family>
+<Given></Given>
+</Name>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>2</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>782014</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Name>
+<Family>Gunarsson</Family>
+<Given>Sebastian</Given>
+</Name>
+<BirthDate>2005-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>3</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>782016</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>50805</Id>
+<Name>
+<Family>Halses</Family>
+<Given>Lars</Given>
+</Name>
+<BirthDate>1970-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>782015</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>50.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1819037</EntryId>
+<Name>Västvärmlands OK 2</Name>
+<Organisation>
+<Id>629</Id>
+<Name>Västvärmlands OK</Name>
+<ShortName>Västvärmlands OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>12</BibNumber>
+<TeamMemberStart>
+<Person sex="M">
+<Id>24375</Id>
+<Name>
+<Family>Fogelberg</Family>
+<Given>Jan</Given>
+</Name>
+<BirthDate>1945-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>43996</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>30647</Id>
+<Name>
+<Family>Jansson</Family>
+<Given>Thord</Given>
+</Name>
+<BirthDate>1957-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>261439</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>30850</Id>
+<Name>
+<Family>Fogelberg</Family>
+<Given>Martin</Given>
+</Name>
+<BirthDate>1973-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>46703</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>1082</Id>
+<Name>
+<Family>Andersson</Family>
+<Given>Ingrid</Given>
+</Name>
+<BirthDate>1947-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>44022</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>36902</Id>
+<Name>
+<Family>Fogelberg</Family>
+<Given>Jonas</Given>
+</Name>
+<BirthDate>1976-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>46719</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1817772</EntryId>
+<Name>Lustens OK 4</Name>
+<Organisation>
+<Id>640</Id>
+<Name>Lustens OK</Name>
+<ShortName>Lustens OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>13</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>21592</Id>
+<Name>
+<Family>Boman</Family>
+<Given>Cecilia</Given>
+</Name>
+<BirthDate>1996-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>961013</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>37111</Id>
+<Name>
+<Family>Karlsson</Family>
+<Given>Niklas</Given>
+</Name>
+<BirthDate>1973-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>342516</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>37075</Id>
+<Name>
+<Family>Olsson</Family>
+<Given>Anders</Given>
+</Name>
+<BirthDate>1964-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>353554</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>33445</Id>
+<Name>
+<Family>Modin</Family>
+<Given>Sven-Åke</Given>
+</Name>
+<BirthDate>1935-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>353560</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>1411</Id>
+<Name>
+<Family>Eriksson</Family>
+<Given>Anders</Given>
+</Name>
+<BirthDate>1960-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>226738</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1815496</EntryId>
+<Name>Kristinehamns OK / OK Hällen /OK Djerf</Name>
+<Organisation>
+<Id>214</Id>
+<Name>Kristinehamns OK</Name>
+<ShortName>Kristinehamns OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>14</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>21753</Id>
+<Name>
+<Family>Ericsson</Family>
+<Given>Anne-Marie</Given>
+</Name>
+<BirthDate>1960-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>1112345</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>1449</Id>
+<Name>
+<Family>Gunnarsson</Family>
+<Given>Stefan</Given>
+</Name>
+<BirthDate>1954-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>340286</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>21028</Id>
+<Name>
+<Family>Öberg</Family>
+<Given>Peter</Given>
+</Name>
+<BirthDate>1980-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>902300</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>90617</Id>
+<Name>
+<Family>Wester</Family>
+<Given>Simon</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>2050713</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>18205</Id>
+<Name>
+<Family>Larsson</Family>
+<Given>Jonas</Given>
+</Name>
+<BirthDate>1973-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>1973921</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1815106</EntryId>
+<Name>OK Älgen 1</Name>
+<Organisation>
+<Id>522</Id>
+<Name>OK Älgen</Name>
+<ShortName>OK Älgen</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>15</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>10788</Id>
+<Name>
+<Family>Umeland</Family>
+<Given>Erika</Given>
+</Name>
+<BirthDate>1976-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>409521</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>7033</Id>
+<Name>
+<Family>Lind</Family>
+<Given>Mikael</Given>
+</Name>
+<BirthDate>1971-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>710123</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>35154</Id>
+<Name>
+<Family>Tallberg</Family>
+<Given>Morgan</Given>
+</Name>
+<BirthDate>1973-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>306178</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>55312</Id>
+<Name>
+<Family>Lindh</Family>
+<Given>Felix</Given>
+</Name>
+<BirthDate>2006-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>970207</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>699</Id>
+<Name>
+<Family>Lind</Family>
+<Given>Lottie</Given>
+</Name>
+<BirthDate>1964-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>600699</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1815497</EntryId>
+<Name>Kristinehamns OK / OK Hällen 2</Name>
+<Organisation>
+<Id>214</Id>
+<Name>Kristinehamns OK</Name>
+<ShortName>Kristinehamns OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>16</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>9381</Id>
+<Name>
+<Family>Gunnarsson</Family>
+<Given>Britt</Given>
+</Name>
+<BirthDate>1954-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>262886</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>22268</Id>
+<Name>
+<Family>Brodin</Family>
+<Given>Sven-Erik</Given>
+</Name>
+<BirthDate>1956-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>12179</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>15214</Id>
+<Name>
+<Family>Öberg</Family>
+<Given>Johanna</Given>
+</Name>
+<BirthDate>1982-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>820407</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>87607</Id>
+<Name>
+<Family>Forslund</Family>
+<Given>Emelie</Given>
+</Name>
+<BirthDate>2005-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>354375</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>3976</Id>
+<Name>
+<Family>Gillenäs</Family>
+<Given>Christer</Given>
+</Name>
+<BirthDate>1948-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>28936</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1817771</EntryId>
+<Name>Lustens OK 3</Name>
+<Organisation>
+<Id>640</Id>
+<Name>Lustens OK</Name>
+<ShortName>Lustens OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>17</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>30036</Id>
+<Name>
+<Family>Nilsson</Family>
+<Given>Mariann</Given>
+</Name>
+<BirthDate>1941-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>44433</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>30038</Id>
+<Name>
+<Family>Eriksson</Family>
+<Given>Anders</Given>
+</Name>
+<BirthDate>1959-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>209699</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>19502</Id>
+<Name>
+<Family>Westerlund</Family>
+<Given>Lars-Ola</Given>
+</Name>
+<BirthDate>1972-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>343849</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>56281</Id>
+<Name>
+<Family>Åkerlind</Family>
+<Given>David</Given>
+</Name>
+<BirthDate>2002-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>228761</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>30040</Id>
+<Name>
+<Family>Andersson</Family>
+<Given>Per</Given>
+</Name>
+<BirthDate>1972-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>228786</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1817769</EntryId>
+<Name>Lustens OK 1</Name>
+<Organisation>
+<Id>640</Id>
+<Name>Lustens OK</Name>
+<ShortName>Lustens OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>18</BibNumber>
+<TeamMemberStart>
+<Person sex="M">
+<Id>30115</Id>
+<Name>
+<Family>Campbell</Family>
+<Given>Eric</Given>
+</Name>
+<BirthDate>1999-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>990526</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>39545</Id>
+<Name>
+<Family>Campbell</Family>
+<Given>Greg</Given>
+</Name>
+<BirthDate>1965-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>228779</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>30114</Id>
+<Name>
+<Family>Campbell</Family>
+<Given>Tom</Given>
+</Name>
+<BirthDate>1997-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>970309</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>47068</Id>
+<Name>
+<Family>Bad</Family>
+<Given>Thea</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>344977</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>39546</Id>
+<Name>
+<Family>Sörlin</Family>
+<Given>Åsa</Given>
+</Name>
+<BirthDate>1964-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>228775</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1813324</EntryId>
+<Name>Skattkärrs IF 3</Name>
+<Organisation>
+<Id>334</Id>
+<Name>Skattkärrs IF</Name>
+<ShortName>Skattkärrs IF</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>19</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>26153</Id>
+<Name>
+<Family>Ekberg</Family>
+<Given>Ylva</Given>
+</Name>
+<BirthDate>1969-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>262853</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>5237</Id>
+<Name>
+<Family>Hyvönen</Family>
+<Given>Ann</Given>
+</Name>
+<BirthDate>1976-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>761125</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>5249</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Hanna</Given>
+</Name>
+<BirthDate>1990-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>901146</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>56060</Id>
+<Name>
+<Family>Ekberg</Family>
+<Given>Axel</Given>
+</Name>
+<BirthDate>2004-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>426151</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>54463</Id>
+<Name>
+<Family>Ekberg</Family>
+<Given>Jan</Given>
+</Name>
+<BirthDate>1969-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>47287</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1812132</EntryId>
+<Name>Degerfors OK / IK Vikings OK</Name>
+<Organisation>
+<Id>25</Id>
+<Name>Degerfors OK</Name>
+<ShortName>Degerfors OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>20</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>16703</Id>
+<Name>
+<Family>Jacobsson</Family>
+<Given>Anna-Lena</Given>
+</Name>
+<BirthDate>1968-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>341224</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>13988</Id>
+<Name>
+<Family>Jacobsson</Family>
+<Given>Amanda</Given>
+</Name>
+<BirthDate>1994-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>940430</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>15568</Id>
+<Name>
+<Family>Jacobsson</Family>
+<Given>Filip</Given>
+</Name>
+<BirthDate>1997-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>979706</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>29752</Id>
+<Name>
+<Family>Lundberg</Family>
+<Given>Adrian</Given>
+</Name>
+<BirthDate>1999-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>438113</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>9416</Id>
+<Name>
+<Family>Jacobsson</Family>
+<Given>Lars</Given>
+</Name>
+<BirthDate>1965-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>231356</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1813323</EntryId>
+<Name>Skattkärrs IF 2</Name>
+<Organisation>
+<Id>334</Id>
+<Name>Skattkärrs IF</Name>
+<ShortName>Skattkärrs IF</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>21</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>59635</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Elin</Given>
+</Name>
+<BirthDate>1997-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>262865</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>7030</Id>
+<Name>
+<Family>Bergenfur</Family>
+<Given>Jonas</Given>
+</Name>
+<BirthDate>1971-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>710209</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>1992</Id>
+<Name>
+<Family>Boström</Family>
+<Given>Per</Given>
+</Name>
+<BirthDate>1969-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>347060</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>35334</Id>
+<Name>
+<Family>Ekberg</Family>
+<Given>Johan</Given>
+</Name>
+<BirthDate>2002-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>520224</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>12279</Id>
+<Name>
+<Family>Risberg</Family>
+<Given>Peter</Given>
+</Name>
+<BirthDate>1970-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>405457</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1818558</EntryId>
+<Name>Malungs OK Skogsmårdarna 1</Name>
+<Organisation>
+<Id>342</Id>
+<Name>Malungs OK Skogsmårdarna</Name>
+<ShortName>Malungs OK Skogsmårdarna</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>22</BibNumber>
+<TeamMemberStart>
+<Person sex="M">
+<Id>70462</Id>
+<Name>
+<Family>Harkman</Family>
+<Given>Lars</Given>
+</Name>
+<BirthDate>1955-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>782001</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>46367</Id>
+<Name>
+<Family>Halses</Family>
+<Given>Lars</Given>
+</Name>
+<BirthDate>1970-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>782002</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Name>
+<Family>Norén</Family>
+<Given>Jörgen</Given>
+</Name>
+<BirthDate>1974-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>782003</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>87197</Id>
+<Name>
+<Family>Gunnarsson</Family>
+<Given>Julia</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>2</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>782004</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Name>
+<Family>Gunnarsson</Family>
+<Given>Emilia</Given>
+</Name>
+<BirthDate>2003-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>3</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>782006</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>5138</Id>
+<Name>
+<Family>Sigfrids</Family>
+<Given>Jörgen</Given>
+</Name>
+<BirthDate>1978-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>782005</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>50.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1815603</EntryId>
+<Name>OK Djerf 2</Name>
+<Organisation>
+<Id>74</Id>
+<Name>OK Djerf</Name>
+<ShortName>OK Djerf</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>23</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>47369</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Kristina</Given>
+</Name>
+<BirthDate>1968-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>903029</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>19271</Id>
+<Name>
+<Family>Welander</Family>
+<Given>Maja</Given>
+</Name>
+<BirthDate>1999-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>990211</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>26507</Id>
+<Name>
+<Family>Svensson</Family>
+<Given>Björn</Given>
+</Name>
+<BirthDate>1965-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>902984</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>47374</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Ylva</Given>
+</Name>
+<BirthDate>2002-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>520817</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>47310</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Frida</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>600218</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1792730</EntryId>
+<Name>Västvärmlands OK 1</Name>
+<Organisation>
+<Id>629</Id>
+<Name>Västvärmlands OK</Name>
+<ShortName>Västvärmlands OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>24</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>3930</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Kristin</Given>
+</Name>
+<BirthDate>1971-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>37839</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>1631</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Anders</Given>
+</Name>
+<BirthDate>1968-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>681206</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>12275</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Oskar</Given>
+</Name>
+<BirthDate>1996-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>245892</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>23461</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Arvid</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>261405</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>56056</Id>
+<Name>
+<Family>Jonsson</Family>
+<Given>Magnus</Given>
+</Name>
+<BirthDate>1976-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>46718</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1608788</EntryId>
+<Name>Kils OK 2</Name>
+<Organisation>
+<Id>526</Id>
+<Name>Kils OK</Name>
+<ShortName>Kils OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>25</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>21450</Id>
+<Name>
+<Family>Holmgård</Family>
+<Given>Elsa</Given>
+</Name>
+<BirthDate>1999-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>990504</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>21493</Id>
+<Name>
+<Family>Holmgård</Family>
+<Given>Klara</Given>
+</Name>
+<BirthDate>1996-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>960720</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>49844</Id>
+<Name>
+<Family>Holmgård</Family>
+<Given>Sofia</Given>
+</Name>
+<BirthDate>1970-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>701212</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>49822</Id>
+<Name>
+<Family>Holmgård</Family>
+<Given>Nora</Given>
+</Name>
+<BirthDate>2002-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>920716</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>21619</Id>
+<Name>
+<Family>Holmgård</Family>
+<Given>Lars</Given>
+</Name>
+<BirthDate>1964-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>640101</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1794941</EntryId>
+<Name>OK Tyr 1</Name>
+<Organisation>
+<Id>416</Id>
+<Name>OK Tyr</Name>
+<ShortName>OK Tyr</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>26</BibNumber>
+<TeamMemberStart>
+<Person sex="M">
+<Id>35421</Id>
+<Name>
+<Family>Gustafsson</Family>
+<Given>Jan</Given>
+</Name>
+<BirthDate>1958-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>580628</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>67552</Id>
+<Name>
+<Family>Beckius</Family>
+<Given>Marcus</Given>
+</Name>
+<BirthDate>1997-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>970302</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>14841</Id>
+<Name>
+<Family>Gustafsson</Family>
+<Given>Johan</Given>
+</Name>
+<BirthDate>1997-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>970817</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>14842</Id>
+<Name>
+<Family>Gustafsson</Family>
+<Given>Linda</Given>
+</Name>
+<BirthDate>1999-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>990111</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>7023</Id>
+<Name>
+<Family>Beckius</Family>
+<Given>Örjan</Given>
+</Name>
+<BirthDate>1968-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>37564</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1815520</EntryId>
+<Name>OK Tyr 2</Name>
+<Organisation>
+<Id>416</Id>
+<Name>OK Tyr</Name>
+<ShortName>OK Tyr</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>27</BibNumber>
+<TeamMemberStart>
+<Person sex="M">
+<Id>36379</Id>
+<Name>
+<Family>Nyman</Family>
+<Given>Oskar</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>747574</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>6259</Id>
+<Name>
+<Family>Nyman</Family>
+<Given>Pär</Given>
+</Name>
+<BirthDate>1965-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>260697</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>48679</Id>
+<Name>
+<Family>Simes</Family>
+<Given>Egil</Given>
+</Name>
+<BirthDate>1997-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>440888</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>48680</Id>
+<Name>
+<Family>Simes</Family>
+<Given>Nial</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>440890</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>17560</Id>
+<Name>
+<Family>Nyman</Family>
+<Given>Malin</Given>
+</Name>
+<BirthDate>1998-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>866413</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1602789</EntryId>
+<Name>Kils OK 1</Name>
+<Organisation>
+<Id>526</Id>
+<Name>Kils OK</Name>
+<ShortName>Kils OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>28</BibNumber>
+<TeamMemberStart>
+<Person sex="M">
+<Id>47075</Id>
+<Name>
+<Family>Uller</Family>
+<Given>Jonathan</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>602000</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>47074</Id>
+<Name>
+<Family>Uller</Family>
+<Given>Anna</Given>
+</Name>
+<BirthDate>1972-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>418032</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>47032</Id>
+<Name>
+<Family>Uller</Family>
+<Given>Andreas</Given>
+</Name>
+<BirthDate>1998-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>980227</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>47076</Id>
+<Name>
+<Family>Uller</Family>
+<Given>Anton</Given>
+</Name>
+<BirthDate>2003-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>602303</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>28707</Id>
+<Name>
+<Family>Uller</Family>
+<Given>Jonas</Given>
+</Name>
+<BirthDate>1973-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>362571</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1793995</EntryId>
+<Name>Kils OK 3</Name>
+<Organisation>
+<Id>526</Id>
+<Name>Kils OK</Name>
+<ShortName>Kils OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>29</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>35637</Id>
+<Name>
+<Family>Nordström</Family>
+<Given>Ella</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>866399</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>22913</Id>
+<Name>
+<Family>Nordström</Family>
+<Given>Elis</Given>
+</Name>
+<BirthDate>1997-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>970423</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>38181</Id>
+<Name>
+<Family>Nordström</Family>
+<Given>Lars</Given>
+</Name>
+<BirthDate>1958-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>511800</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>41855</Id>
+<Name>
+<Family>Nordström</Family>
+<Given>Klara</Given>
+</Name>
+<BirthDate>2003-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>407209</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>21970</Id>
+<Name>
+<Family>Nordström</Family>
+<Given>Anna</Given>
+</Name>
+<BirthDate>1971-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>711022</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1817770</EntryId>
+<Name>Lustens OK 2</Name>
+<Organisation>
+<Id>640</Id>
+<Name>Lustens OK</Name>
+<ShortName>Lustens OK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>30</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>24154</Id>
+<Name>
+<Family>Landfors</Family>
+<Given>Kristina</Given>
+</Name>
+<BirthDate>1967-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>343873</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>19265</Id>
+<Name>
+<Family>Landfors</Family>
+<Given>Pelle</Given>
+</Name>
+<BirthDate>1967-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>343867</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>36882</Id>
+<Name>
+<Family>Larsson</Family>
+<Given>Johan</Given>
+</Name>
+<BirthDate>1985-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>44431</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>36317</Id>
+<Name>
+<Family>Jonsson</Family>
+<Given>Viktor</Given>
+</Name>
+<BirthDate>2000-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>342543</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>14778</Id>
+<Name>
+<Family>Landfors</Family>
+<Given>Linnea</Given>
+</Name>
+<BirthDate>1995-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>951015</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1813322</EntryId>
+<Name>Skattkärrs IF 1</Name>
+<Organisation>
+<Id>334</Id>
+<Name>Skattkärrs IF</Name>
+<ShortName>Skattkärrs IF</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>31</BibNumber>
+<TeamMemberStart>
+<Person sex="F">
+<Id>21928</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Kajsa</Given>
+</Name>
+<BirthDate>1997-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>1</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>970909</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>5242</Id>
+<Name>
+<Family>Rööhs</Family>
+<Given>Lina</Given>
+</Name>
+<BirthDate>1978-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#1 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>780211</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>12534</Id>
+<Name>
+<Family>Risberg</Family>
+<Given>David</Given>
+</Name>
+<BirthDate>1998-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#1 Bana3A</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>980506</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>59642</Id>
+<Name>
+<Family>Johansson</Family>
+<Given>Maja</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>426169</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>5240</Id>
+<Name>
+<Family>Larsson</Family>
+<Given>Mikael</Given>
+</Name>
+<BirthDate>1970-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#1 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>701016</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+<TeamStart>
+<EntryId>1819065</EntryId>
+<Name>Lesjöfors SK / IK Vikings OK</Name>
+<Organisation>
+<Id>236</Id>
+<Name>Lesjöfors SK</Name>
+<ShortName>Lesjöfors SK</ShortName>
+<Country code="SWE">SWE</Country>
+</Organisation>
+<BibNumber>32</BibNumber>
+<TeamMemberStart>
+<Person sex="M">
+<Id>70203</Id>
+<Name>
+<Family>Carlsson-Ekelund</Family>
+<Given>Albin</Given>
+</Name>
+<BirthDate>1999-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>2</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<Course>
+<Id>1</Id>
+<Name>#1 Bana1</Name>
+<Length>3110</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>450728</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>54165</Id>
+<Name>
+<Family>Dalheimer</Family>
+<Given>Tim</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>1</Leg>
+<LegOrder>3</LegOrder>
+<StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+<ControlCard>540022</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>53147</Id>
+<Name>
+<Family>Widman</Family>
+<Given>Camilla</Given>
+</Name>
+<BirthDate>1968-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>2</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>2</Id>
+<Name>#2 Bana5</Name>
+<Length>4170</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>680809</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="M">
+<Id>32758</Id>
+<Name>
+<Family>Andersson</Family>
+<Given>Matz</Given>
+</Name>
+<BirthDate>1966-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>3</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>3</Id>
+<Name>#2 Bana3B</Name>
+<Length>6310</Length>
+<NumberOfControls>18</NumberOfControls>
+</Course>
+<ControlCard>661022</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>53146</Id>
+<Name>
+<Family>Widman</Family>
+<Given>Saga</Given>
+</Name>
+<BirthDate>2001-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>4</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>4</Id>
+<Name>#1 Bana4</Name>
+<Length>2400</Length>
+<NumberOfControls>10</NumberOfControls>
+</Course>
+<ControlCard>660720</ControlCard>
+</Start>
+</TeamMemberStart>
+<TeamMemberStart>
+<Person sex="F">
+<Id>19143</Id>
+<Name>
+<Family>Pettersson</Family>
+<Given>Åsa</Given>
+</Name>
+<BirthDate>1977-01-01</BirthDate>
+</Person>
+<Start>
+<Leg>5</Leg>
+<LegOrder>1</LegOrder>
+<Course>
+<Id>5</Id>
+<Name>#2 Bana2</Name>
+<Length>4280</Length>
+<NumberOfControls>13</NumberOfControls>
+</Course>
+<ControlCard>347293</ControlCard>
+</Start>
+</TeamMemberStart>
+<AssignedFee>
+<Fee>
+<Name>Actual</Name>
+<Amount>450.00</Amount>
+</Fee>
+</AssignedFee>
+<AssignedFee>
+<Fee>
+<Name>Xtra</Name>
+<Amount>50.00</Amount>
+</Fee>
+</AssignedFee>
+</TeamStart>
+</ClassStart>
 </StartList>
