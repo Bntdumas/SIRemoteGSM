@@ -66,7 +66,7 @@ contains(QT_MAJOR_VERSION, 5):system(for f in $(ls $$PWD/qml/RemoteControlUI/ | 
 !contains(QT_MAJOR_VERSION, 5):system(for f in $(ls $$PWD/qml/RemoteControlUI/ | grep -P \".*\\.qml\"); do sed -i \"s/QtQuick 2.0/QtQuick 1.1/\" $$PWD/qml/RemoteControlUI/$f; done)
 system(ln -sf $$PWD/qml/RemoteControlUI/RunnersDialogDesktop.qml qml/RemoteControlUI/RunnersDialog.qml)
 system(mkdir --parents app/native/data)
-system(cp -f data/runners.txt app/native/data)
+system(cp -f data/* app/native/data)
 
 OTHER_FILES += icon.png
 
