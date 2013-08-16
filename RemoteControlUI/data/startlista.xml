@@ -598,7 +598,7 @@
 	    <Length>2400</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	  <ControlCard>991105</ControlCard>
+          <ControlCard>258545</ControlCard>
 	</Start>
       </TeamMemberStart>
       <TeamMemberStart>
@@ -1118,10 +1118,10 @@
       </Organisation>
       <BibNumber>8</BibNumber>
       <TeamMemberStart>
-	<Person sex="M">
+        <Person sex="F">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Andersson</Family>
+            <Given>Julia</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1134,13 +1134,34 @@
 	    <Length>3110</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
+          <ControlCard>452084</ControlCard>
 	</Start>
+      </TeamMemberStart>
+      <TeamMemberStart>
+        <Person sex="M">
+          <Name>
+            <Family>Bergenfur</Family>
+            <Given>Elias</Given>
+          </Name>
+        </Person>
+        <Start>
+          <Leg>1</Leg>
+          <LegOrder>2</LegOrder>
+          <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+          <Course>
+            <Id>1</Id>
+            <Name>#1 Bana1</Name>
+            <Length>3110</Length>
+            <NumberOfControls>10</NumberOfControls>
+          </Course>
+          <ControlCard>547283</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Lundberg</Family>
+            <Given>Simon</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1152,13 +1173,14 @@
 	    <Length>4170</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>438127</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Dumas</Family>
+            <Given>Benoit</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1170,13 +1192,14 @@
 	    <Length>6310</Length>
 	    <NumberOfControls>18</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>890510</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
-	<Person sex="M">
+        <Person sex="F">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Fischer</Family>
+            <Given>Hanna</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1188,13 +1211,33 @@
 	    <Length>2400</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>911282</ControlCard>
+        </Start>
+      </TeamMemberStart>
+      <TeamMemberStart>
+        <Person sex="F">
+          <Name>
+            <Family>Fischer</Family>
+            <Given>Elsa</Given>
+          </Name>
+        </Person>
+        <Start>
+          <Leg>4</Leg>
+          <LegOrder>2</LegOrder>
+          <Course>
+            <Id>4</Id>
+            <Name>#1 Bana4</Name>
+            <Length>2400</Length>
+            <NumberOfControls>10</NumberOfControls>
+          </Course>
+          <ControlCard>700325</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Dalheimer</Family>
+            <Given>Jan</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1206,7 +1249,8 @@
 	    <Length>4280</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>684897</ControlCard>
+        </Start>
       </TeamMemberStart>
       <AssignedFee>
 	<Fee>
@@ -1226,10 +1270,10 @@
       </Organisation>
       <BibNumber>11</BibNumber>
       <TeamMemberStart>
-	<Person sex="M">
+        <Person sex="F">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Jonsson</Family>
+            <Given>Elisabeth</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1242,13 +1286,14 @@
 	    <Length>3110</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782011</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Harkman</Family>
+            <Given>Lars</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1260,13 +1305,14 @@
 	    <Length>4280</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782012</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Norén</Family>
+            <Given>Jörgen</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1278,13 +1324,14 @@
 	    <Length>6310</Length>
 	    <NumberOfControls>18</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782013</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Gunnarsson</Family>
+            <Given>Julia</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1296,13 +1343,33 @@
 	    <Length>2400</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782014</ControlCard>
+        </Start>
+      </TeamMemberStart>
+      <TeamMemberStart>
+        <Person sex="M">
+          <Name>
+            <Family>Gunnarsson</Family>
+            <Given>Sebastian</Given>
+          </Name>
+        </Person>
+        <Start>
+          <Leg>4</Leg>
+          <LegOrder>1</LegOrder>
+          <Course>
+            <Id>4</Id>
+            <Name>#1 Bana4</Name>
+            <Length>2400</Length>
+            <NumberOfControls>10</NumberOfControls>
+          </Course>
+          <ControlCard>782016</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Halses</Family>
+            <Given>Lars</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1314,7 +1381,8 @@
 	    <Length>4170</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782015</ControlCard>
+        </Start>
       </TeamMemberStart>
       <AssignedFee>
 	<Fee>
@@ -1571,7 +1639,7 @@
     </TeamStart>
     <TeamStart>
       <EntryId>1815496</EntryId>
-      <Name>Kristinehamns OK 1</Name>
+      <Name>Kristinehamns OK/OK Hällen/OK Djerf</Name>
       <Organisation>
 	<Id>214</Id>
 	<Name>Kristinehamns OK</Name>
@@ -1582,8 +1650,8 @@
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Ericsson</Family>
+            <Given>Anne-Marie</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1596,13 +1664,14 @@
 	    <Length>3110</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>1112345</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Gunnarsson</Family>
+            <Given>Stefan</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1614,13 +1683,14 @@
 	    <Length>4280</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>340286</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Öberg</Family>
+            <Given>Peter</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1632,13 +1702,14 @@
 	    <Length>6310</Length>
 	    <NumberOfControls>18</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>902300</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Wester</Family>
+            <Given>Simon</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1650,13 +1721,14 @@
 	    <Length>2400</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>2050713</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Larsson</Family>
+            <Given>Jonas</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1668,7 +1740,8 @@
 	    <Length>4170</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>1973921</ControlCard>
+        </Start>
       </TeamMemberStart>
       <AssignedFee>
 	<Fee>
@@ -1802,7 +1875,7 @@
     </TeamStart>
     <TeamStart>
       <EntryId>1815497</EntryId>
-      <Name>Kristinehamns OK 2</Name>
+      <Name>Kristinehamns OK/OK Hällen 2</Name>
       <Organisation>
 	<Id>214</Id>
 	<Name>Kristinehamns OK</Name>
@@ -1813,8 +1886,8 @@
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Gunnarsson</Family>
+            <Given>Britt</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1827,13 +1900,14 @@
 	    <Length>3110</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>262886</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Brodin</Family>
+            <Given>Sven-Erik</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1845,13 +1919,14 @@
 	    <Length>4170</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>12179</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Öberg</Family>
+            <Given>Johanna</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1863,13 +1938,14 @@
 	    <Length>6310</Length>
 	    <NumberOfControls>18</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>820407</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Forslund</Family>
+            <Given>Emilie</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1881,13 +1957,14 @@
 	    <Length>2400</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>354375</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Gillenäs</Family>
+            <Given>Christer</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -1899,7 +1976,8 @@
 	    <Length>4280</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>28936</ControlCard>
+        </Start>
       </TeamMemberStart>
       <AssignedFee>
 	<Fee>
@@ -1958,7 +2036,7 @@
 	    <Length>4280</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	  <ControlCard>247817</ControlCard>
+          <ControlCard>209699</ControlCard>
 	</Start>
       </TeamMemberStart>
       <TeamMemberStart>
@@ -2021,7 +2099,7 @@
 	    <Length>4170</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	  <ControlCard>353553</ControlCard>
+          <ControlCard>228786</ControlCard>
 	</Start>
       </TeamMemberStart>
       <AssignedFee>
@@ -2167,8 +2245,8 @@
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Ekberg</Family>
+            <Given>Ylva</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2181,13 +2259,14 @@
 	    <Length>3110</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>262853</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Hyvönen</Family>
+            <Given>Ann</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2199,13 +2278,14 @@
 	    <Length>4170</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>761125</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Johansson</Family>
+            <Given>Hanna</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2217,13 +2297,14 @@
 	    <Length>6310</Length>
 	    <NumberOfControls>18</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>901146</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Ekberg</Family>
+            <Given>Axel</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2235,13 +2316,14 @@
 	    <Length>2400</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>426151</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Ekberg</Family>
+            <Given>Jan</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2253,7 +2335,8 @@
 	    <Length>4280</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>47287</ControlCard>
+        </Start>
       </TeamMemberStart>
       <AssignedFee>
 	<Fee>
@@ -2398,8 +2481,8 @@
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Johansson</Family>
+            <Given>Elin</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2412,13 +2495,14 @@
 	    <Length>3110</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>262865</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Bergenfur</Family>
+            <Given>Jonas</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2430,13 +2514,14 @@
 	    <Length>4170</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>710209</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Boström</Family>
+            <Given>Per</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2448,13 +2533,14 @@
 	    <Length>6310</Length>
 	    <NumberOfControls>18</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>347060</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Ekberg</Family>
+            <Given>Johan</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2466,13 +2552,14 @@
 	    <Length>2400</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>520224</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Risberg</Family>
+            <Given>Peter</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2484,7 +2571,8 @@
 	    <Length>4280</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>405457</ControlCard>
+        </Start>
       </TeamMemberStart>
       <AssignedFee>
 	<Fee>
@@ -2506,8 +2594,8 @@
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Masapärs</Family>
+            <Given>Sofie</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2520,13 +2608,14 @@
 	    <Length>3110</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782001</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Gunnarsson</Family>
+            <Given>Lars</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2538,13 +2627,14 @@
 	    <Length>4170</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782002</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Allerhed</Family>
+            <Given>Marcus</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2556,13 +2646,14 @@
 	    <Length>6310</Length>
 	    <NumberOfControls>18</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782003</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Gunnarsson</Family>
+            <Given>Emilia</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2574,13 +2665,33 @@
 	    <Length>2400</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782004</ControlCard>
+        </Start>
+      </TeamMemberStart>
+      <TeamMemberStart>
+        <Person sex="M">
+          <Name>
+            <Family>Masapärs</Family>
+            <Given>Joel</Given>
+          </Name>
+        </Person>
+        <Start>
+          <Leg>4</Leg>
+          <LegOrder>2</LegOrder>
+          <Course>
+            <Id>4</Id>
+            <Name>#1 Bana4</Name>
+            <Length>2400</Length>
+            <NumberOfControls>10</NumberOfControls>
+          </Course>
+          <ControlCard>782006</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Sigfrids</Family>
+            <Given>Jörgen</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -2592,7 +2703,8 @@
 	    <Length>4280</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>782005</ControlCard>
+        </Start>
       </TeamMemberStart>
       <AssignedFee>
 	<Fee>
@@ -3598,8 +3710,8 @@
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Johansson</Family>
+            <Given>Kajsa</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -3612,13 +3724,14 @@
 	    <Length>3110</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>970909</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Rööhs</Family>
+            <Given>Lina</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -3630,13 +3743,14 @@
 	    <Length>4280</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>780211</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Risberg</Family>
+            <Given>David</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -3648,13 +3762,14 @@
 	    <Length>6310</Length>
 	    <NumberOfControls>18</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>980506</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Johansson</Family>
+            <Given>Maja</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -3666,13 +3781,14 @@
 	    <Length>2400</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>426169</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Larsson</Family>
+            <Given>Mikael</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -3684,7 +3800,8 @@
 	    <Length>4170</Length>
 	    <NumberOfControls>13</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>701016</ControlCard>
+        </Start>
       </TeamMemberStart>
       <AssignedFee>
 	<Fee>
@@ -3706,8 +3823,8 @@
       <TeamMemberStart>
 	<Person sex="M">
 	  <Name>
-	    <Family>N.N.</Family>
-	    <Given></Given>
+            <Family>Carlsson-Ekelund</Family>
+            <Given>Albin</Given>
 	  </Name>
 	</Person>
 	<Start>
@@ -3720,7 +3837,28 @@
 	    <Length>3110</Length>
 	    <NumberOfControls>10</NumberOfControls>
 	  </Course>
-	</Start>
+          <ControlCard>450728</ControlCard>
+        </Start>
+      </TeamMemberStart>
+      <TeamMemberStart>
+        <Person sex="M">
+          <Name>
+            <Family>Dalheimer</Family>
+            <Given>Tim</Given>
+          </Name>
+        </Person>
+        <Start>
+          <Leg>1</Leg>
+          <LegOrder>2</LegOrder>
+          <StartTime>2013-08-17T11:00:00.000+02:00</StartTime>
+          <Course>
+            <Id>1</Id>
+            <Name>#1 Bana1</Name>
+            <Length>3110</Length>
+            <NumberOfControls>10</NumberOfControls>
+          </Course>
+          <ControlCard>540022</ControlCard>
+        </Start>
       </TeamMemberStart>
       <TeamMemberStart>
 	<Person sex="F">
