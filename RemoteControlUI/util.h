@@ -13,7 +13,7 @@ class Util : public QObject
 public:
     static Util* instance;
 
-    Q_INVOKABLE int timeToString(const QTime& time);
+    Q_INVOKABLE int timeToSeconds(const QTime& time);
     Q_INVOKABLE QDateTime timeDifference(const QTime& t1, const QTime& t2);
 
     QDateTime competitionTime() const { return m_competitionTime; }

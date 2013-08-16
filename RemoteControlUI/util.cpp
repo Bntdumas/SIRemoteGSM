@@ -10,7 +10,7 @@ Util::Util(QObject *parent) :
 
 }
 
-int Util::timeToString(const QTime &time)
+int Util::timeToSeconds(const QTime &time)
 {
     return time.hour() * 60 * 60 + time.minute() * 60 + time.second();
 }
