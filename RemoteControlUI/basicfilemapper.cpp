@@ -112,8 +112,8 @@ void BasicFileMapper::loadCache()
 
 void BasicFileMapper::loadPermanentData()
 {
-    //loadRunnersFromXML();
-    loadRunners();
+    loadRunnersFromXML();
+    //loadRunners();
 
     saveToCache();
 }
@@ -235,6 +235,8 @@ void BasicFileMapper::loadRunnersFromXML()
             teamStartElement = teamStartElement.nextSiblingElement("TeamStart");
         }
         
+    } else {
+        qDebug() << "NOTE Error opening startlista.xml:" << qPrintable(file.errorString());
     }
     file.close();
 }
