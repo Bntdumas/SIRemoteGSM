@@ -1,7 +1,7 @@
 import QtQuick 1.1
 
 Rectangle {
-    property string text: edit.text
+    property string text: ""
     property string placeholderText: ""
 
     radius: 5
@@ -11,6 +11,10 @@ Rectangle {
     width: 150
     height: 80
     clip: true
+
+    function setText(str) {
+        edit.text = str;
+    }
 
     Text {
         id: placeholder
@@ -24,9 +28,10 @@ Rectangle {
 
     TextEdit {
         id: edit
-        anchors.left: parent.left
-        anchors.right: parent.right
+        anchors.fill: parent
         anchors.leftMargin: 3
-        anchors.verticalCenter: parent.verticalCenter
+        verticalAlignment: TextEdit.AlignVCenter
+
+        onTextChanged: parent.text = text
     }
 }

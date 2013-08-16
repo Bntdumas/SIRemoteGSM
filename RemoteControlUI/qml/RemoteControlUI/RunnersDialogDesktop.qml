@@ -81,9 +81,9 @@ Rectangle {
             newSiTextField.placeholderText = mapper.siForIndex(index);
             newNameTextField.placeholderText = mapper.nameForIndex(index);
             newLapTextField.placeholderText = mapper.lapForIndex(index);
-            newSiTextField.text = "";
-            newNameTextField.text = "";
-            newLapTextField.text = "";
+            newSiTextField.setText("");
+            newNameTextField.setText("");
+            newLapTextField.setText("");
         }
 
         onIndexChanged: clear();
@@ -182,12 +182,10 @@ Rectangle {
                     width: 80
                     text: "Save"
                     onClicked: {
-                        console.debug(newLapTextField.text.length);
                         if (newLapTextField.text.length > 0) {
                             mapper.changeLap(mapper.siForIndex(editor.index),
                                                   newLapTextField.text);
                             selector.visible = true;
-                            console.debug("save clicked");
                         }
                     }
                 }
