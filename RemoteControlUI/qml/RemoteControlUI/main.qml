@@ -29,10 +29,18 @@ Rectangle {
     }
 
     Image {
-        id: image1
+        id: background
         anchors.fill: parent
-        source: "images/background.jpg"
+        source: "images/background.jpeg"
         visible: !dialog.visible
+
+        Image {
+            anchors.horizontalCenter: background.horizontalCenter
+            source: "images/viking-logo.png"
+            fillMode: Image.PreserveAspectFit
+            height: background.height
+            opacity: 0.05
+        }
 
         Rectangle {
             id: container
@@ -47,28 +55,6 @@ Rectangle {
                 anchors.top: parent.top
                 height: 75
                 color: "transparent"
-
-                Image {
-                    anchors.right: parent.right
-                    anchors.rightMargin: 10
-                    anchors.verticalCenter: parent.verticalCenter
-                    source: "images/viking-logo.png"
-                    fillMode: Image.PreserveAspectFit
-                    width: height
-                    height: parent.height
-                    opacity: 0.5
-                }
-
-                Image {
-                    anchors.left: parent.left
-                    anchors.leftMargin: 10
-                    anchors.verticalCenter: parent.verticalCenter
-                    source: "images/viking-logo.png"
-                    fillMode: Image.PreserveAspectFit
-                    width: height
-                    height: parent.height
-                    opacity: 0.5
-                }
 
                 Clock {
                     id: clock
@@ -119,8 +105,12 @@ Rectangle {
                         running: parent.visible
                         triggeredOnStart: true
 
+                        function timeToSeconds(t) {
+                            return t.getHours() * 60 * 60 + t.getMinutes() * 60 + t.getSeconds();
+                        }
+
                         onTriggered: {
-                            parent.highlighted = Util.timeToSeconds(arrivalTime) + root.secondsHighlighted > Util.timeToSeconds(new Date());
+                            parent.highlighted = Util.timeToString(arrivalTime) + root.secondsHighlighted > Util.timeToString(new Date());
                         }
                     }
 
