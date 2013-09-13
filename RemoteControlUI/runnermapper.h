@@ -51,7 +51,7 @@ public slots:
 
 protected:
     virtual bool map(const int si, const QTime& realTime,
-                     QString* name, QString* team, QTime* time, int* lap) = 0;
+                     QString* name, QString* team, QTime* time, int* lap, int* bib) = 0;
 
     virtual QMap<int, QString> runners() = 0;
 

@@ -35,7 +35,7 @@ private:
     void loadRunnersFromXML();
 
 protected:
-    bool map(const int si, const QTime &realTime, QString *name, QString *team, QTime *time, int *lap);
+    bool map(const int si, const QTime &realTime, QString *name, QString *team, QTime *time, int *lap, int *bib);
     QMap<int, QString> runners();
 
 public slots:

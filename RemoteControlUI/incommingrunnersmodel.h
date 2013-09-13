@@ -23,6 +23,7 @@ public:
         RawTimeRole,
         RealTimeRole,
         LapRole,
+        BibRole,
         ArrivalTimeRole
     };
 
@@ -47,9 +48,10 @@ public slots:
      * @param time The time the runner has been on his lap for
      * @param realTime The time at which the runner punched the control
      * @param lap The lap the runner is on
+     * @param bib The runners bib
      */
     void addRunner(const QString& name, const QString& team, const QTime& time, const QTime& realTime,
-                   const int lap);
+                   const int lap, const int bib);
 
     /**
      * @brief reload Reloads all runners from memory
@@ -61,12 +63,14 @@ private:
     {
         IncommingRunner() {}
         IncommingRunner(const QString& name, const QString& team, const QTime& time, const QTime& realTime,
-                        const int lap) : name(name), team(team), time(time), realTime(realTime), lap(lap), arrivalTime(QTime::currentTime()) {}
+                        const int lap, const int bib) :
+            name(name), team(team), time(time), realTime(realTime), lap(lap), bib(bib), arrivalTime(QTime::currentTime()) {}
         QString name;
         QString team;
         QTime time;
         QTime realTime;
         int lap;
+        int bib;
         QTime arrivalTime;
 
         bool operator<(const IncommingRunner& other);

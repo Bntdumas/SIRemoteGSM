@@ -110,10 +110,11 @@ void RunnerMapper::punched(const int si, const QTime &realTime)
     QString team;
     QTime time;
     int lap;
-    if (map(si, realTime, &name, &team, &time, &lap)) {
-        emit runnerPunched(name, team , time, realTime, lap);
+    int bib;
+    if (map(si, realTime, &name, &team, &time, &lap, &bib)) {
+        emit runnerPunched(name, team , time, realTime, lap, bib);
     } else {
-        emit runnerPunched(QString("SI %1").arg(si), "", Util::instance->competitionTime().time(), realTime, -1);
+        emit runnerPunched(QString("SI %1").arg(si), "", Util::instance->competitionTime().time(), realTime, -1, -1);
     }
 }
 

@@ -281,7 +281,7 @@ void BasicFileMapper::loadRunners()
     }
 }
 
-bool BasicFileMapper::map(const int si, const QTime &, QString *name, QString *team, QTime *time, int *lap)
+bool BasicFileMapper::map(const int si, const QTime &, QString *name, QString *team, QTime *time, int *lap, int *bib)
 {
     if (!m_runners.contains(si)) {
         return false;
@@ -291,6 +291,7 @@ bool BasicFileMapper::map(const int si, const QTime &, QString *name, QString *t
     *name = runner.name;
     *team = runner.team;
     *lap = runner.lap;
+    *bib = runner.bibnumber.toInt();
     *time = Util::instance->competitionTime().time();
     return true;
 }

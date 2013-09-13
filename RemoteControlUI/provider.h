@@ -12,7 +12,7 @@ public:
     
 signals:
     void runnerPunched(const QString& name, const QString& team, const QTime& time, const QTime& realTime,
-                       const int lap);
+                       const int lap, const int bib);
 };
 
 #endif // PROVIDER_H

@@ -20,5 +20,5 @@ DBusProvider::DBusProvider(QObject *parent) :
 
 void DBusProvider::runnerPunchedAtControl(const QString &name, const QString &team, const QTime &time, const QTime &realTime, const int lap)
 {
-    emit runnerPunched(name, team, time, realTime, lap);
+    emit runnerPunched(name, team, time, realTime, lap, 0);
 }

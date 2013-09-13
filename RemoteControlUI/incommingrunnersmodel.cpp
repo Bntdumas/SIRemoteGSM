@@ -46,6 +46,7 @@ QHash<int, QByteArray> IncommingRunnersModel::roleNames() const
     hash.insert(RawTimeRole, "rawTime");
     hash.insert(RealTimeRole, "realTime");
     hash.insert(LapRole, "lap");
+    hash.insert(BibRole, "bib");
     hash.insert(ArrivalTimeRole, "arrivalTime");
     return hash;
 }
@@ -84,6 +85,8 @@ QVariant IncommingRunnersModel::data(const QModelIndex &index, int role) const
             return QVariant("");
         }
         return runner.lap;
+    case BibRole:
+        return runner.bib;
     case ArrivalTimeRole:
         return runner.arrivalTime;
     default:
@@ -114,6 +117,9 @@ bool IncommingRunnersModel::setData(const QModelIndex &index, const QVariant &va
         return true;
     case LapRole:
         m_runners[row].lap = value.toInt();
+        return true;
+    case BibRole:
+        m_runners[row].bib = value.toInt();
         return true;
     default:
         return false;
@@ -148,10 +154,10 @@ bool IncommingRunnersModel::removeRows(int row, int count, const QModelIndex &pa
     return true;
 }
 
-void IncommingRunnersModel::addRunner(const QString &name, const QString &team, const QTime &time, const QTime &realTime, const int lap)
+void IncommingRunnersModel::addRunner(const QString &name, const QString &team, const QTime &time, const QTime &realTime, const int lap, const int bib)
 {
     beginInsertRows(QModelIndex(), 0, 0);
-    m_runners.insert(0, IncommingRunner(name, team, time, realTime, lap));
+    m_runners.insert(0, IncommingRunner(name, team, time, realTime, lap, bib));
 
 //    QDir dir(QStandardPaths::writableLocation(QStandardPaths::DataLocation));
 //    QFile file(dir.absoluteFilePath("runners_cache"));
