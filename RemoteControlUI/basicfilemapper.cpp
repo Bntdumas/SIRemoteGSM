@@ -23,6 +23,7 @@ BasicFileMapper::BasicFileMapper(QObject *parent) :
 QString BasicFileMapper::generateCache() const
 {
     QStringList rows;
+    rows.append(QString("compTime:%1").arg(Util::instance->competitionTime().toString("hh:mm:ss")));
     foreach (const int si, m_runners.keys()) {
         MappedRunner runner = m_runners[si];
         QString row = "%1,,,%2,,,%3,,,%4,,,%5";
@@ -42,6 +43,12 @@ void BasicFileMapper::readCache(const QString &data)
     QStringList rows = data.split('\n');
     foreach (const QString& entry, rows) {
         if (entry.isEmpty()) {
+            continue;
+        }
+        if (entry.startsWith("compTime:")) {
+            const QDateTime competitionTime = QDateTime::fromString(entry.right(entry.indexOf(":")),
+                                                                    "hh:mm:ss");
+            Util::instance->setCompetitionTime(competitionTime);
             continue;
         }
         MappedRunner runner;
