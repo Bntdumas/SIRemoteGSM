@@ -12,8 +12,8 @@ void Registry::setModel(IncommingRunnersModel *model)
 
 int Registry::registerProvider(Provider *provider)
 {
-    connect(provider, SIGNAL(runnerPunched(QString,QString,QTime,QTime,int)),
-            m_model, SLOT(addRunner(QString,QString,QTime,QTime,int)));
+    connect(provider, SIGNAL(runnerPunched(QString,QString,QTime,QTime,int,int)),
+            m_model, SLOT(addRunner(QString,QString,QTime,QTime,int,int)));
     int index = m_providers.size();
     m_providers.insert(index, provider);
     return index;
